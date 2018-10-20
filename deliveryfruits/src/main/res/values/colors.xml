@@ -4,8 +4,11 @@
     <color name="colorPrimaryDark">#383fcf</color>
     <color name="colorAccent">#d21353</color>
     <color name="colorPrimary1">#19be40</color>
-    <color name="colorPrimary2">#c29277</color>
+    <color name="colorPrimary2">#efd8cb</color>
     <color name="colorPrimaryDark1111">#383fcf</color>
     <color name="colorPrimary222">#4851d2</color>
     <color name="colorPrimary221">#b77e5e</color>
+    <color name="yellow1">#e1d126</color>
+    <color name="colorPrimary2211">#2fb62d</color>
+    <color name="colorPrimaryDark22">#a5a8e8</color>
 </resources>
