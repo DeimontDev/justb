@@ -2,6 +2,15 @@
 <items version="2" >
 
     <item
+        is-multidex="true"
+        jar="C:\Users\Deimont\IdeaProjects\Deliapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.3"
+        sha1="44201e208bd47ba750470a5889158f8c2a73b0ba">
+        <dex dex="C:\Users\Deimont\IdeaProjects\Deliapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_9d21cd4e5c4b86e88dae6de879324e1ddf6ae491\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\Deimont\.android\build-cache\59599147a725cbd8f1b4767a462f85f0fa1148ac\output\jars\classes.jar"
         jumboMode="false"
@@ -34,8 +43,17 @@
         jumboMode="true"
         optimize="true"
         revision="28.0.3"
-        sha1="8bc7f42d53452572e451ad4f83cce0a05b7f0ff6">
+        sha1="2a9176898295a50bc7b7acd0ce8b20627340a9da">
         <dex dex="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_e742f79b2a60b24a4af403d45473050e45023cd4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Deimont\IdeaProjects\Deliapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.3"
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="C:\Users\Deimont\IdeaProjects\Deliapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_dce1334e4f0ea30b064db9a9e7e37bf711f0fd66\classes.dex" />
     </item>
 
 </items>

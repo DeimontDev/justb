@@ -64,29 +64,29 @@
                                 android:orientation="vertical"
                                 android:layout_width="160dp"
                                 android:layout_height="190dp" android:id="@+id/layout"
-                                app:layout_constraintStart_toStartOf="@+id/imageButton4"
-                                app:layout_constraintTop_toTopOf="@+id/imageButton4" android:layout_marginTop="8dp"
-                                app:layout_constraintEnd_toEndOf="@+id/imageButton4">
+                                app:layout_constraintStart_toStartOf="@+id/img1"
+                                app:layout_constraintTop_toTopOf="@+id/img1" android:layout_marginTop="8dp"
+                                app:layout_constraintEnd_toEndOf="@+id/img1">
                         </LinearLayout>
                         <ImageButton
                                 android:layout_width="142dp"
                                 android:layout_height="200dp" app:srcCompat="@android:drawable/alert_dark_frame"
-                                android:id="@+id/imageButton5"
-                                android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/imageButton1"
+                                android:id="@+id/img4"
+                                android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/img2"
                                 android:layout_marginEnd="48dp" app:layout_constraintEnd_toEndOf="parent"
                                 android:layout_marginRight="48dp"/>
                         <ImageButton
                                 android:layout_width="142dp"
                                 android:layout_height="200dp" app:srcCompat="@android:drawable/alert_dark_frame"
-                                android:id="@+id/imageButton7"
-                                app:layout_constraintTop_toBottomOf="@+id/imageButton3" android:layout_marginTop="100dp"
-                                app:layout_constraintEnd_toStartOf="@+id/imageButton2" android:layout_marginEnd="25dp"
+                                android:id="@+id/img5"
+                                app:layout_constraintTop_toBottomOf="@+id/img3" android:layout_marginTop="100dp"
+                                app:layout_constraintEnd_toStartOf="@+id/img6" android:layout_marginEnd="25dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="48dp"
                                 android:layout_marginLeft="48dp" android:layout_marginRight="25dp"/>
                         <ImageButton
-                                android:layout_width="160dp"
-                                android:layout_height="170dp" app:srcCompat="@android:drawable/alert_dark_frame"
-                                android:id="@+id/imageButton4"
+                                android:layout_width="160dip"
+                                android:layout_height="170dip" app:srcCompat="@android:drawable/alert_dark_frame"
+                                android:id="@+id/img1"
                                 app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="34dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="35dp"
                                 android:tint="@android:color/black"
@@ -96,7 +96,7 @@
                                 android:layout_height="43dp"
                                 android:inputType="numberSigned"
                                 android:ems="10"
-                                android:id="@+id/editText2"
+                                android:id="@+id/text1"
                                 android:hint="@string/_1"
                                 android:singleLine="false"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
@@ -105,21 +105,21 @@
                                 tools:ignore="SmallSp"
                                 android:textColorLink="@color/colorPrimary222"
                                 android:selectAllOnFocus="false"
-                                app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+                                app:layout_constraintTop_toBottomOf="@+id/img1"
                                 app:layout_constraintBottom_toBottomOf="@+id/layout"
-                                app:layout_constraintStart_toEndOf="@+id/minus" android:layout_marginStart="5dp"
+                                app:layout_constraintStart_toEndOf="@+id/minus1" android:layout_marginStart="5dp"
                                 android:layout_marginLeft="5dp"/>
                         <ImageButton
                                 android:layout_width="142dp"
                                 android:layout_height="200dp" app:srcCompat="@android:drawable/alert_dark_frame"
-                                android:id="@+id/imageButton2"
-                                android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+                                android:id="@+id/img6"
+                                android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/img4"
                                 android:layout_marginEnd="48dp" app:layout_constraintEnd_toEndOf="parent"
                                 android:layout_marginRight="48dp"/>
                         <ImageButton
                                 android:layout_width="160dp"
                                 android:layout_height="200dp" app:srcCompat="@android:drawable/alert_dark_frame"
-                                android:id="@+id/imageButton1"
+                                android:id="@+id/img2"
                                 app:layout_constraintTop_toTopOf="parent"
                                 android:layout_marginTop="34dp"
                                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="35dp"
@@ -127,16 +127,16 @@
                         <ImageButton
                                 android:layout_width="142dp"
                                 android:layout_height="200dp" app:srcCompat="@android:drawable/alert_dark_frame"
-                                android:id="@+id/imageButton3"
+                                android:id="@+id/img3"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="48dp"
                                 android:layout_marginTop="100dp"
-                                app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+                                app:layout_constraintTop_toBottomOf="@+id/img1"
                                 android:layout_marginLeft="48dp"/>
                         <ImageButton
                                 android:layout_width="142dp"
                                 android:layout_height="200dp" app:srcCompat="@android:drawable/alert_dark_frame"
                                 android:id="@+id/imageButton6"
-                                android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+                                android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/img5"
                                 app:layout_constraintEnd_toStartOf="@+id/imageButton" android:layout_marginEnd="25dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="48dp"
                                 android:layout_marginRight="25dp" android:layout_marginLeft="48dp"/>
@@ -145,7 +145,7 @@
                                 android:layout_height="200dp" app:srcCompat="@android:drawable/alert_dark_frame"
                                 android:id="@+id/imageButton"
                                 android:layout_marginTop="100dp"
-                                app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+                                app:layout_constraintTop_toBottomOf="@+id/img6"
                                 android:layout_marginEnd="48dp" app:layout_constraintEnd_toEndOf="parent"
                                 android:layout_marginRight="48dp"/>
                         <ImageButton
@@ -173,25 +173,25 @@
                                 tools:layout_marginEnd="10dp"
                                 app:srcCompat="@drawable/plus"
                                 android:background="@color/colorPrimaryDark22"
-                                app:layout_constraintBottom_toBottomOf="@+id/editText2"
+                                app:layout_constraintBottom_toBottomOf="@+id/text1"
                                 android:layout_marginBottom="6dp"
-                                app:layout_constraintTop_toTopOf="@+id/editText2" android:layout_marginTop="6dp"
+                                app:layout_constraintTop_toTopOf="@+id/text1" android:layout_marginTop="6dp"
                                 app:layout_constraintVertical_bias="0.0"
-                                app:layout_constraintStart_toEndOf="@+id/editText2" android:layout_marginStart="5dp"
+                                app:layout_constraintStart_toEndOf="@+id/text1" android:layout_marginStart="5dp"
                                 android:layout_marginLeft="5dp"/>
                         <ImageButton
                                 android:layout_width="32dp"
-                                android:layout_height="30dp" android:id="@+id/minus"
+                                android:layout_height="30dp" android:id="@+id/minus1"
                                 style="@style/Widget.AppCompat.ImageButton"
                                 android:background="@color/colorPrimaryDark22"
-                                app:layout_constraintTop_toTopOf="@+id/editText2"
+                                app:layout_constraintTop_toTopOf="@+id/text1"
                                 app:srcCompat="@drawable/ic_action_name"
                                 app:layout_constraintStart_toStartOf="@+id/layout"
                                 android:layout_marginTop="6dp"
-                                app:layout_constraintBottom_toBottomOf="@+id/editText2"
+                                app:layout_constraintBottom_toBottomOf="@+id/text1"
                                 android:layout_marginBottom="6dp"
                                 app:layout_constraintVertical_bias="0.0"
-                                android:layout_marginStart="5dp"/>
+                                android:layout_marginStart="5dp" android:layout_marginLeft="5dp"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="150dp"
@@ -199,7 +199,7 @@
                                 android:id="@+id/button"
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2"
-                                app:layout_constraintTop_toBottomOf="@+id/editText2"
+                                app:layout_constraintTop_toBottomOf="@+id/text1"
                                 app:layout_constraintEnd_toEndOf="@+id/layout"
                                 app:layout_constraintStart_toStartOf="@+id/layout"
                                 android:textColor="@android:color/black" android:textSize="10sp"
