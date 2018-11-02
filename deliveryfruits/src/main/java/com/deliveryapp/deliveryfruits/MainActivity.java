@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
         Resources res = getResources();
         for (int i = 0; i < 10; i++) {
+            if (i == 3) {
+                continue;
+            }
             int id = i + 1;
             ImageButton plus = findViewById(res.getIdentifier(
                     "plus"+ String.valueOf(id), "id", getPackageName()));
@@ -35,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
                     "minus"+ String.valueOf(id), "id", getPackageName()));
             minus.setOnClickListener(plusMinusListener(id, false));
         }
-
     }
 
     private View.OnClickListener plusMinusListener(final int id, final boolean plus) {

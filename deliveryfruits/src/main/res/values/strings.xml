@@ -96,4 +96,6 @@
     <string name="_1">1</string>
     <string name="to_basket">В корзину</string>
     <string name="add_to_basket">в корзину</string>
+    <string name="americano_180ml">Americano 180ml</string>
+    <string name="americano_250ml">Americano 250ml</string>
 </resources>

@@ -6,9 +6,13 @@
     <color name="colorPrimary1">#19be40</color>
     <color name="colorPrimary2">#efd8cb</color>
     <color name="colorPrimaryDark1111">#383fcf</color>
-    <color name="colorPrimary222">#4851d2</color>
+    <color name="colorPrimary222">#4242df</color>
     <color name="colorPrimary221">#b77e5e</color>
     <color name="yellow1">#e1d126</color>
     <color name="colorPrimary2211">#2fb62d</color>
     <color name="colorPrimaryDark22">#a5a8e8</color>
+    <color name="colorPrimary2222312">#b8c996</color>
+    <color name="colorPrimary21">#f1f9b1</color>
+    <color name="colorPrimaryDark222">#9b9ca4</color>
+    <color name="colorPrimary222231222">#cfdeb3</color>
 </resources>
