@@ -525,7 +525,7 @@
                                 app:layout_constraintTop_toTopOf="@+id/text10" android:layout_marginTop="6dp"
                                 android:layout_marginEnd="2dp" android:layout_marginRight="2dp"/>
                         <TextView
-                                android:text="@string/americano"
+                                android:text="@string/americano_180ml"
                                 android:layout_width="130dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/americano"
@@ -538,7 +538,7 @@
                                 android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
                                 android:background="@color/colorPrimary222231222" android:textAllCaps="false"/>
                         <TextView
-                                android:text="@string/cappuccino"
+                                android:text="@string/americano_180ml"
                                 android:layout_width="130dp"
                                 android:layout_height="25dp"
                                 android:id="@+id/capuccino" app:layout_constraintStart_toStartOf="@+id/img2"
@@ -549,7 +549,7 @@
                                 android:fontFamily="serif"
                                 android:typeface="normal"/>
                         <TextView
-                                android:text="@string/latte"
+                                android:text="@string/americano_180ml"
                                 android:layout_width="130dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/latte" app:layout_constraintEnd_toEndOf="@+id/img3"

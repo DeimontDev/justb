@@ -98,4 +98,8 @@
     <string name="add_to_basket">в корзину</string>
     <string name="americano_180ml">Americano 180ml</string>
     <string name="americano_250ml">Americano 250ml</string>
+    <string name="cappucino_250ml">Cappucino 250ml</string>
+    <string name="cappucno_180ml">Cappucino 180ml</string>
+    <string name="latte_180ml">Latte 180ml</string>
+    <string name="latte_250ml">Latte 250ml</string>
 </resources>

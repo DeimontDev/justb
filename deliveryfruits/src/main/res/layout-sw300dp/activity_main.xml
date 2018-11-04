@@ -104,7 +104,7 @@
                                 style="@style/Widget.AppCompat.ImageButton"
                                 android:scaleType="centerCrop" app:srcCompat="@mipmap/americano1"
                                 android:background="@color/colorPrimary222231222" android:adjustViewBounds="true"
-                                android:cropToPadding="true"/>
+                                android:cropToPadding="true" android:layout_marginLeft="25dp"/>
                         <EditText
                                 android:layout_width="48dp"
                                 android:layout_height="43dp"
@@ -122,7 +122,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/img1"
                                 app:layout_constraintBottom_toBottomOf="@+id/layout"
                                 app:layout_constraintStart_toEndOf="@+id/minus1" android:layout_marginStart="5dp"
-                                android:layout_marginTop="18dp"/>
+                                android:layout_marginTop="18dp" android:layout_marginLeft="5dp"/>
                         <ImageButton
                                 android:layout_width="130dp"
                                 android:layout_height="150dp" app:srcCompat="@android:drawable/alert_dark_frame"
@@ -160,7 +160,7 @@
                                 android:layout_marginTop="34dp"
                                 android:background="@color/colorPrimary222231222"
                                 style="@style/Widget.AppCompat.ImageButton" android:scaleType="centerCrop"
-                        />
+                                android:layout_marginRight="25dp"/>
                         <ImageButton
                                 android:layout_width="130dp"
                                 android:layout_height="150dp" app:srcCompat="@mipmap/latte1"
@@ -183,7 +183,7 @@
                                 app:layout_constraintTop_toTopOf="@+id/text1" android:layout_marginTop="6dp"
                                 app:layout_constraintVertical_bias="0.0"
                                 app:layout_constraintStart_toEndOf="@+id/text1" android:layout_marginStart="12dp"
-                        />
+                                android:layout_marginLeft="12dp"/>
                         <ImageButton
                                 android:layout_width="30dp"
                                 android:layout_height="28dp" android:id="@+id/minus1"
@@ -208,7 +208,7 @@
                                 app:layout_constraintEnd_toEndOf="@+id/layout"
                                 app:layout_constraintStart_toStartOf="@+id/layout"
                                 android:textColor="@android:color/black" android:textSize="10sp"
-                        />
+                                tools:ignore="SmallSp"/>
                         <ImageButton
                                 android:layout_width="32dp"
                                 android:layout_height="30dp" app:srcCompat="@drawable/ic_action_name"
@@ -525,27 +525,26 @@
                                 app:layout_constraintTop_toTopOf="@+id/text10" android:layout_marginTop="6dp"
                                 android:layout_marginEnd="2dp" android:layout_marginRight="2dp"/>
                         <TextView
-                                android:text="Americano 180ml"
+                                android:text="@string/americano_180ml"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/americano"
                                 app:layout_constraintEnd_toEndOf="@+id/img1"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:fontFamily="serif"
                                 android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
                                 android:background="@color/colorPrimary222231222" android:textAllCaps="false"
                                 android:textSize="12sp"
                                 app:layout_constraintBottom_toTopOf="@+id/text1"
-                                app:layout_constraintStart_toStartOf="@+id/img1" android:layout_marginBottom="3dp"/>
+                                app:layout_constraintStart_toStartOf="@+id/img1" android:layout_marginBottom="3dp"
+                                android:fontFamily="serif"/>
                         <TextView
-                                android:text="Americano 250ml"
+                                android:text="@string/americano_250ml"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/capuccino"
                                 app:layout_constraintEnd_toEndOf="@+id/img2"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
                                 android:textAlignment="center" android:textStyle="bold|italic"
-                                android:fontFamily="serif"
                                 android:typeface="normal" app:layout_constraintStart_toStartOf="@+id/img2"
                                 app:layout_constraintHorizontal_bias="0.0" android:textSize="12sp"
                                 app:layout_constraintBottom_toTopOf="@+id/text2"/>
@@ -557,7 +556,7 @@
                                 android:layout_marginEnd="8dp" app:layout_constraintTop_toTopOf="@+id/img3"
                                 android:layout_marginTop="128dp" app:layout_constraintStart_toStartOf="@+id/img3"
                                 android:layout_marginStart="8dp"
-                                android:textAppearance="@style/TextAppearance.AppCompat" android:fontFamily="serif"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic"/>
                     </android.support.constraint.ConstraintLayout>
