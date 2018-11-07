@@ -26,10 +26,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Resources res = getResources();
-        for (int i = 0; i < 10; i++) {
-            if (i == 3) {
-                continue;
-            }
+        for (int i = 0; i < 20; i++) {
             int id = i + 1;
             ImageButton plus = findViewById(res.getIdentifier(
                     "plus"+ String.valueOf(id), "id", getPackageName()));
