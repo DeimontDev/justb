@@ -120,7 +120,7 @@
                                 android:cropToPadding="true"/>
                         <ImageButton
                                 android:layout_width="120dp"
-                                android:layout_height="150dp" app:srcCompat="@mipmap/foietaj_sunca"
+                                android:layout_height="150dp" app:srcCompat="@mipmap/placintavisina"
                                 android:id="@+id/img15"
                                 app:layout_constraintTop_toBottomOf="@+id/img13" android:layout_marginTop="100dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="25dp"
@@ -130,7 +130,7 @@
                                 android:cropToPadding="true"/>
                         <ImageButton
                                 android:layout_width="120dp"
-                                android:layout_height="150dp" app:srcCompat="@mipmap/foietaj_sunca"
+                                android:layout_height="150dp" app:srcCompat="@mipmap/donuroz"
                                 android:id="@+id/img17"
                                 app:layout_constraintTop_toBottomOf="@+id/img15" android:layout_marginTop="100dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="25dp"
@@ -220,7 +220,7 @@
                                 android:scaleType="fitCenter"/>
                         <ImageButton
                                 android:layout_width="120dp"
-                                android:layout_height="150dp" app:srcCompat="@mipmap/foietaj2"
+                                android:layout_height="150dp" app:srcCompat="@mipmap/cruasan"
                                 android:id="@+id/img14"
                                 android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/img12"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -240,7 +240,7 @@
                                 android:scaleType="fitCenter"/>
                         <ImageButton
                                 android:layout_width="120dp"
-                                android:layout_height="150dp" app:srcCompat="@mipmap/foietaj2"
+                                android:layout_height="150dp" app:srcCompat="@mipmap/negrudonuts"
                                 android:id="@+id/img18"
                                 android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/img16"
                                 app:layout_constraintEnd_toEndOf="parent"
