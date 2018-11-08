@@ -3,12 +3,12 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <device id="Nexus One" />
-        <device id="pixel" />
-        <device id="Nexus 4" />
-        <device id="Galaxy Nexus" />
-        <device id="Nexus 6" />
         <device id="Nexus 5X" />
+        <device id="Galaxy Nexus" />
+        <device id="pixel" />
+        <device id="Nexus One" />
+        <device id="Nexus 4" />
+        <device id="Nexus 6" />
         <device id="wear_square" />
         <device id="pixel_xl" />
         <device id="pixel_c" />
@@ -30,29 +30,125 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c5c221e-4e6b-4119-8e15-1a6302f1f725" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-hdpi/cruasan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-hdpi/donuroz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-hdpi/placintavisina.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-mdpi/cruasan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-mdpi/donuroz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-mdpi/placintavisina.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xhdpi/cruasan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xhdpi/donuroz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xhdpi/placintavisina.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxhdpi/cruasan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxhdpi/donuroz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxhdpi/placintavisina.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxxhdpi/cruasan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxxhdpi/donuroz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxxhdpi/placintavisina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/americano1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/covrig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/cruasan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/donuroz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/donutsalb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/foietaj2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/foietaj_fructe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/foietaj_sunca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/hotdog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/latte1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/muffin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/negrudonuts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/pizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/placintabrinza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/placintavisina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-hdpi/sasisca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/americano1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/covrig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/cruasan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/donuroz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/donutsalb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/foietaj2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/foietaj_fructe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/foietaj_sunca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/hotdog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/latte1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/muffin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/negrudonuts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/pizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/placintabrinza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/placintavisina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-mdpi/sasisca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/americano1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/covrig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/cruasan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/donuroz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/donutsalb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/foietaj2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/foietaj_fructe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/foietaj_sunca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/hotdog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/latte1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/muffin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/negrudonuts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/pizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/placintabrinza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/placintavisina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xhdpi/sasisca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/americano1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/covrig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/cruasan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/donuroz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/donutsalb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/foietaj2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/foietaj_fructe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/foietaj_sunca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/hotdog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/latte1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/muffin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/negrudonuts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/pizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/placintabrinza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/placintavisina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-xxhdpi/sasisca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/americano1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/capucino1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/covrig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/cruasan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/donuroz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/donutsalb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/foietaj2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/foietaj_fructe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/foietaj_sunca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/hotdog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/latte1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/muffin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/negrudonuts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/pizza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/placintabrinza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/placintavisina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/sasisca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-hdpi/donutsalb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-hdpi/foietaj_fructe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-hdpi/muffin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-mdpi/donutsalb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-mdpi/foietaj_fructe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-mdpi/muffin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xhdpi/donutsalb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xhdpi/foietaj_fructe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xhdpi/muffin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxhdpi/donutsalb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxhdpi/foietaj_fructe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxhdpi/muffin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxxhdpi/donutsalb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxxhdpi/foietaj_fructe1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-xxxhdpi/muffin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -99,12 +195,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="11509">
-              <caret line="677" column="76" selection-start-line="677" selection-start-column="76" selection-end-line="677" selection-end-column="76" />
+            <state relative-caret-position="442">
+              <caret line="702" column="38" selection-start-line="702" selection-start-column="38" selection-end-line="702" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="88" column="85" lean-forward="true" selection-start-line="88" selection-start-column="85" selection-end-line="88" selection-end-column="85" />
+              <folding>
+                <element signature="e#22755#22774#0" expanded="true" />
+                <element signature="e#25164#25176#0" expanded="true" />
+                <element signature="e#26020#26032#0" expanded="true" />
+                <element signature="e#27248#27267#0" expanded="true" />
+                <element signature="e#28122#28141#0" expanded="true" />
+                <element signature="e#29385#29397#0" expanded="true" />
+                <element signature="e#36129#36148#0" expanded="true" />
+                <element signature="e#37010#37029#0" expanded="true" />
+                <element signature="e#37891#37910#0" expanded="true" />
+                <element signature="e#38772#38791#0" expanded="true" />
+                <element signature="e#39653#39672#0" expanded="true" />
+                <element signature="e#40536#40555#0" expanded="true" />
+                <element signature="e#41419#41438#0" expanded="true" />
+                <element signature="e#42303#42322#0" expanded="true" />
+                <element signature="e#43187#43206#0" expanded="true" />
+                <element signature="e#44071#44090#0" expanded="true" />
+                <element signature="e#44913#44932#0" expanded="true" />
+                <element signature="e#45789#45808#0" expanded="true" />
+                <element signature="e#46667#46686#0" expanded="true" />
+                <element signature="e#47545#47564#0" expanded="true" />
+                <element signature="e#48423#48442#0" expanded="true" />
+                <element signature="e#49301#49320#0" expanded="true" />
+                <element signature="e#50179#50198#0" expanded="true" />
+                <element signature="e#56319#56331#0" expanded="true" />
+                <element signature="e#57097#57109#0" expanded="true" />
+                <element signature="e#57875#57887#0" expanded="true" />
+                <element signature="e#58655#58667#0" expanded="true" />
+                <element signature="e#59436#59448#0" expanded="true" />
+                <element signature="e#60217#60229#0" expanded="true" />
+                <element signature="e#60998#61010#0" expanded="true" />
+                <element signature="e#61779#61791#0" expanded="true" />
+                <element signature="e#68939#68951#0" expanded="true" />
+                <element signature="e#69827#69839#0" expanded="true" />
+                <element signature="e#70716#70728#0" expanded="true" />
+                <element signature="e#71607#71619#0" expanded="true" />
+                <element signature="e#72498#72510#0" expanded="true" />
+                <element signature="e#73389#73401#0" expanded="true" />
+                <element signature="e#74280#74292#0" expanded="true" />
+                <element signature="e#75171#75183#0" expanded="true" />
+                <element signature="e#82541#82566#0" expanded="true" />
+                <element signature="e#83540#83565#0" expanded="true" />
+                <element signature="e#84472#84496#0" expanded="true" />
+                <element signature="e#85291#85312#0" expanded="true" />
+                <element signature="e#86103#86124#0" expanded="true" />
+                <element signature="e#86915#86940#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="1160" selection-start-line="1160" selection-end-line="1160" />
             </state>
           </provider>
         </entry>
@@ -142,20 +305,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>plus11</find>
-      <find>button11</find>
-      <find>img13</find>
-      <find>text13</find>
-      <find>minus13</find>
-      <find>plus13</find>
-      <find>button13</find>
-      <find>img14</find>
-      <find>minus14</find>
-      <find>plus14</find>
-      <find>button14</find>
-      <find>img15</find>
-      <find>text15</find>
-      <find>plus15</find>
       <find>button15</find>
       <find>img16</find>
       <find>text16</find>
@@ -172,6 +321,20 @@
       <find>plus18</find>
       <find>text18</find>
       <find>button18</find>
+      <find>120dp</find>
+      <find>minus</find>
+      <find>text</find>
+      <find>192</find>
+      <find>190</find>
+      <find>img5</find>
+      <find>img4</find>
+      <find>150dp</find>
+      <find>android:layout_marginTop=&quot;192dp&quot;</find>
+      <find>android:layout_marginTop=&quot;190dp&quot;</find>
+      <find>android:layout_width=&quot;120dp&quot;</find>
+      <find>54dp</find>
+      <find>40dp</find>
+      <find>@mipmap</find>
     </findStrings>
     <replaceStrings>
       <replace>android:layout_marginTop=&quot;100dp&quot;</replace>
@@ -188,6 +351,15 @@
       <replace>130</replace>
       <replace>120dp</replace>
       <replace>android:background=&quot;@color/colorPrimary222231222&quot;</replace>
+      <replace>135dp</replace>
+      <replace>160dp</replace>
+      <replace>202</replace>
+      <replace>158dp</replace>
+      <replace>android:layout_marginTop=&quot;202dp&quot;</replace>
+      <replace>android:layout_width=&quot;135dp&quot;</replace>
+      <replace>60dp</replace>
+      <replace>44dp</replace>
+      <replace>@drawable</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Deimont\IdeaProjects\Deliapp\app</dir>
@@ -3437,8 +3609,6 @@
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/mipmap-anydpi-v26/capuci_round.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw480dp/activity_main.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw160dp/activity_main.xml" />
-        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" />
-        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw100dp/activity_main.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw200dp/activity_main.xml" />
@@ -3447,6 +3617,8 @@
         <option value="$PROJECT_DIR$/deliveryfruits/.gitignore" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml" />
+        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml" />
+        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" />
       </list>
     </option>
   </component>
@@ -3473,6 +3645,50 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Deliapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="deliveryfruits" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Deliapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="deliveryfruits" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Deliapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="deliveryfruits" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="deliveryfruits" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deliapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="deliveryfruits" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="Deliapp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="deliveryfruits" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Deliapp" type="58d84e3e:PackageViewProjectNode" />
+              <item name="deliveryfruits" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -3530,76 +3746,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-sw300dp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-sw300dp-v16" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-sw400dp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="mipmap-mdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="deliveryfruits" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -3651,50 +3798,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Deliapp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="deliveryfruits" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="deliveryfruits" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="deliveryfruits" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="deliveryfruits" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="deliveryfruits" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="Deliapp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="deliveryfruits" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Deliapp" type="58d84e3e:PackageViewProjectNode" />
-              <item name="deliveryfruits" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3703,7 +3806,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/Android" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="device.picker.selection" value="Nexus_One_API_26" />
+    <property name="device.picker.selection" value="Galaxy_Nexus_API_26" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -3712,12 +3815,12 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\layout" />
-      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable-xxhdpi" />
       <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable-xhdpi" />
       <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable-mdpi" />
+      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable-hdpi" />
+      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\mipmap-xxxhdpi" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.deliveryapp.deliveryfruits" />
@@ -3725,12 +3828,12 @@
     <key name="android.template.parentActivityClass">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\mipmap-xxxhdpi" />
-      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\mipmap-xxhdpi" />
-      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\mipmap-xhdpi" />
-      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\mipmap-mdpi" />
-      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\mipmap-hdpi" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable-xxhdpi" />
+      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable-xhdpi" />
+      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable-mdpi" />
+      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable-hdpi" />
+      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\mipmap-anydpi-v26" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -3983,7 +4086,8 @@
       <workItem from="1541524114612" duration="923000" />
       <workItem from="1541531916676" duration="532000" />
       <workItem from="1541622686347" duration="3770000" />
-      <workItem from="1541653948684" duration="1102000" />
+      <workItem from="1541653948684" duration="1436000" />
+      <workItem from="1541696390708" duration="6643000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1539889234007</created>
@@ -4062,7 +4166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541626603860</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added some images">
+      <created>1541655414841</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1541655414841</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -4074,7 +4185,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179667000" />
+    <option name="totallyTimeSpent" value="186644000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4087,9 +4198,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Android Profiler" order="14" show_stripe_button="false" weight="0.32838285" />
+      <window_info anchor="bottom" id="Android Profiler" order="14" weight="0.32838285" />
       <window_info id="Build Variants" order="8" sideWeight="0.50165015" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.660066" />
       <window_info anchor="right" id="Maven Projects" order="4" />
@@ -4108,6 +4220,7 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Preview" order="8" weight="0.32980332" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.42739275" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.5594059" />
@@ -4118,7 +4231,6 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32838285" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Preview" order="8" weight="0.32980332" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -4173,7 +4285,8 @@
     <MESSAGE value="Added some elements" />
     <MESSAGE value="Added some images and created all product fields" />
     <MESSAGE value="Git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Git ignore" />
+    <MESSAGE value="Added some images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some images" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -4185,12 +4298,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-480x800/activity_main.xml" />
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-1080x1900/activity_main.xml" />
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-1440x2560/activity_main.xml" />
@@ -4246,14 +4359,6 @@
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw160dp/activity_main.xml" />
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw100dp/activity_main.xml" />
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/drawable-v24/ic_launcher_foreground.xml" />
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw200dp/activity_main.xml" />
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer2" />
@@ -4301,8 +4406,71 @@
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="11509">
-          <caret line="677" column="76" selection-start-line="677" selection-start-column="76" selection-end-line="677" selection-end-column="76" />
+        <state relative-caret-position="442">
+          <caret line="702" column="38" selection-start-line="702" selection-start-column="38" selection-end-line="702" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="88" column="85" lean-forward="true" selection-start-line="88" selection-start-column="85" selection-end-line="88" selection-end-column="85" />
+          <folding>
+            <element signature="e#22755#22774#0" expanded="true" />
+            <element signature="e#25164#25176#0" expanded="true" />
+            <element signature="e#26020#26032#0" expanded="true" />
+            <element signature="e#27248#27267#0" expanded="true" />
+            <element signature="e#28122#28141#0" expanded="true" />
+            <element signature="e#29385#29397#0" expanded="true" />
+            <element signature="e#36129#36148#0" expanded="true" />
+            <element signature="e#37010#37029#0" expanded="true" />
+            <element signature="e#37891#37910#0" expanded="true" />
+            <element signature="e#38772#38791#0" expanded="true" />
+            <element signature="e#39653#39672#0" expanded="true" />
+            <element signature="e#40536#40555#0" expanded="true" />
+            <element signature="e#41419#41438#0" expanded="true" />
+            <element signature="e#42303#42322#0" expanded="true" />
+            <element signature="e#43187#43206#0" expanded="true" />
+            <element signature="e#44071#44090#0" expanded="true" />
+            <element signature="e#44913#44932#0" expanded="true" />
+            <element signature="e#45789#45808#0" expanded="true" />
+            <element signature="e#46667#46686#0" expanded="true" />
+            <element signature="e#47545#47564#0" expanded="true" />
+            <element signature="e#48423#48442#0" expanded="true" />
+            <element signature="e#49301#49320#0" expanded="true" />
+            <element signature="e#50179#50198#0" expanded="true" />
+            <element signature="e#56319#56331#0" expanded="true" />
+            <element signature="e#57097#57109#0" expanded="true" />
+            <element signature="e#57875#57887#0" expanded="true" />
+            <element signature="e#58655#58667#0" expanded="true" />
+            <element signature="e#59436#59448#0" expanded="true" />
+            <element signature="e#60217#60229#0" expanded="true" />
+            <element signature="e#60998#61010#0" expanded="true" />
+            <element signature="e#61779#61791#0" expanded="true" />
+            <element signature="e#68939#68951#0" expanded="true" />
+            <element signature="e#69827#69839#0" expanded="true" />
+            <element signature="e#70716#70728#0" expanded="true" />
+            <element signature="e#71607#71619#0" expanded="true" />
+            <element signature="e#72498#72510#0" expanded="true" />
+            <element signature="e#73389#73401#0" expanded="true" />
+            <element signature="e#74280#74292#0" expanded="true" />
+            <element signature="e#75171#75183#0" expanded="true" />
+            <element signature="e#82541#82566#0" expanded="true" />
+            <element signature="e#83540#83565#0" expanded="true" />
+            <element signature="e#84472#84496#0" expanded="true" />
+            <element signature="e#85291#85312#0" expanded="true" />
+            <element signature="e#86103#86124#0" expanded="true" />
+            <element signature="e#86915#86940#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="1160" selection-start-line="1160" selection-end-line="1160" />
         </state>
       </provider>
     </entry>
