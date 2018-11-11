@@ -5,6 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:focusable="true"
         tools:context="com.deliveryapp.deliveryfruits.MainActivity">
     <android.support.design.widget.AppBarLayout
             android:id="@+id/appbar"
@@ -28,7 +29,7 @@
             android:id="@+id/call_button"
             app:rippleColor="?attr/colorControlNormal"
             app:backgroundTint="@color/colorAccent" app:fabSize="mini" android:focusable="true"
-            app:layout_anchor="@id/tool_bar" app:layout_anchorGravity="top|right"/>
+            app:layout_anchor="@id/tool_bar" app:layout_anchorGravity="top|left"/>
     <android.support.design.widget.FloatingActionButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +38,7 @@
             android:id="@+id/basket_button"
             android:focusable="true" app:fabSize="mini" app:backgroundTint="@color/colorPrimary222"
             app:rippleColor="?attr/colorBackgroundFloating"
-            app:layout_anchor="@+id/tool_bar" app:layout_anchorGravity="top|left" android:visibility="visible"/>
+            app:layout_anchor="@+id/tool_bar" app:layout_anchorGravity="top|right" android:visibility="visible"/>
     <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -298,7 +299,7 @@
                                 app:layout_constraintTop_toTopOf="@+id/text1" android:layout_marginTop="6dp"
                                 app:layout_constraintVertical_bias="0.0"
                                 app:layout_constraintStart_toEndOf="@+id/text1"
-                                android:layout_marginStart="3dp"/>
+                                android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <ImageButton
                                 android:layout_width="40dp"
                                 android:layout_height="38dp" android:id="@+id/minus1"
@@ -315,7 +316,7 @@
                                 android:text="@string/to_basket"
                                 android:layout_width="155dp"
                                 android:layout_height="35dp"
-                                android:id="@+id/button"
+                                android:id="@+id/button1"
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2"
                                 app:layout_constraintTop_toBottomOf="@+id/text1"
@@ -349,7 +350,7 @@
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="179dp"
                                 app:layout_constraintTop_toTopOf="@+id/img2"
                                 tools:ignore="SmallSp" app:layout_constraintStart_toEndOf="@+id/minus2"
-                                android:layout_marginStart="3dp"/>
+                                android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <EditText
                                 android:layout_width="68dp"
                                 android:layout_height="49dp"
@@ -1081,7 +1082,7 @@
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img1"
                                 android:fontFamily="casual"
-                                app:layout_constraintTop_toBottomOf="@+id/textView4" android:layout_marginTop="130dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product1" android:layout_marginTop="130dp"/>
                         <TextView
                                 android:text="@string/americano_250ml"
                                 android:layout_width="0dp"
@@ -1163,13 +1164,13 @@
                         <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/textView4" app:layout_constraintStart_toStartOf="@+id/img1"
+                                android:id="@+id/product1" app:layout_constraintStart_toStartOf="@+id/img1"
                                 app:layout_constraintEnd_toEndOf="@+id/img1"
                                 app:layout_constraintTop_toTopOf="@+id/img1" android:layout_marginTop="5dp"
                                 android:text="@string/americano_180ml"
                                 android:textAppearance="@style/TextAppearance.AppCompat" android:fontFamily="serif"
                                 android:typeface="normal" android:textStyle="bold|italic"
-                                android:textAlignment="center"/>
+                                android:textAlignment="center" android:textSize="14sp"/>
                     </android.support.constraint.ConstraintLayout>
                 </LinearLayout>
             </ScrollView>

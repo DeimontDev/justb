@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.deliveryapp.deliveryfruits.ShoppingCartActivity" android:id="@+id/main_layout">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/PopupOverlay"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true" app:srcCompat="@android:drawable/ic_menu_call"
+            android:id="@+id/call_button"
+            app:rippleColor="?attr/colorControlNormal"
+            app:backgroundTint="@color/colorAccent" app:fabSize="mini" android:focusable="true"
+            app:layout_anchor="@id/toolbar" app:layout_anchorGravity="top|left"/>
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true" app:srcCompat="@drawable/shop_basket"
+            android:id="@+id/basket_button"
+            android:focusable="true" app:fabSize="mini" app:backgroundTint="@color/colorPrimary222"
+            app:rippleColor="?attr/colorBackgroundFloating"
+            app:layout_anchor="@+id/toolbar" app:layout_anchorGravity="top|right" android:visibility="visible"/>
+</android.support.design.widget.CoordinatorLayout>

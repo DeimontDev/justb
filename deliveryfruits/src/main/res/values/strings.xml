@@ -103,4 +103,5 @@
     <string name="latte_180ml">Latte 180ml</string>
     <string name="latte_250ml">Latte 250ml</string>
     <string name="_10_lei">10 lei</string>
+    <string name="title_activity_shopping_cart">ShoppingCartActivity</string>
 </resources>

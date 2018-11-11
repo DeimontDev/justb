@@ -6,8 +6,8 @@
             android:largeScreens="true"
             android:normalScreens="true"
             android:smallScreens="true"
-            android:xlargeScreens="true"
-        />
+            android:xlargeScreens="true"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -31,6 +31,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+                android:name=".ShoppingCartActivity"
+                android:label="@string/title_activity_shopping_cart"
+                android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         </activity>
     </application>
 

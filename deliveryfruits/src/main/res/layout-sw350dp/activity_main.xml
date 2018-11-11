@@ -155,7 +155,7 @@
                                 app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="34dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="25dp"
                                 style="@style/Widget.AppCompat.ImageButton"
-                                android:scaleType="centerCrop" app:srcCompat="@drawable/americano1"
+                                android:scaleType="fitCenter" app:srcCompat="@drawable/americano1"
                                 android:background="@color/colorPrimary222231222" android:adjustViewBounds="true"
                                 android:cropToPadding="true"/>
                         <EditText
@@ -1073,7 +1073,7 @@
                                 android:text="@string/americano_180ml"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
-                                android:id="@+id/americano_180"
+                                android:id="@+id/product1"
                                 app:layout_constraintEnd_toEndOf="@+id/img1"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
                                 android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
