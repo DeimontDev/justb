@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private static Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,14 +22,16 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Snack", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(intent);
             }
         });
 
         Resources res = getResources();
-        Button toBasket = findViewById(R.id.button1);
-        toBasket.setOnClickListener(basketListener(1));
+        Button toBasket1 = findViewById(R.id.button1);
+        Button toBasket2 = findViewById(R.id.button2);
+        toBasket1.setOnClickListener(basketListener(1));
+        toBasket2.setOnClickListener(basketListener(2));
+
 
 //        for (int i = 0; i < 20; i++) {
 //            int id = i + 1;
@@ -56,9 +58,13 @@ public class MainActivity extends AppCompatActivity {
                 Resources res = getResources();
                 TextView productName = findViewById(res.getIdentifier(
                         "product"+ String.valueOf(id), "id", getPackageName()));
-                Intent intent = new Intent(MainActivity.this, ShoppingCartActivity.class);
-                intent.putExtra("product" + id, productName.toString());
-                startActivity(intent);
+
+                if (intent == null) {
+                    intent = new Intent(MainActivity.this, ShoppingCartActivity.class);
+                }
+
+                System.out.println("product" + id);
+                intent.putExtra("product" + id, productName.getText().toString());
             }
         };
     }

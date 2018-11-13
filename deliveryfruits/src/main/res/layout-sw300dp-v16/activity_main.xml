@@ -1087,7 +1087,7 @@
                                 android:text="@string/americano_250ml"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
-                                android:id="@+id/americano_250"
+                                android:id="@+id/product2"
                                 app:layout_constraintEnd_toEndOf="@+id/img2"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
                                 android:textAlignment="center" android:textStyle="bold|italic"
