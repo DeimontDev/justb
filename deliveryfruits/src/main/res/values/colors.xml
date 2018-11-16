@@ -16,4 +16,5 @@
     <color name="colorPrimaryDark222">#9b9ca4</color>
     <color name="colorPrimary222231222">#cfdeb3</color>
     <color name="colorPrimary22132">#eee6e1</color>
+    <color name="custom">#f7d0dbe3</color>
 </resources>

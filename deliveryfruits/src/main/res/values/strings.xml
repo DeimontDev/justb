@@ -15,4 +15,6 @@
     <string name="latte_250ml">Latte 250ml</string>
     <string name="_10_lei">10 lei</string>
     <string name="title_activity_shopping_cart">ShoppingCartActivity</string>
+    <string name="_001">Номер заказа: 001</string>
+    <string name="name1">Товар:</string>
 </resources>
