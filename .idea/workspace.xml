@@ -29,13 +29,11 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5c221e-4e6b-4119-8e15-1a6302f1f725" name="Default" comment="Added some possibilities to programmatically add views">
+    <list default="true" id="7c5c221e-4e6b-4119-8e15-1a6302f1f725" name="Default" comment="Added first basket">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliveryfruits/deliveryfruits.iml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/deliveryfruits.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/values/strings.xml" afterDir="false" />
@@ -107,19 +105,21 @@
     <session id="1755429182">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.130" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.71" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -127,7 +127,7 @@
           <entry key="class" value="1" />
           <entry key="gradle" value="3" />
           <entry key="java" value="5" />
-          <entry key="xml" value="34" />
+          <entry key="xml" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -135,23 +135,23 @@
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="3" />
           <entry key="JAVA" value="5" />
-          <entry key="XML" value="34" />
+          <entry key="XML" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="java" value="830" />
-          <entry key="txt" value="356" />
-          <entry key="xml" value="74" />
+          <entry key="java" value="974" />
+          <entry key="txt" value="782" />
+          <entry key="xml" value="331" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="830" />
-          <entry key="PLAIN_TEXT" value="356" />
-          <entry key="XML" value="74" />
+          <entry key="JAVA" value="974" />
+          <entry key="PLAIN_TEXT" value="782" />
+          <entry key="XML" value="331" />
         </counts>
       </usages-collector>
     </session>
@@ -161,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="-17">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,18 +173,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="341">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+              <folding>
+                <element signature="e#846#1047#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+              <folding>
+                <element signature="e#4579#4592#0" expanded="true" />
+                <element signature="e#6038#6050#0" expanded="true" />
+                <element signature="e#8379#8404#0" expanded="true" />
+                <element signature="e#9550#9563#0" expanded="true" />
+                <element signature="e#11598#11610#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml">
+        <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="69" column="115" lean-forward="true" selection-start-line="69" selection-start-column="115" selection-end-line="69" selection-end-column="115" />
+            <state relative-caret-position="138">
+              <caret line="1298" column="59" selection-start-line="1298" selection-start-column="59" selection-end-line="1298" selection-end-column="59" />
+              <folding>
+                <element signature="e#19037#19054#0" expanded="true" />
+                <element signature="e#84375#84392#0" expanded="true" />
+                <element signature="e#85312#85329#0" expanded="true" />
+                <element signature="e#86249#86274#0" expanded="true" />
+                <element signature="e#87201#87225#0" expanded="true" />
+                <element signature="e#92867#92892#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,18 +221,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="5406">
-              <caret line="318" column="57" selection-start-line="318" selection-start-column="57" selection-end-line="318" selection-end-column="57" />
+            <state relative-caret-position="238">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -222,50 +241,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>minus</find>
-      <find>text</find>
-      <find>192</find>
-      <find>190</find>
-      <find>img5</find>
-      <find>img4</find>
-      <find>150dp</find>
-      <find>android:layout_marginTop=&quot;192dp&quot;</find>
-      <find>android:layout_marginTop=&quot;190dp&quot;</find>
-      <find>android:layout_width=&quot;120dp&quot;</find>
-      <find>54dp</find>
-      <find>40dp</find>
-      <find>@mipmap</find>
-      <find>135dp</find>
-      <find>160dp</find>
-      <find>34dp</find>
-      <find>32dp</find>
-      <find>android:layout_width=&quot;60dp&quot;</find>
-      <find>60dp</find>
-      <find>44dp</find>
-      <find>158dp</find>
-      <find>202dp</find>
-      <find>120dp</find>
-      <find>100dp</find>
-      <find>110dp</find>
-      <find>Toolbar.LayoutParams toolParams = new Toolbar.LayoutParams(Toolbar.LayoutParams.MATCH_PARENT, R.attr.actionBarSize);</find>
-      <find>actionBarSize</find>
-      <find>button1</find>
-      <find>button</find>
       <find>button2</find>
+      <find>lay2</find>
+      <find>product6</find>
+      <find>6</find>
+      <find>10</find>
+      <find>11</find>
+      <find>12</find>
+      <find>13</find>
+      <find>14</find>
+      <find>15</find>
+      <find>16</find>
+      <find>17</find>
+      <find>18</find>
+      <find>19</find>
+      <find>img13</find>
+      <find>product13</find>
+      <find>img14</find>
+      <find>product14</find>
+      <find>img15</find>
+      <find>product15</find>
+      <find>img16</find>
+      <find>product16</find>
+      <find>img17</find>
+      <find>product17</find>
+      <find>img18</find>
+      <find>product18</find>
+      <find>img19</find>
+      <find>product19</find>
+      <find>img20</find>
+      <find>product20</find>
     </findStrings>
     <replaceStrings>
-      <replace>165</replace>
-      <replace>60</replace>
-      <replace>185</replace>
-      <replace>80dp</replace>
-      <replace>183</replace>
-      <replace>225</replace>
-      <replace>163</replace>
-      <replace>130</replace>
-      <replace>android:background=&quot;@color/colorPrimary222231222&quot;</replace>
-      <replace>135dp</replace>
-      <replace>160dp</replace>
-      <replace>202</replace>
       <replace>158dp</replace>
       <replace>android:layout_marginTop=&quot;202dp&quot;</replace>
       <replace>android:layout_width=&quot;135dp&quot;</replace>
@@ -284,6 +291,18 @@
       <replace>120dp</replace>
       <replace>110dp</replace>
       <replace>115dp</replace>
+      <replace>9</replace>
+      <replace>10</replace>
+      <replace>11</replace>
+      <replace>12</replace>
+      <replace>13</replace>
+      <replace>14</replace>
+      <replace>15</replace>
+      <replace>16</replace>
+      <replace>17</replace>
+      <replace>18</replace>
+      <replace>19</replace>
+      <replace>20</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Deimont\IdeaProjects\Deliapp\app</dir>
@@ -3696,11 +3715,11 @@
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_main.xml" />
-        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" />
-        <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java" />
-        <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" />
+        <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java" />
+        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" />
       </list>
     </option>
   </component>
@@ -3898,7 +3917,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/Android" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542403037934" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542458718151" />
     <property name="device.picker.selection" value="Nexus_6P_API_22" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/deliveryfruits" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -4240,7 +4259,9 @@
       <workItem from="1542229537427" duration="283000" />
       <workItem from="1542260138516" duration="420000" />
       <workItem from="1542396221331" duration="3261000" />
-      <workItem from="1542400604890" duration="2404000" />
+      <workItem from="1542400604890" duration="2705000" />
+      <workItem from="1542446540287" duration="4771000" />
+      <workItem from="1542451508348" duration="6596000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1539889234007</created>
@@ -4354,7 +4375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542141295289</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added first basket">
+      <created>1542403152486</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1542403152486</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -4372,7 +4400,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228605000" />
+    <option name="totallyTimeSpent" value="240273000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4387,7 +4415,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.21406959" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.21406959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -4410,7 +4438,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" weight="0.32838285" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32838285" />
-      <window_info anchor="bottom" id="Android Profiler" order="14" show_stripe_button="false" weight="0.32838285" />
+      <window_info anchor="bottom" id="Android Profiler" order="14" weight="0.32838285" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -4515,7 +4543,8 @@
     <MESSAGE value="Added final version for all screens" />
     <MESSAGE value="Added second activity" />
     <MESSAGE value="Added some possibilities to programmatically add views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some possibilities to programmatically add views" />
+    <MESSAGE value="Added first basket" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added first basket" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -4561,6 +4590,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
@@ -4570,7 +4600,6 @@
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/appcompat-v7/26.1.0/2b34456c30d6b6e5db5fa3e8fa02f6cebd5531fd/appcompat-v7-26.1.0-sources.jar!/android/support/v7/app/AppCompatActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -4615,22 +4644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="6375">
-          <caret line="375" column="66" selection-start-line="375" selection-start-column="66" selection-end-line="375" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
@@ -4643,43 +4656,78 @@
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="5406">
-          <caret line="318" column="57" selection-start-line="318" selection-start-column="57" selection-end-line="318" selection-end-column="57" />
+        <state relative-caret-position="64">
+          <caret line="160" column="24" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding>
+            <element signature="e#846#1047#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+          <folding>
+            <element signature="e#4579#4592#0" expanded="true" />
+            <element signature="e#6038#6050#0" expanded="true" />
+            <element signature="e#8379#8404#0" expanded="true" />
+            <element signature="e#9550#9563#0" expanded="true" />
+            <element signature="e#11598#11610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="69" column="115" lean-forward="true" selection-start-line="69" selection-start-column="115" selection-end-line="69" selection-end-column="115" />
+        <state relative-caret-position="138">
+          <caret line="1298" column="59" selection-start-line="1298" selection-start-column="59" selection-end-line="1298" selection-end-column="59" />
+          <folding>
+            <element signature="e#19037#19054#0" expanded="true" />
+            <element signature="e#84375#84392#0" expanded="true" />
+            <element signature="e#85312#85329#0" expanded="true" />
+            <element signature="e#86249#86274#0" expanded="true" />
+            <element signature="e#87201#87225#0" expanded="true" />
+            <element signature="e#92867#92892#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

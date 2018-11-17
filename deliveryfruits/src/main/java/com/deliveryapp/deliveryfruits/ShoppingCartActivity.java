@@ -1,7 +1,10 @@
 package com.deliveryapp.deliveryfruits;
 
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageButton;
 
 public class ShoppingCartActivity extends AppCompatActivity {
 
@@ -17,7 +20,14 @@ public class ShoppingCartActivity extends AppCompatActivity {
         System.out.println(product1);
         System.out.println(product2);
 
-
+        ImageButton delete1 = findViewById(R.id.delete1);
+        delete1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ConstraintLayout lay1 = findViewById(R.id.lay1);
+                lay1.setVisibility(View.GONE);
+            }
+        });
 
     }
 

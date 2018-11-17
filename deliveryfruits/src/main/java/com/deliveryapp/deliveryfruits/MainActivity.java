@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -27,27 +26,25 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Resources res = getResources();
-        Button toBasket1 = findViewById(R.id.button1);
-        Button toBasket2 = findViewById(R.id.button2);
-        toBasket1.setOnClickListener(basketListener(1));
-        toBasket2.setOnClickListener(basketListener(2));
 
-
-//        for (int i = 0; i < 20; i++) {
-//            int id = i + 1;
-//            ImageButton toBasket = findViewById(res.getIdentifier(
-//                    "button" + String.valueOf(id), "id", getPackageName()));
-//            toBasket.setOnClickListener(basketListener(id));
-//        }
+        for (int i = 0; i < 20; i++) {
+            int id = i + 1;
+            ImageButton toBasket = findViewById(res.getIdentifier(
+                    "button" + String.valueOf(id), "id", getPackageName()));
+            toBasket.setOnClickListener(basketListener(id));
+        }
 
         for (int i = 0; i < 20; i++) {
             int id = i + 1;
             ImageButton plus = findViewById(res.getIdentifier(
                     "plus"+ String.valueOf(id), "id", getPackageName()));
             plus.setOnClickListener(plusMinusListener(id, true));
+
             ImageButton minus = findViewById(res.getIdentifier(
                     "minus"+ String.valueOf(id), "id", getPackageName()));
             minus.setOnClickListener(plusMinusListener(id, false));
+
+
         }
     }
 
@@ -63,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, ShoppingCartActivity.class);
                 }
 
-                System.out.println("product" + id);
                 intent.putExtra("product" + id, productName.getText().toString());
             }
         };

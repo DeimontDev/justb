@@ -4,7 +4,6 @@
     <string name="action_settings">Settings</string>
     <string name="fruits">Fruits</string>
     <string name="vegetables">vegetables</string>
-    <string name="_1">1</string>
     <string name="to_basket">В корзину</string>
     <string name="add_to_basket">в корзину</string>
     <string name="americano_180ml">Americano 180ml</string>
@@ -13,8 +12,15 @@
     <string name="cappucno_180ml">Cappucino 180ml</string>
     <string name="latte_180ml">Latte 180ml</string>
     <string name="latte_250ml">Latte 250ml</string>
-    <string name="_10_lei">10 lei</string>
     <string name="title_activity_shopping_cart">ShoppingCartActivity</string>
     <string name="_001">Номер заказа: 001</string>
     <string name="name1">Товар:</string>
+    <string name="_15">15 лей</string>
+    <string name="_10">10 лей</string>
+    <string name="_1">1</string>
+    <string name="price_1">price 1</string>
+    <string name="product_1">Product 1</string>
+    <string name="price_3">price 3</string>
+    <string name="price_2">price 2</string>
+    <string name="price_4">price 4</string>
 </resources>
