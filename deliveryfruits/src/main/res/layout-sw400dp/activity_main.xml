@@ -298,7 +298,7 @@
                                 style="@style/Widget.AppCompat.ImageButton" android:scaleType="centerCrop"
                                 android:layout_marginRight="25dp"
                                 app:layout_constraintRight_toRightOf="parent" android:layout_marginTop="110dp"
-                                app:layout_constraintTop_toBottomOf="@+id/img4"/>
+                                app:layout_constraintTop_toBottomOf="@+id/img4" android:layout_marginEnd="25dp"/>
                         <ImageButton
                                 android:layout_width="40dp"
                                 android:layout_height="38dp"
@@ -1123,6 +1123,214 @@
                                 android:fontFamily="casual"
                                 app:layout_constraintTop_toBottomOf="@+id/product4" android:layout_marginTop="128dp"/>
                         <TextView
+                                android:text="@string/price_5"
+                                android:layout_width="0dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/price5"
+                                app:layout_constraintEnd_toEndOf="@+id/img5"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img5"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product5" android:layout_marginTop="128dp"/>
+                        <TextView
+                                android:text="@string/price_6"
+                                android:layout_width="0dp"
+                                android:layout_height="26dp"
+                                android:id="@+id/price6"
+                                app:layout_constraintEnd_toEndOf="@+id/img6"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img6"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product6" android:layout_marginTop="128dp"/>
+                        <TextView
+                                android:text="@string/price_7"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price7"
+                                app:layout_constraintEnd_toEndOf="@+id/img7"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img7"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product7" android:layout_marginTop="128dp"/>
+                        <TextView
+                                android:text="@string/price_8"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price8"
+                                app:layout_constraintEnd_toEndOf="@+id/img8"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img8"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product8" android:layout_marginTop="128dp"/>
+                        <TextView
+                                android:text="@string/price_9"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price9"
+                                app:layout_constraintEnd_toEndOf="@+id/img9"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img9"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product9" android:layout_marginTop="128dp"/>
+                        <TextView
+                                android:text="@string/price_10"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price10"
+                                app:layout_constraintEnd_toEndOf="@+id/img10"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img10"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product10" android:layout_marginTop="128dp"/>
+                        <TextView
+                                android:text="@string/price_11"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price11"
+                                app:layout_constraintEnd_toEndOf="@+id/img11"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img11"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product11" android:layout_marginTop="128dp"/>
+                        <TextView
+                                android:text="@string/price_12"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price12"
+                                app:layout_constraintEnd_toEndOf="@+id/img12"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img12"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product12" android:layout_marginTop="128dp"/>
+                        <TextView
+                                android:text="@string/price_13"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price13"
+                                app:layout_constraintEnd_toEndOf="@+id/img13"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img13"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product13" android:layout_marginTop="138dp"/>
+                        <TextView
+                                android:text="@string/price_14"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price14"
+                                app:layout_constraintEnd_toEndOf="@+id/img14"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img14"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product14" android:layout_marginTop="138dp"/>
+                        <TextView
+                                android:text="@string/price_15"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price15"
+                                app:layout_constraintEnd_toEndOf="@+id/img15"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img15"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product15" android:layout_marginTop="138dp"/>
+                        <TextView
+                                android:text="@string/price_16"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price16"
+                                app:layout_constraintEnd_toEndOf="@+id/img16"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img16"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product16" android:layout_marginTop="138dp"/>
+                        <TextView
+                                android:text="@string/price_17"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price17"
+                                app:layout_constraintEnd_toEndOf="@+id/img17"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img17"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product17" android:layout_marginTop="138dp"/>
+                        <TextView
+                                android:text="@string/price_18"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price18"
+                                app:layout_constraintEnd_toEndOf="@+id/img18"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img18"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product18" android:layout_marginTop="138dp"/>
+                        <TextView
+                                android:text="@string/price_19"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price19"
+                                app:layout_constraintEnd_toEndOf="@+id/img19"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img19"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product19" android:layout_marginTop="138dp"/>
+                        <TextView
+                                android:text="@string/price_20"
+                                android:layout_width="0dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/price20"
+                                app:layout_constraintEnd_toEndOf="@+id/img20"
+                                android:textAppearance="@style/TextAppearance.AppCompat"
+                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAllCaps="false"
+                                android:textSize="18sp"
+                                app:layout_constraintStart_toStartOf="@+id/img20"
+                                android:fontFamily="casual"
+                                app:layout_constraintTop_toBottomOf="@+id/product20" android:layout_marginTop="138dp"/>
+                        <TextView
                                 android:text="@string/americano_250ml"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
@@ -1166,7 +1374,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Hot dog"
+                                android:text="@string/hot_dog"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product7" app:layout_constraintEnd_toEndOf="@+id/img7"
@@ -1176,7 +1384,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Covrig mac"
+                                android:text="@string/covrig_mac"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product8" app:layout_constraintEnd_toEndOf="@+id/img8"
@@ -1186,7 +1394,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Foietaj sunca"
+                                android:text="@string/foietaj_sunca"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product9" app:layout_constraintEnd_toEndOf="@+id/img9"
@@ -1196,7 +1404,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Pizza"
+                                android:text="@string/pizza"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product10" app:layout_constraintEnd_toEndOf="@+id/img10"
@@ -1206,7 +1414,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Placinta brinza"
+                                android:text="@string/placinta_brinza"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product11" app:layout_constraintEnd_toEndOf="@+id/img11"
@@ -1216,7 +1424,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Sasica"
+                                android:text="@string/sasisca"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product12" app:layout_constraintEnd_toEndOf="@+id/img12"
@@ -1226,7 +1434,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Foietaj fructe"
+                                android:text="@string/foietaj_fructe"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product13" app:layout_constraintEnd_toEndOf="@+id/img13"
@@ -1236,7 +1444,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Cruasan"
+                                android:text="@string/cruasan"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product14" app:layout_constraintEnd_toEndOf="@+id/img14"
@@ -1246,7 +1454,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Placinta visina"
+                                android:text="@string/placinta_visina"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product15" app:layout_constraintEnd_toEndOf="@+id/img15"
@@ -1256,7 +1464,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Muffin"
+                                android:text="@string/muffin"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product16" app:layout_constraintEnd_toEndOf="@+id/img16"
@@ -1266,7 +1474,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Donuts roz"
+                                android:text="@string/donuts_roz"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product17" app:layout_constraintEnd_toEndOf="@+id/img17"
@@ -1276,7 +1484,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Donuts negru"
+                                android:text="@string/donuts_negru"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product18" app:layout_constraintEnd_toEndOf="@+id/img18"
@@ -1286,7 +1494,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Donuts alb"
+                                android:text="@string/donuts_alb"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product19" app:layout_constraintEnd_toEndOf="@+id/img19"
@@ -1296,7 +1504,7 @@
                                 android:typeface="normal" android:textAlignment="center"
                                 android:textStyle="bold|italic" android:textSize="14sp" android:fontFamily="serif"/>
                         <TextView
-                                android:text="Foietaj crema"
+                                android:text="@string/foietaj_crema"
                                 android:layout_width="0dp"
                                 android:layout_height="20dp"
                                 android:id="@+id/product20" app:layout_constraintEnd_toEndOf="@+id/img20"
