@@ -29,18 +29,13 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5c221e-4e6b-4119-8e15-1a6302f1f725" name="Default" comment="Added some actions with calculate price">
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_shopping_cart.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_shopping_cart.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_shopping_cart.xml" afterDir="false" />
+    <list default="true" id="7c5c221e-4e6b-4119-8e15-1a6302f1f725" name="Default" comment="Added support for all screens">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_shopping_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_shopping_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_shopping_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_shopping_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_shopping_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_shopping_cart.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +129,7 @@
           <entry key="gradle" value="3" />
           <entry key="java" value="8" />
           <entry key="png" value="1" />
-          <entry key="xml" value="53" />
+          <entry key="xml" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -143,22 +138,22 @@
           <entry key="Groovy" value="3" />
           <entry key="Image" value="1" />
           <entry key="JAVA" value="8" />
-          <entry key="XML" value="53" />
+          <entry key="XML" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="java" value="3780" />
-          <entry key="txt" value="1385" />
+          <entry key="java" value="3821" />
+          <entry key="txt" value="1427" />
           <entry key="xml" value="815" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="3780" />
-          <entry key="PLAIN_TEXT" value="1385" />
+          <entry key="JAVA" value="3821" />
+          <entry key="PLAIN_TEXT" value="1427" />
           <entry key="XML" value="815" />
         </counts>
       </usages-collector>
@@ -182,11 +177,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="290">
+              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
               <folding>
                 <element signature="e#798#1047#0" expanded="true" />
                 <element signature="e#1046#1047#0" expanded="true" />
@@ -197,7 +192,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_shopping_cart.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
@@ -268,174 +263,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#11213#11225#0" expanded="true" />
-                <element signature="e#11427#11439#0" expanded="true" />
-                <element signature="e#18446#18463#0" expanded="true" />
-                <element signature="e#23287#23306#0" expanded="true" />
-                <element signature="e#25713#25725#0" expanded="true" />
-                <element signature="e#26627#26639#0" expanded="true" />
-                <element signature="e#27881#27900#0" expanded="true" />
-                <element signature="e#28815#28834#0" expanded="true" />
-                <element signature="e#30104#30116#0" expanded="true" />
-                <element signature="e#36920#36939#0" expanded="true" />
-                <element signature="e#37827#37846#0" expanded="true" />
-                <element signature="e#38734#38753#0" expanded="true" />
-                <element signature="e#39641#39660#0" expanded="true" />
-                <element signature="e#40548#40567#0" expanded="true" />
-                <element signature="e#41457#41476#0" expanded="true" />
-                <element signature="e#42366#42385#0" expanded="true" />
-                <element signature="e#43276#43295#0" expanded="true" />
-                <element signature="e#44186#44205#0" expanded="true" />
-                <element signature="e#45096#45115#0" expanded="true" />
-                <element signature="e#45998#46017#0" expanded="true" />
-                <element signature="e#46900#46919#0" expanded="true" />
-                <element signature="e#47804#47823#0" expanded="true" />
-                <element signature="e#48708#48727#0" expanded="true" />
-                <element signature="e#49612#49631#0" expanded="true" />
-                <element signature="e#50516#50535#0" expanded="true" />
-                <element signature="e#51420#51439#0" expanded="true" />
-                <element signature="e#57586#57598#0" expanded="true" />
-                <element signature="e#58364#58376#0" expanded="true" />
-                <element signature="e#59142#59154#0" expanded="true" />
-                <element signature="e#59922#59934#0" expanded="true" />
-                <element signature="e#60703#60715#0" expanded="true" />
-                <element signature="e#61484#61496#0" expanded="true" />
-                <element signature="e#62265#62277#0" expanded="true" />
-                <element signature="e#63046#63058#0" expanded="true" />
-                <element signature="e#70206#70218#0" expanded="true" />
-                <element signature="e#71120#71132#0" expanded="true" />
-                <element signature="e#72035#72047#0" expanded="true" />
-                <element signature="e#72952#72964#0" expanded="true" />
-                <element signature="e#73869#73881#0" expanded="true" />
-                <element signature="e#74786#74798#0" expanded="true" />
-                <element signature="e#75703#75715#0" expanded="true" />
-                <element signature="e#76620#76632#0" expanded="true" />
-                <element signature="e#83411#83428#0" expanded="true" />
-                <element signature="e#84289#84306#0" expanded="true" />
-                <element signature="e#85167#85184#0" expanded="true" />
-                <element signature="e#86045#86062#0" expanded="true" />
-                <element signature="e#86923#86940#0" expanded="true" />
-                <element signature="e#87801#87818#0" expanded="true" />
-                <element signature="e#88679#88696#0" expanded="true" />
-                <element signature="e#88647#88664#0" expanded="true" />
-                <element signature="e#89493#89511#0" expanded="true" />
-                <element signature="e#90344#90362#0" expanded="true" />
-                <element signature="e#91195#91213#0" expanded="true" />
-                <element signature="e#92046#92064#0" expanded="true" />
-                <element signature="e#92897#92915#0" expanded="true" />
-                <element signature="e#93748#93766#0" expanded="true" />
-                <element signature="e#94599#94617#0" expanded="true" />
-                <element signature="e#95450#95468#0" expanded="true" />
-                <element signature="e#96301#96319#0" expanded="true" />
-                <element signature="e#97152#97170#0" expanded="true" />
-                <element signature="e#98003#98021#0" expanded="true" />
-                <element signature="e#98854#98879#0" expanded="true" />
-                <element signature="e#101100#101124#0" expanded="true" />
-                <element signature="e#101912#101933#0" expanded="true" />
-                <element signature="e#102721#102742#0" expanded="true" />
-                <element signature="e#103530#103547#0" expanded="true" />
-                <element signature="e#104335#104355#0" expanded="true" />
-                <element signature="e#105143#105166#0" expanded="true" />
-                <element signature="e#105954#105969#0" expanded="true" />
-                <element signature="e#106761#106786#0" expanded="true" />
-                <element signature="e#107578#107595#0" expanded="true" />
-                <element signature="e#108387#108411#0" expanded="true" />
-                <element signature="e#109203#109220#0" expanded="true" />
-                <element signature="e#110012#110037#0" expanded="true" />
-                <element signature="e#110829#110845#0" expanded="true" />
-                <element signature="e#111637#111657#0" expanded="true" />
-                <element signature="e#112449#112471#0" expanded="true" />
-                <element signature="e#113263#113283#0" expanded="true" />
-                <element signature="e#114075#114098#0" expanded="true" />
-                <element signature="e#114890#114915#0" expanded="true" />
-                <element signature="e#117388#117413#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_shopping_cart.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="257">
+            <state relative-caret-position="1241">
               <caret line="73" column="77" selection-start-line="73" selection-start-column="77" selection-end-line="73" selection-end-column="77" />
-              <folding>
-                <element signature="e#3807#3823#0" expanded="true" />
-                <element signature="e#4220#4235#0" expanded="true" />
-                <element signature="e#6245#6270#0" expanded="true" />
-                <element signature="e#7416#7433#0" expanded="true" />
-                <element signature="e#8879#8891#0" expanded="true" />
-                <element signature="e#11316#11341#0" expanded="true" />
-                <element signature="e#12487#12504#0" expanded="true" />
-                <element signature="e#14589#14601#0" expanded="true" />
-                <element signature="e#16411#16435#0" expanded="true" />
-                <element signature="e#17580#17597#0" expanded="true" />
-                <element signature="e#19682#19694#0" expanded="true" />
-                <element signature="e#21497#21522#0" expanded="true" />
-                <element signature="e#22627#22644#0" expanded="true" />
-                <element signature="e#24729#24741#0" expanded="true" />
-                <element signature="e#26551#26572#0" expanded="true" />
-                <element signature="e#27714#27731#0" expanded="true" />
-                <element signature="e#29816#29828#0" expanded="true" />
-                <element signature="e#31638#31659#0" expanded="true" />
-                <element signature="e#32801#32818#0" expanded="true" />
-                <element signature="e#34903#34915#0" expanded="true" />
-                <element signature="e#36718#36735#0" expanded="true" />
-                <element signature="e#37878#37895#0" expanded="true" />
-                <element signature="e#39980#39992#0" expanded="true" />
-                <element signature="e#41802#41822#0" expanded="true" />
-                <element signature="e#42964#42981#0" expanded="true" />
-                <element signature="e#45066#45078#0" expanded="true" />
-                <element signature="e#46888#46911#0" expanded="true" />
-                <element signature="e#48060#48077#0" expanded="true" />
-                <element signature="e#50162#50174#0" expanded="true" />
-                <element signature="e#51985#52000#0" expanded="true" />
-                <element signature="e#53144#53162#0" expanded="true" />
-                <element signature="e#55252#55264#0" expanded="true" />
-                <element signature="e#57083#57108#0" expanded="true" />
-                <element signature="e#58261#58279#0" expanded="true" />
-                <element signature="e#60369#60381#0" expanded="true" />
-                <element signature="e#62199#62216#0" expanded="true" />
-                <element signature="e#63362#63380#0" expanded="true" />
-                <element signature="e#65470#65482#0" expanded="true" />
-                <element signature="e#67300#67324#0" expanded="true" />
-                <element signature="e#68478#68496#0" expanded="true" />
-                <element signature="e#70586#70598#0" expanded="true" />
-                <element signature="e#72417#72434#0" expanded="true" />
-                <element signature="e#73580#73598#0" expanded="true" />
-                <element signature="e#75688#75700#0" expanded="true" />
-                <element signature="e#77518#77543#0" expanded="true" />
-                <element signature="e#78696#78714#0" expanded="true" />
-                <element signature="e#80804#80816#0" expanded="true" />
-                <element signature="e#82634#82650#0" expanded="true" />
-                <element signature="e#83795#83813#0" expanded="true" />
-                <element signature="e#85903#85915#0" expanded="true" />
-                <element signature="e#87733#87753#0" expanded="true" />
-                <element signature="e#88899#88917#0" expanded="true" />
-                <element signature="e#91007#91019#0" expanded="true" />
-                <element signature="e#92837#92859#0" expanded="true" />
-                <element signature="e#94009#94027#0" expanded="true" />
-                <element signature="e#96117#96129#0" expanded="true" />
-                <element signature="e#97947#97967#0" expanded="true" />
-                <element signature="e#99115#99133#0" expanded="true" />
-                <element signature="e#101223#101235#0" expanded="true" />
-                <element signature="e#103116#103139#0" expanded="true" />
-                <element signature="e#104286#104304#0" expanded="true" />
-              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -3924,13 +3758,13 @@
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/GlobalConst.java" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/MainActivity.java" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml" />
-        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_shopping_cart.xml" />
-        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml" />
+        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" />
+        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_shopping_cart.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_shopping_cart.xml" />
+        <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java" />
       </list>
     </option>
   </component>
@@ -4032,6 +3866,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout-sw300dp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="layout-sw300dp-v16" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -4042,6 +3885,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="layout-sw350dp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout-sw400dp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
@@ -4110,7 +3962,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/Android" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542556661492" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542575207619" />
     <property name="device.picker.selection" value="Nexus_One_API_26" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/deliveryfruits" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -4136,11 +3988,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\layout-sw300dp" />
       <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\layout-sw300dp-v16" />
       <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\layout-sw350dp" />
       <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\layout-sw400dp" />
       <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable-xxhdpi" />
-      <recent name="C:\Users\Deimont\IdeaProjects\Deliapp\deliveryfruits\src\main\res\drawable-xhdpi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -4456,7 +4308,7 @@
       <workItem from="1542446540287" duration="4771000" />
       <workItem from="1542451508348" duration="6670000" />
       <workItem from="1542474590393" duration="14690000" />
-      <workItem from="1542533809305" duration="21320000" />
+      <workItem from="1542533809305" duration="26790000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1539889234007</created>
@@ -4598,7 +4450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542545293497</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added support for all screens">
+      <created>1542556785960</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1542556785960</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -4616,7 +4475,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276357000" />
+    <option name="totallyTimeSpent" value="281827000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4763,7 +4622,8 @@
     <MESSAGE value="Added some products to basket.Added product names to main layout" />
     <MESSAGE value="Added all products to basket shop and did logic with delete and go back" />
     <MESSAGE value="Added some actions with calculate price" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some actions with calculate price" />
+    <MESSAGE value="Added support for all screens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added support for all screens" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -4994,14 +4854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
@@ -5009,14 +4861,6 @@
           <caret line="1150" column="58" lean-forward="true" selection-start-line="1150" selection-start-column="58" selection-end-line="1150" selection-end-column="58" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_shopping_cart.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer2" />
@@ -5116,87 +4960,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_shopping_cart.xml">
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="73" column="77" selection-start-line="73" selection-start-column="77" selection-end-line="73" selection-end-column="77" />
-          <folding>
-            <element signature="e#3807#3823#0" expanded="true" />
-            <element signature="e#4220#4235#0" expanded="true" />
-            <element signature="e#6245#6270#0" expanded="true" />
-            <element signature="e#7416#7433#0" expanded="true" />
-            <element signature="e#8879#8891#0" expanded="true" />
-            <element signature="e#11316#11341#0" expanded="true" />
-            <element signature="e#12487#12504#0" expanded="true" />
-            <element signature="e#14589#14601#0" expanded="true" />
-            <element signature="e#16411#16435#0" expanded="true" />
-            <element signature="e#17580#17597#0" expanded="true" />
-            <element signature="e#19682#19694#0" expanded="true" />
-            <element signature="e#21497#21522#0" expanded="true" />
-            <element signature="e#22627#22644#0" expanded="true" />
-            <element signature="e#24729#24741#0" expanded="true" />
-            <element signature="e#26551#26572#0" expanded="true" />
-            <element signature="e#27714#27731#0" expanded="true" />
-            <element signature="e#29816#29828#0" expanded="true" />
-            <element signature="e#31638#31659#0" expanded="true" />
-            <element signature="e#32801#32818#0" expanded="true" />
-            <element signature="e#34903#34915#0" expanded="true" />
-            <element signature="e#36718#36735#0" expanded="true" />
-            <element signature="e#37878#37895#0" expanded="true" />
-            <element signature="e#39980#39992#0" expanded="true" />
-            <element signature="e#41802#41822#0" expanded="true" />
-            <element signature="e#42964#42981#0" expanded="true" />
-            <element signature="e#45066#45078#0" expanded="true" />
-            <element signature="e#46888#46911#0" expanded="true" />
-            <element signature="e#48060#48077#0" expanded="true" />
-            <element signature="e#50162#50174#0" expanded="true" />
-            <element signature="e#51985#52000#0" expanded="true" />
-            <element signature="e#53144#53162#0" expanded="true" />
-            <element signature="e#55252#55264#0" expanded="true" />
-            <element signature="e#57083#57108#0" expanded="true" />
-            <element signature="e#58261#58279#0" expanded="true" />
-            <element signature="e#60369#60381#0" expanded="true" />
-            <element signature="e#62199#62216#0" expanded="true" />
-            <element signature="e#63362#63380#0" expanded="true" />
-            <element signature="e#65470#65482#0" expanded="true" />
-            <element signature="e#67300#67324#0" expanded="true" />
-            <element signature="e#68478#68496#0" expanded="true" />
-            <element signature="e#70586#70598#0" expanded="true" />
-            <element signature="e#72417#72434#0" expanded="true" />
-            <element signature="e#73580#73598#0" expanded="true" />
-            <element signature="e#75688#75700#0" expanded="true" />
-            <element signature="e#77518#77543#0" expanded="true" />
-            <element signature="e#78696#78714#0" expanded="true" />
-            <element signature="e#80804#80816#0" expanded="true" />
-            <element signature="e#82634#82650#0" expanded="true" />
-            <element signature="e#83795#83813#0" expanded="true" />
-            <element signature="e#85903#85915#0" expanded="true" />
-            <element signature="e#87733#87753#0" expanded="true" />
-            <element signature="e#88899#88917#0" expanded="true" />
-            <element signature="e#91007#91019#0" expanded="true" />
-            <element signature="e#92837#92859#0" expanded="true" />
-            <element signature="e#94009#94027#0" expanded="true" />
-            <element signature="e#96117#96129#0" expanded="true" />
-            <element signature="e#97947#97967#0" expanded="true" />
-            <element signature="e#99115#99133#0" expanded="true" />
-            <element signature="e#101223#101235#0" expanded="true" />
-            <element signature="e#103116#103139#0" expanded="true" />
-            <element signature="e#104286#104304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#798#1047#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#4127#4547#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1632">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>
@@ -5264,6 +5032,35 @@
             <element signature="e#97953#97973#0" expanded="true" />
             <element signature="e#99121#99139#0" expanded="true" />
             <element signature="e#101229#101241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_shopping_cart.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_shopping_cart.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="77" selection-start-line="73" selection-start-column="77" selection-end-line="73" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/deliveryfruits/ShoppingCartActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding>
+            <element signature="e#798#1047#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#4127#4547#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
           </folding>
         </state>
       </provider>

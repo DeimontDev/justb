@@ -10,6 +10,7 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -40,6 +41,9 @@ public class ShoppingCartActivity extends AppCompatActivity {
         processProduct(res);
         processButtons(res);
         setNewAmount(String.valueOf(TOTAL), amount);
+
+        Button order = findViewById(R.id.order_button);
+
     }
 
     private void setNewAmount(String newAmount, TextView amount) {
