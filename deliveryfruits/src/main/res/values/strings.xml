@@ -55,5 +55,6 @@
     <string name="hot_dog">Hot dog</string>
     <string name="total">Сумма:</string>
     <string name="order">Заказать</string>
-    <string name="amount"><u>25 лей</u></string>
+
+    <string name="amount"><u>0</u></string>
 </resources>

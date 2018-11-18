@@ -39,16 +39,14 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
         processProduct(res);
         processButtons(res);
-
         setNewAmount(String.valueOf(TOTAL), amount);
     }
 
-    private TextView setNewAmount(String newAmount, TextView amount) {
-        SpannableString ss = new SpannableString(newAmount + " лей");
+    private void setNewAmount(String newAmount, TextView amount) {
+        newAmount += " лей";
+        SpannableString ss = new SpannableString(newAmount);
         ss.setSpan(new UnderlineSpan(), 0, newAmount.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         amount.setText(ss);
-
-        return amount;
     }
 
     private void processPrice(Resources res) {
@@ -133,11 +131,35 @@ public class ShoppingCartActivity extends AppCompatActivity {
                 Resources res = getResources();
                 TextView textView = findViewById(res.getIdentifier(
                         "text" + String.valueOf(id), "id", getPackageName()));
+                TextView price = findViewById(res.getIdentifier(
+                        "price" + String.valueOf(id), "id", getPackageName()));
+                String actQuan = textView.getText().toString();
+                String clearPrice = price.getText().toString().substring(0, price.getText().toString().indexOf(" "));
+                int priceEntity = Integer.parseInt(clearPrice) / Integer.parseInt(actQuan);
+
                 if (plus) {
                     setPlus(textView);
+
+                    TOTAL = TOTAL + priceEntity;
+                    String newPrice = String.valueOf(Integer.parseInt(clearPrice) + priceEntity) + " лей";
+                    price.setText(newPrice);
                 } else {
                     setMinus(textView);
+
+                    if (Integer.parseInt(textView.getText().toString()) == 0) {
+                        ConstraintLayout layout = findViewById(res.getIdentifier(
+                                "lay" + String.valueOf(id), "id", getPackageName()));
+                        layout.setVisibility(View.GONE);
+                        extras.removeExtra("product" + id);
+                    }
+
+                    TOTAL = TOTAL - priceEntity;
+                    String newPrice = String.valueOf(Integer.parseInt(clearPrice) - priceEntity) + " лей";
+                    price.setText(newPrice);
                 }
+
+                TextView amount = findViewById(R.id.amount);
+                setNewAmount(String.valueOf(TOTAL), amount);
             }
         };
     }

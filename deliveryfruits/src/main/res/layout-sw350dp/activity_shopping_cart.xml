@@ -44,7 +44,7 @@
             app:backgroundTint="@color/colorPrimaryDark" android:tint="@color/colorPrimary22132" app:fabSize="mini"/>
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp" android:layout_marginTop="500dp"
+            android:layout_height="200dp" android:layout_marginTop="420dp"
             android:background="@android:color/background_light" android:overScrollMode="ifContentScrolls"
             android:isScrollContainer="false" tools:overScrollMode="always">
         <TextView
@@ -76,11 +76,11 @@
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="90dp"/>
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="85dp"/>
     </android.support.constraint.ConstraintLayout>
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="450dp" style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+            android:layout_height="350dp" style="@android:style/Widget.DeviceDefault.Light.ScrollView"
             android:fillViewport="false" android:clipToPadding="false" android:layout_marginTop="57dp">
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"

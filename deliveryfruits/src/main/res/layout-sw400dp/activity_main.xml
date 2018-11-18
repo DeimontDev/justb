@@ -266,12 +266,12 @@
                                 android:id="@+id/price2"
                                 app:layout_constraintEnd_toEndOf="@+id/img2"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img2"
-                                android:fontFamily="casual"
-                                app:layout_constraintTop_toBottomOf="@+id/product2" android:layout_marginTop="125dp"/>
+
+                                app:layout_constraintTop_toBottomOf="@+id/product2" android:layout_marginTop="128dp"/>
                         <ImageButton
                                 android:layout_width="155dp"
                                 android:layout_height="180dp" app:srcCompat="@drawable/capucino1"
@@ -1090,11 +1090,11 @@
                                 android:id="@+id/price1"
                                 app:layout_constraintEnd_toEndOf="@+id/img1"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img1"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product1" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_3"
@@ -1103,11 +1103,11 @@
                                 android:id="@+id/price3"
                                 app:layout_constraintEnd_toEndOf="@+id/img3"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img3"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product3" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_4"
@@ -1116,11 +1116,11 @@
                                 android:id="@+id/price4"
                                 app:layout_constraintEnd_toEndOf="@+id/img4"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img4"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product4" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_5"
@@ -1129,11 +1129,11 @@
                                 android:id="@+id/price5"
                                 app:layout_constraintEnd_toEndOf="@+id/img5"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img5"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product5" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_6"
@@ -1142,11 +1142,11 @@
                                 android:id="@+id/price6"
                                 app:layout_constraintEnd_toEndOf="@+id/img6"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img6"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product6" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_7"
@@ -1155,11 +1155,11 @@
                                 android:id="@+id/price7"
                                 app:layout_constraintEnd_toEndOf="@+id/img7"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img7"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product7" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_8"
@@ -1168,11 +1168,11 @@
                                 android:id="@+id/price8"
                                 app:layout_constraintEnd_toEndOf="@+id/img8"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img8"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product8" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_9"
@@ -1181,11 +1181,11 @@
                                 android:id="@+id/price9"
                                 app:layout_constraintEnd_toEndOf="@+id/img9"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img9"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product9" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_10"
@@ -1194,11 +1194,11 @@
                                 android:id="@+id/price10"
                                 app:layout_constraintEnd_toEndOf="@+id/img10"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img10"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product10" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_11"
@@ -1207,11 +1207,11 @@
                                 android:id="@+id/price11"
                                 app:layout_constraintEnd_toEndOf="@+id/img11"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img11"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product11" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_12"
@@ -1220,11 +1220,11 @@
                                 android:id="@+id/price12"
                                 app:layout_constraintEnd_toEndOf="@+id/img12"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img12"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product12" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_13"
@@ -1233,11 +1233,11 @@
                                 android:id="@+id/price13"
                                 app:layout_constraintEnd_toEndOf="@+id/img13"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img13"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product13" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_14"
@@ -1246,11 +1246,11 @@
                                 android:id="@+id/price14"
                                 app:layout_constraintEnd_toEndOf="@+id/img14"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img14"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product14" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_15"
@@ -1259,11 +1259,11 @@
                                 android:id="@+id/price15"
                                 app:layout_constraintEnd_toEndOf="@+id/img15"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img15"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product15" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_16"
@@ -1272,11 +1272,11 @@
                                 android:id="@+id/price16"
                                 app:layout_constraintEnd_toEndOf="@+id/img16"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img16"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product16" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_17"
@@ -1285,11 +1285,11 @@
                                 android:id="@+id/price17"
                                 app:layout_constraintEnd_toEndOf="@+id/img17"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img17"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product17" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_18"
@@ -1298,11 +1298,11 @@
                                 android:id="@+id/price18"
                                 app:layout_constraintEnd_toEndOf="@+id/img18"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img18"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product18" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_19"
@@ -1311,11 +1311,11 @@
                                 android:id="@+id/price19"
                                 app:layout_constraintEnd_toEndOf="@+id/img19"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img19"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product19" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/price_20"
@@ -1324,11 +1324,11 @@
                                 android:id="@+id/price20"
                                 app:layout_constraintEnd_toEndOf="@+id/img20"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:typeface="normal" android:textAlignment="center" android:textStyle="bold|italic"
+                                android:typeface="normal" android:textAlignment="center"
                                 android:textAllCaps="false"
                                 android:textSize="18sp"
                                 app:layout_constraintStart_toStartOf="@+id/img20"
-                                android:fontFamily="casual"
+                                 
                                 app:layout_constraintTop_toBottomOf="@+id/product20" android:layout_marginTop="128dp"/>
                         <TextView
                                 android:text="@string/americano_250ml"
@@ -1337,12 +1337,12 @@
                                 android:id="@+id/product2"
                                 app:layout_constraintEnd_toEndOf="@+id/img2"
                                 android:textAppearance="@style/TextAppearance.AppCompat"
-                                android:textAlignment="center" android:textStyle="bold|italic"
+                                android:textAlignment="center"
                                 android:typeface="normal" app:layout_constraintStart_toStartOf="@+id/img2"
                                 app:layout_constraintHorizontal_bias="0.0" android:textSize="14sp"
                                 android:fontFamily="serif"
                                 app:layout_constraintTop_toTopOf="@+id/img2"
-                                android:layout_marginTop="5dp"/>
+                                android:layout_marginTop="5dp" android:textStyle="bold|italic"/>
                         <TextView
                                 android:text="@string/cappucno_180ml"
                                 android:layout_width="0dp"
