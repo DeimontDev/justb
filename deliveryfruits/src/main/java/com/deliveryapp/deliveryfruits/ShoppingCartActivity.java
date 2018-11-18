@@ -6,11 +6,17 @@ import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class ShoppingCartActivity extends AppCompatActivity {
+
+    private static int TOTAL;
+    private Intent extras = GlobalConst.intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +31,64 @@ public class ShoppingCartActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Bundle extras = getIntent().getExtras();
 
         Resources res = getResources();
+        TextView amount = findViewById(R.id.amount);
+        TOTAL = 0;
+        processPrice(res);
 
+        processProduct(res);
+        processButtons(res);
+
+        setNewAmount(String.valueOf(TOTAL), amount);
+    }
+
+    private TextView setNewAmount(String newAmount, TextView amount) {
+        SpannableString ss = new SpannableString(newAmount + " лей");
+        ss.setSpan(new UnderlineSpan(), 0, newAmount.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        amount.setText(ss);
+
+        return amount;
+    }
+
+    private void processPrice(Resources res) {
+        for (int i = 1; i <= 20 ; i++) {
+            if (extras != null && extras.getStringExtra("product" + i) != null) {
+                TextView price = findViewById(res.getIdentifier(
+                        "price" + String.valueOf(i), "id", getPackageName()));
+                String pric = price.getText().toString().substring(0, price.getText().toString().indexOf(" "));
+                String actQuan = extras.getStringExtra("quantity" + i);
+                int quantityActual = Integer.parseInt(actQuan);
+                int priceActual = Integer.parseInt(pric);
+
+                if (quantityActual > 1) {
+                    priceActual *= quantityActual;
+                }
+
+                TOTAL = TOTAL + priceActual;
+
+                pric = String.valueOf(priceActual) + " лей";
+                price.setText(pric);
+            }
+        }
+    }
+
+    private void processProduct(Resources res) {
+        for (int i = 1; i <= 20; i++) {
+            if (extras != null && extras.getStringExtra("product" + i) != null) {
+                ConstraintLayout lay = findViewById(res.getIdentifier(
+                        "lay" + String.valueOf(i), "id", getPackageName()));
+                TextView quantity = findViewById(res.getIdentifier(
+                        "text" + String.valueOf(i), "id", getPackageName()));
+                String actQuan = extras.getStringExtra("quantity" + i);
+                quantity.setText(actQuan);
+
+                lay.setVisibility(View.VISIBLE);
+            }
+        }
+    }
+
+    private void processButtons(Resources res) {
         for (int i = 0; i < 20; i++) {
             int id = i + 1;
             ImageButton plus = findViewById(res.getIdentifier(
@@ -41,19 +101,27 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
             ImageButton delete = findViewById(res.getIdentifier(
                     "delete" + String.valueOf(id), "id", getPackageName()));
-            delete.setOnClickListener(deleteListener(id));
+            delete.setOnClickListener(deleteListener(id, extras));
         }
-
     }
 
-    private View.OnClickListener deleteListener(final int id) {
+    private View.OnClickListener deleteListener(final int id, final Intent extras) {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Resources res = getResources();
                 ConstraintLayout layout = findViewById(res.getIdentifier(
                         "lay" + String.valueOf(id), "id", getPackageName()));
+                TextView price = findViewById(res.getIdentifier(
+                        "price" + String.valueOf(id), "id", getPackageName()));
+                String clearPrice = price.getText().toString().substring(0, price.getText().toString().indexOf(" "));
+                TOTAL = TOTAL - Integer.parseInt(clearPrice);
+
+                TextView amount = findViewById(R.id.amount);
+                setNewAmount(String.valueOf(TOTAL), amount);
+
                 layout.setVisibility(View.GONE);
+                extras.removeExtra("product" + id);
             }
         };
     }

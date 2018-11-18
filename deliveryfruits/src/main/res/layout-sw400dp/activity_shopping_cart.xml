@@ -93,7 +93,7 @@
                     android:id="@+id/lay1"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
@@ -166,7 +166,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay1"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay2">
                 <TextView
                         android:text="@string/americano_250ml"
@@ -237,7 +237,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay2"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay3">
                 <TextView
                         android:text="@string/cappucno_180ml"
@@ -308,7 +308,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay3"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay4">
                 <TextView
                         android:text="@string/cappucino_250ml"
@@ -379,7 +379,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay5"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay6">
                 <TextView
                         android:text="@string/latte_250ml"
@@ -450,7 +450,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay4"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay5">
                 <TextView
                         android:text="@string/latte_180ml"
@@ -521,7 +521,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay6"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay7">
                 <TextView
                         android:text="@string/hot_dog"
@@ -592,7 +592,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay7"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay8">
                 <TextView
                         android:text="@string/covrig_mac"
@@ -663,7 +663,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay8"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay9">
                 <TextView
                         android:text="@string/foietaj_sunca"
@@ -734,7 +734,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay9"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay10">
                 <TextView
                         android:text="@string/pizza"
@@ -806,7 +806,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay10"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay11">
                 <TextView
                         android:text="@string/placinta_brinza"
@@ -877,7 +877,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay11"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay12">
                 <TextView
                         android:text="@string/sasisca"
@@ -948,7 +948,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay12"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay13">
                 <TextView
                         android:text="@string/foietaj_fructe"
@@ -1020,7 +1020,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay13"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay14">
                 <TextView
                         android:text="@string/cruasan"
@@ -1091,7 +1091,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay14"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay15">
                 <TextView
                         android:text="@string/placinta_visina"
@@ -1162,7 +1162,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay15"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay16">
                 <TextView
                         android:text="@string/muffin"
@@ -1233,7 +1233,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay16"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="15dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay17">
                 <TextView
                         android:text="@string/donuts_roz"
@@ -1304,7 +1304,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay17"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="15dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay18">
                 <TextView
                         android:text="@string/donuts_negru"
@@ -1375,7 +1375,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay18"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="15dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay19">
                 <TextView
                         android:text="@string/donuts_alb"
@@ -1446,7 +1446,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/lay19"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                     android:layout_marginStart="15dp" app:layout_constraintEnd_toEndOf="parent"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:id="@+id/lay20">
                 <TextView
                         android:text="@string/foietaj_crema"

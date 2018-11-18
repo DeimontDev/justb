@@ -12,7 +12,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private static Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,19 +22,38 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(intent);
+                startActivity(GlobalConst.intent);
             }
         });
 
         Resources res = getResources();
+        processBasketActions(res);
+        processPlusMinus(res);
+    }
 
+    public void processBasketActions(Resources res) {
         for (int i = 0; i < 20; i++) {
             int id = i + 1;
             AppCompatButton toBasket = findViewById(res.getIdentifier(
                     "button" + String.valueOf(id), "id", getPackageName()));
             toBasket.setOnClickListener(basketListener(id));
-        }
 
+            if (GlobalConst.intent != null) {
+                String product = GlobalConst.intent.getStringExtra("product" + id);
+
+                if (product != null) {
+                    toBasket.setBackgroundColor(Color.parseColor("#FFB77E5E"));
+                    toBasket.setText("Добавлено");
+                    String quant = GlobalConst.intent.getStringExtra("quantity" + id);
+                    TextView quantity = findViewById(res.getIdentifier(
+                            "text" + String.valueOf(id), "id", getPackageName()));
+                    quantity.setText(quant);
+                }
+            }
+        }
+    }
+
+    public void processPlusMinus(Resources res) {
         for (int i = 0; i < 20; i++) {
             int id = i + 1;
             ImageButton plus = findViewById(res.getIdentifier(
@@ -60,19 +78,19 @@ public class MainActivity extends AppCompatActivity {
                     Resources res = getResources();
                     TextView productName = findViewById(res.getIdentifier(
                             "product" + String.valueOf(id), "id", getPackageName()));
-                    TextView productPrice = findViewById(res.getIdentifier(
-                            "price" + String.valueOf(id), "id", getPackageName()));
-                    if (intent == null) {
-                        intent = new Intent(MainActivity.this, ShoppingCartActivity.class);
+                    TextView quantity = findViewById(res.getIdentifier(
+                            "text" + String.valueOf(id), "id", getPackageName()));
+                    if (GlobalConst.intent == null) {
+                        GlobalConst.intent = new Intent(MainActivity.this, ShoppingCartActivity.class);
                     }
 
-                    intent.putExtra("product" + id, productName.getText().toString());
-                    intent.putExtra("price" + id, productPrice.getText().toString());
+                    GlobalConst.intent.putExtra("product" + id, productName.getText().toString());
+                    GlobalConst.intent.putExtra("quantity" + id, quantity.getText().toString());
                 } else {
                     view.setBackgroundColor(Color.parseColor("#FFEFD8CB"));
                     textView.setText("В корзину");
-                    intent.removeExtra("product" + id);
-                    intent.removeExtra("price" + id);
+                    GlobalConst.intent.removeExtra("product" + id);
+                    GlobalConst.intent.removeExtra("price" + id);
                 }
             }
         };
