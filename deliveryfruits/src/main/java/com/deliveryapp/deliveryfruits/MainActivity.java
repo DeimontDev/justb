@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(GlobalConst.intent);
+                Intent intent = GlobalConst.intent == null ?
+                        new Intent(MainActivity.this, ShoppingCartActivity.class) : GlobalConst.intent;
+                startActivity(intent);
             }
         });
 
