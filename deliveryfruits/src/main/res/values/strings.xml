@@ -57,4 +57,5 @@
     <string name="order">Заказать</string>
 
     <string name="amount"><u>0</u></string>
+    <string name="order_text">Номер заказа:</string>
 </resources>

@@ -44,8 +44,8 @@
             app:backgroundTint="@color/colorPrimaryDark" android:tint="@color/colorPrimary22132" app:fabSize="mini"/>
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp" android:layout_marginTop="500dp"
-            android:background="@android:color/background_light" android:overScrollMode="ifContentScrolls"
+            android:layout_height="200dp" android:layout_marginTop="480dp"
+            android:background="#ded4d4" android:overScrollMode="ifContentScrolls"
             android:isScrollContainer="false" tools:overScrollMode="always">
         <TextView
                 android:text="@string/total"
@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/total" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="20dp" android:layout_marginStart="20dp"
-                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="32dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="60dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
                 android:textSize="24sp" android:lineSpacingExtra="8sp" android:textStyle="italic"/>
         <TextView
@@ -61,11 +61,12 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:id="@+id/amount"
-                android:singleLine="false" android:text="@string/amount"
+                android:singleLine="false"
                 android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 style="@android:style/Widget.DeviceDefault.Light.TextView" android:textIsSelectable="true"
-                android:gravity="center" app:layout_constraintTop_toTopOf="@+id/total"/>
+                android:gravity="center" app:layout_constraintTop_toTopOf="@+id/total" android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"/>
         <Button
                 android:text="@string/order"
                 android:layout_width="200dp"
@@ -76,11 +77,27 @@
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="90dp"/>
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="105dp"/>
+        <TextView
+                android:text="@string/order_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="20dp" android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title" android:textSize="24sp"
+                android:textStyle="italic"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_number" android:layout_marginEnd="80dp" android:layout_marginRight="80dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title" android:textSize="24sp"/>
     </android.support.constraint.ConstraintLayout>
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="450dp" style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+            android:layout_height="420dp" style="@android:style/Widget.DeviceDefault.Light.ScrollView"
             android:fillViewport="false" android:clipToPadding="false" android:layout_marginTop="57dp">
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"

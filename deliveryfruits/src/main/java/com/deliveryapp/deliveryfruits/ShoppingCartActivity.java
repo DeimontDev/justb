@@ -25,11 +25,16 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Iterator;
+import java.util.Locale;
 
 public class ShoppingCartActivity extends AppCompatActivity {
 
     private static int TOTAL;
+    private static int ORDER_NUMBER;
     private static String TOTAL2;
     private static String PRODUCT_NAME;
     private static String QUANTITY;
@@ -39,6 +44,9 @@ public class ShoppingCartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping_cart);
+        ORDER_NUMBER = (int) (Math.random() * 10000);
+        TextView orderNumber = findViewById(R.id.order_number);
+        orderNumber.setText(String.valueOf(ORDER_NUMBER));
 
         FloatingActionButton back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +71,28 @@ public class ShoppingCartActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Resources res = getResources();
+                try {
+                    PRODUCT_NAME = "Comanda №";
+                    QUANTITY = String.valueOf(ORDER_NUMBER);
+                    TOTAL2 = " ";
+                    new SendRequest().execute();
+                    Thread.sleep(1000);
+
+                    PRODUCT_NAME = "Data/Ora:";
+                    System.out.println(new Date(Calendar.getInstance().getTimeInMillis()));
+                    QUANTITY = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.US).format(new Date(System.currentTimeMillis()));
+                    TOTAL2 = " ";
+                    new SendRequest().execute();
+                    Thread.sleep(1500);
+
+                    PRODUCT_NAME = "Produs";
+                    QUANTITY = "Cantitatea";
+                    TOTAL2 = "Total";
+                    new SendRequest().execute();
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
                 for (int i = 1; i <= 20; i++) {
                     ConstraintLayout lay = findViewById(res.getIdentifier(
