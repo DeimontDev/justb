@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:focusable="true"
-        tools:context="com.deliveryapp.deliveryfruits.MainActivity">
+        tools:context="com.deliveryapp.sdobapp.MainActivity">
     <android.support.design.widget.AppBarLayout
             android:id="@+id/appbar"
             android:fitsSystemWindows="true"
@@ -37,7 +37,7 @@
             android:clickable="true" app:srcCompat="@drawable/shop_basket"
             android:id="@+id/basket_button"
             android:focusable="true" app:fabSize="mini" app:backgroundTint="@color/colorPrimary222"
-            app:rippleColor="?attr/colorBackgroundFloating"
+            app:rippleColor="@android:color/holo_orange_light"
             app:layout_anchor="@+id/tool_bar" app:layout_anchorGravity="top|right" android:visibility="visible"/>
     <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
@@ -1554,4 +1554,17 @@
             </ScrollView>
         </android.support.constraint.ConstraintLayout>
     </android.support.v4.widget.NestedScrollView>
+    <android.widget.TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:elevation="7dp"
+            app:backgroundTint="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:id="@+id/counter" app:layout_anchorGravity="right|top"
+            app:layout_anchor="@+id/basket_button"
+            app:fabSize="mini" android:layout_marginTop="2dp" android:layout_marginRight="2dp"
+            android:text="@string/_0"
+            tools:textColor="@android:color/black" android:textStyle="bold" android:layout_marginEnd="2dp"/>
+
 </android.support.design.widget.CoordinatorLayout>

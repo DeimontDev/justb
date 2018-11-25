@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.deliveryapp.deliveryfruits">
+          package="com.deliveryapp.sdobapp">
 
     <supports-screens
             android:largeScreens="true"
@@ -8,24 +8,25 @@
             android:smallScreens="true"
             android:xlargeScreens="true"/>
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permision.CALL_PHONE"/>
 
     <application
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@drawable/americano1"
             android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:roundIcon="@drawable/cruasan"
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.deliveryapp.sdobapp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
-                android:name=".ShoppingCartActivity"
+                android:name="com.deliveryapp.sdobapp.ShoppingCartActivity"
                 android:label="@string/title_activity_shopping_cart"
                 android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         </activity>

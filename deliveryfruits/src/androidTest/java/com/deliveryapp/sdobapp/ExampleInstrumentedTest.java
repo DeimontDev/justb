@@ -1,4 +1,4 @@
-package com.deliveryapp.deliveryfruits;
+package com.deliveryapp.sdobapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

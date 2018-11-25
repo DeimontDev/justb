@@ -1,11 +1,16 @@
-package com.deliveryapp.deliveryfruits;
+package com.deliveryapp.sdobapp;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -15,7 +20,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 import org.json.JSONObject;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -26,10 +30,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Locale;
+
+import static com.deliveryapp.sdobapp.GlobalConst.COUNTER;
 
 public class ShoppingCartActivity extends AppCompatActivity {
 
@@ -44,9 +49,12 @@ public class ShoppingCartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping_cart);
+
         ORDER_NUMBER = (int) (Math.random() * 10000);
         TextView orderNumber = findViewById(R.id.order_number);
         orderNumber.setText(String.valueOf(ORDER_NUMBER));
+
+        findViewById(R.id.call_button).setOnClickListener(callingListener());
 
         FloatingActionButton back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +78,20 @@ public class ShoppingCartActivity extends AppCompatActivity {
         order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Snackbar.make(view, "Comanda e acceptata", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+                if (ActivityCompat.checkSelfPermission(ShoppingCartActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    return;
+                }
+                startActivity(new Intent(Intent.ACTION_CALL, Uri.fromParts("tel", "123456", null)));
+
                 Resources res = getResources();
                 try {
                     PRODUCT_NAME = "Comanda №";
@@ -79,8 +101,11 @@ public class ShoppingCartActivity extends AppCompatActivity {
                     Thread.sleep(1000);
 
                     PRODUCT_NAME = "Data/Ora:";
-                    System.out.println(new Date(Calendar.getInstance().getTimeInMillis()));
-                    QUANTITY = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.US).format(new Date(System.currentTimeMillis()));
+
+                    Date date = new Date();
+                    date.setTime(System.currentTimeMillis());
+
+                    QUANTITY = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.US).format(date);
                     TOTAL2 = " ";
                     new SendRequest().execute();
                     Thread.sleep(1500);
@@ -130,8 +155,26 @@ public class ShoppingCartActivity extends AppCompatActivity {
         });
     }
 
-    public String getPostDataString(JSONObject params) throws Exception {
+    public View.OnClickListener callingListener() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (ActivityCompat.checkSelfPermission(ShoppingCartActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    return;
+                }
+                startActivity(new Intent(Intent.ACTION_CALL, Uri.fromParts("tel", "123456", null)));
+            }
+        };
+    }
 
+    public String getPostDataString(JSONObject params) throws Exception {
         StringBuilder result = new StringBuilder();
         boolean first = true;
 
@@ -142,16 +185,17 @@ public class ShoppingCartActivity extends AppCompatActivity {
             String key = itr.next();
             Object value = params.get(key);
 
-            if (first)
+            if (first) {
                 first = false;
-            else
+            } else {
                 result.append("&");
+            }
 
             result.append(URLEncoder.encode(key, "UTF-8"));
             result.append("=");
             result.append(URLEncoder.encode(value.toString(), "UTF-8"));
-
         }
+
         return result.toString();
     }
 
@@ -204,17 +248,17 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            Toast.makeText(getApplicationContext(), result,
-                    Toast.LENGTH_LONG).show();
 
         }
     }
 
     private void setNewAmount(String newAmount, TextView amount) {
-        newAmount += " лей";
-        SpannableString ss = new SpannableString(newAmount);
-        ss.setSpan(new UnderlineSpan(), 0, newAmount.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        amount.setText(ss);
+        if (Integer.parseInt(newAmount) != 0) {
+            newAmount += " lei";
+            SpannableString ss = new SpannableString(newAmount);
+            ss.setSpan(new UnderlineSpan(), 0, newAmount.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            amount.setText(ss);
+        }
     }
 
     private void processPrice(Resources res) {
@@ -233,7 +277,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
                 TOTAL = TOTAL + priceActual;
 
-                pric = String.valueOf(priceActual) + " лей";
+                pric = String.valueOf(priceActual) + " lei";
                 price.setText(pric);
             }
         }
@@ -288,6 +332,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
                 layout.setVisibility(View.GONE);
                 extras.removeExtra("product" + id);
+                COUNTER--;
             }
         };
     }
@@ -309,7 +354,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
                     setPlus(textView);
 
                     TOTAL = TOTAL + priceEntity;
-                    String newPrice = String.valueOf(Integer.parseInt(clearPrice) + priceEntity) + " лей";
+                    String newPrice = String.valueOf(Integer.parseInt(clearPrice) + priceEntity) + " lei";
                     price.setText(newPrice);
                 } else {
                     setMinus(textView);
@@ -319,10 +364,11 @@ public class ShoppingCartActivity extends AppCompatActivity {
                                 "lay" + String.valueOf(id), "id", getPackageName()));
                         layout.setVisibility(View.GONE);
                         extras.removeExtra("product" + id);
+                        COUNTER--;
                     }
 
                     TOTAL = TOTAL - priceEntity;
-                    String newPrice = String.valueOf(Integer.parseInt(clearPrice) - priceEntity) + " лей";
+                    String newPrice = String.valueOf(Integer.parseInt(clearPrice) - priceEntity) + " lei";
                     price.setText(newPrice);
                 }
 

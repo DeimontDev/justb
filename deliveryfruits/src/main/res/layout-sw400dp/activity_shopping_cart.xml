@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.deliveryapp.deliveryfruits.ShoppingCartActivity">
+        tools:context="com.deliveryapp.sdobapp.ShoppingCartActivity">
 
     <android.support.design.widget.AppBarLayout
             android:layout_height="wrap_content"
@@ -28,14 +28,6 @@
             app:rippleColor="?attr/colorControlNormal"
             app:backgroundTint="@color/colorAccent" app:fabSize="mini" android:focusable="true"
             app:layout_anchor="@id/toolbar" app:layout_anchorGravity="top|right"/>
-    <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true" app:srcCompat="@android:drawable/ic_btn_speak_now"
-            android:id="@+id/speaker"
-            app:layout_anchor="@id/toolbar" app:layout_anchorGravity="top|right" android:layout_marginRight="65dp"
-            android:layout_marginTop="10dp" app:backgroundTint="@color/colorPrimary2" app:fabSize="mini"
-            android:tint="@android:color/black"/>
     <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,11 +65,12 @@
                 android:layout_height="44dp"
                 android:id="@+id/order_button"
                 style="@style/Widget.AppCompat.Button" android:visibility="visible"
-                android:background="@color/colorPrimary" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="105dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/total" android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary1"/>
         <TextView
                 android:text="@string/order_text"
                 android:layout_width="wrap_content"
@@ -90,10 +83,11 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/order_number" android:layout_marginEnd="80dp" android:layout_marginRight="80dp"
+                android:id="@+id/order_number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title" android:textSize="24sp"
+                android:layout_marginEnd="70dp" android:layout_marginRight="70dp"
                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="20dp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title" android:textSize="24sp"/>
+                android:layout_marginTop="20dp"/>
     </android.support.constraint.ConstraintLayout>
     <ScrollView
             android:layout_width="match_parent"
