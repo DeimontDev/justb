@@ -6,10 +6,10 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Spannable;
@@ -20,6 +20,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 import org.json.JSONObject;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -38,6 +39,9 @@ import static com.deliveryapp.sdobapp.GlobalConst.COUNTER;
 
 public class ShoppingCartActivity extends AppCompatActivity {
 
+    private static boolean FLAG = true;
+
+    private final int CALL_REQUEST = 100;
     private static int TOTAL;
     private static int ORDER_NUMBER;
     private static String TOTAL2;
@@ -54,7 +58,12 @@ public class ShoppingCartActivity extends AppCompatActivity {
         TextView orderNumber = findViewById(R.id.order_number);
         orderNumber.setText(String.valueOf(ORDER_NUMBER));
 
-        findViewById(R.id.call_button).setOnClickListener(callingListener());
+        findViewById(R.id.call_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callPhoneNumber();
+            }
+        });
 
         FloatingActionButton back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -78,100 +87,122 @@ public class ShoppingCartActivity extends AppCompatActivity {
         order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Comanda e acceptata", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                if (ActivityCompat.checkSelfPermission(ShoppingCartActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    // TODO: Consider calling
-                    //    ActivityCompat#requestPermissions
-                    // here to request the missing permissions, and then overriding
-                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                    //                                          int[] grantResults)
-                    // to handle the case where the user grants the permission. See the documentation
-                    // for ActivityCompat#requestPermissions for more details.
-                    return;
-                }
-                startActivity(new Intent(Intent.ACTION_CALL, Uri.fromParts("tel", "123456", null)));
-
-                Resources res = getResources();
-                try {
-                    PRODUCT_NAME = "Comanda №";
-                    QUANTITY = String.valueOf(ORDER_NUMBER);
-                    TOTAL2 = " ";
-                    new SendRequest().execute();
-                    Thread.sleep(1000);
-
-                    PRODUCT_NAME = "Data/Ora:";
-
-                    Date date = new Date();
-                    date.setTime(System.currentTimeMillis());
-
-                    QUANTITY = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.US).format(date);
-                    TOTAL2 = " ";
-                    new SendRequest().execute();
-                    Thread.sleep(1500);
-
-                    PRODUCT_NAME = "Produs";
-                    QUANTITY = "Cantitatea";
-                    TOTAL2 = "Total";
-                    new SendRequest().execute();
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                for (int i = 1; i <= 20; i++) {
-                    ConstraintLayout lay = findViewById(res.getIdentifier(
-                            "lay" + String.valueOf(i), "id", getPackageName()));
-                    if (lay != null && lay.getVisibility() == View.VISIBLE) {
-                        TextView product = findViewById(res.getIdentifier(
-                                "name" + String.valueOf(i), "id", getPackageName()));
-                        TextView quantity = findViewById(res.getIdentifier(
-                                "text" + String.valueOf(i), "id", getPackageName()));
-                        String productName = product.getText().toString();
-                        String quan = quantity.getText().toString();
-                        PRODUCT_NAME = productName;
-                        QUANTITY = quan;
-                        TOTAL2 = "";
-                        try {
-                            new SendRequest().execute();
-                            Thread.sleep(2000);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
+                if (FLAG) {
+                    FLAG = false;
+                    final Thread call = new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            callPhoneNumber();
                         }
-                    }
+                    });
+                    call.start();
+
+                    Thread order = new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            processOrder();
+                        }
+                    });
+                    order.start();
+                } else {
+                    Toast.makeText(ShoppingCartActivity.this, "Comanda e acceptată", Toast.LENGTH_SHORT).show();
                 }
-                try {
-                    PRODUCT_NAME = " ";
-                    QUANTITY = " ";
-                    TOTAL2 = String.valueOf(TOTAL);
-                    new SendRequest().execute();
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                PRODUCT_NAME = "end";
-                new SendRequest().execute();
             }
         });
     }
 
-    public View.OnClickListener callingListener() {
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (ActivityCompat.checkSelfPermission(ShoppingCartActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+    public void processOrder() {
+        Resources res = getResources();
+        try {
+            PRODUCT_NAME = "Comanda №";
+            QUANTITY = String.valueOf(ORDER_NUMBER);
+            TOTAL2 = " ";
+            new SendRequest().execute();
+            Thread.sleep(1000);
+
+            PRODUCT_NAME = "Data/Ora:";
+
+            Date date = new Date();
+            date.setTime(System.currentTimeMillis());
+
+            QUANTITY = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.US).format(date);
+            TOTAL2 = " ";
+            new SendRequest().execute();
+            Thread.sleep(1500);
+
+            PRODUCT_NAME = "Produs";
+            QUANTITY = "Cantitatea";
+            TOTAL2 = "Total";
+            new SendRequest().execute();
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        for (int i = 1; i <= 20; i++) {
+            ConstraintLayout lay = findViewById(res.getIdentifier(
+                    "lay" + String.valueOf(i), "id", getPackageName()));
+            if (lay != null && lay.getVisibility() == View.VISIBLE) {
+                TextView product = findViewById(res.getIdentifier(
+                        "name" + String.valueOf(i), "id", getPackageName()));
+                TextView quantity = findViewById(res.getIdentifier(
+                        "text" + String.valueOf(i), "id", getPackageName()));
+                String productName = product.getText().toString();
+                String quan = quantity.getText().toString();
+                PRODUCT_NAME = productName;
+                QUANTITY = quan;
+                TOTAL2 = "";
+                try {
+                    new SendRequest().execute();
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        try {
+            PRODUCT_NAME = " ";
+            QUANTITY = " ";
+            TOTAL2 = String.valueOf(TOTAL);
+            new SendRequest().execute();
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        PRODUCT_NAME = "end";
+        new SendRequest().execute();
+    }
+
+    public void callPhoneNumber() {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (ActivityCompat.checkSelfPermission(ShoppingCartActivity.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
-                    //    ActivityCompat#requestPermissions
-                    // here to request the missing permissions, and then overriding
-                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                    //                                          int[] grantResults)
-                    // to handle the case where the user grants the permission. See the documentation
-                    // for ActivityCompat#requestPermissions for more details.
+
+                    ActivityCompat.requestPermissions(ShoppingCartActivity.this,
+                            new String[]{Manifest.permission.CALL_PHONE}, CALL_REQUEST);
                     return;
                 }
-                startActivity(new Intent(Intent.ACTION_CALL, Uri.fromParts("tel", "123456", null)));
             }
-        };
+
+            Intent callIntent = new Intent(Intent.ACTION_CALL);
+            callIntent.setData(Uri.parse("tel:" + "123456"));
+            startActivity(callIntent);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        if (requestCode == CALL_REQUEST) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                callPhoneNumber();
+            } else {
+                Toast.makeText(ShoppingCartActivity.this, "Error", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
     public String getPostDataString(JSONObject params) throws Exception {
@@ -262,7 +293,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
     }
 
     private void processPrice(Resources res) {
-        for (int i = 1; i <= 20 ; i++) {
+        for (int i = 1; i <= 20; i++) {
             if (extras != null && extras.getStringExtra("product" + i) != null) {
                 TextView price = findViewById(res.getIdentifier(
                         "price" + String.valueOf(i), "id", getPackageName()));
@@ -319,6 +350,10 @@ public class ShoppingCartActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                ORDER_NUMBER = (int) (Math.random() * 10000);
+                TextView orderNumber = findViewById(R.id.order_number);
+                orderNumber.setText(String.valueOf(ORDER_NUMBER));
+
                 Resources res = getResources();
                 ConstraintLayout layout = findViewById(res.getIdentifier(
                         "lay" + String.valueOf(id), "id", getPackageName()));
@@ -371,6 +406,10 @@ public class ShoppingCartActivity extends AppCompatActivity {
                     String newPrice = String.valueOf(Integer.parseInt(clearPrice) - priceEntity) + " lei";
                     price.setText(newPrice);
                 }
+
+                ORDER_NUMBER = (int) (Math.random() * 10000);
+                TextView orderNumber = findViewById(R.id.order_number);
+                orderNumber.setText(String.valueOf(ORDER_NUMBER));
 
                 TextView amount = findViewById(R.id.amount);
                 setNewAmount(String.valueOf(TOTAL), amount);

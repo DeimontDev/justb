@@ -897,7 +897,7 @@
                         android:text="@string/sasisca"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/name12"
-                        android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="18sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="14sp"
                         app:layout_constraintEnd_toStartOf="@+id/image12"
                         app:layout_constraintTop_toTopOf="parent"
                         android:layout_marginTop="15dp" android:typeface="sans"
