@@ -88,6 +88,17 @@
                 android:layout_marginEnd="70dp" android:layout_marginRight="70dp"
                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="20dp"/>
+        <TextView
+                android:visibility="gone"
+                android:text="@string/suma_minima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suma_minima" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" android:textStyle="italic"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="120dp"
+                android:textColor="@android:color/holo_red_dark"/>
     </android.support.constraint.ConstraintLayout>
     <ScrollView
             android:layout_width="match_parent"

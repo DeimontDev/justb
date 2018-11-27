@@ -52,9 +52,10 @@
     <string name="covrig_mac">Covrig mac</string>
     <string name="hot_dog">Hot dog</string>
     <string name="total">Total:</string>
-    <string name="order">Comanda</string>
+    <string name="order">Comandă acum</string>
 
     <string name="amount"><u>0</u></string>
     <string name="order_text">Comanda №:</string>
     <string name="_0">0</string>
+    <string name="suma_minima">Suma minimă de comandă e 70 lei</string>
 </resources>
