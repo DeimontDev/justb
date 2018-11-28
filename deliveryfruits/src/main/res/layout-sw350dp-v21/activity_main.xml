@@ -7,6 +7,29 @@
         android:layout_height="match_parent"
         android:focusable="true"
         tools:context="com.deliveryapp.sdobapp.MainActivity">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/ic_launcher_background32" android:layout_gravity="bottom">
+
+        <TextView
+                android:text="Total la moment:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="7dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp" android:gravity="center_vertical"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/la_moment"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" android:gravity="center_vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="7dp" android:layout_marginEnd="31dp" android:layout_marginRight="31dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
     <android.support.design.widget.AppBarLayout
             android:id="@+id/appbar"
             android:fitsSystemWindows="true"
@@ -41,9 +64,9 @@
             app:layout_anchor="@+id/tool_bar" app:layout_anchorGravity="top|right" android:visibility="visible"/>
     <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
-            android:id="@+id/nestedScrollView">
+            android:id="@+id/nestedScrollView" android:layout_marginBottom="45dp">
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -322,12 +345,12 @@
                                 android:layout_height="35dp"
                                 android:id="@+id/button1"
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                                android:background="@color/colorPrimary2"
                                 app:layout_constraintTop_toBottomOf="@+id/text1"
                                 android:textColor="@android:color/black" android:textSize="10sp"
                                 tools:ignore="SmallSp" android:focusable="false"
                                 app:layout_constraintEnd_toEndOf="@+id/img1"
-                                app:layout_constraintStart_toStartOf="@+id/img1"/>
+                                app:layout_constraintStart_toStartOf="@+id/img1"
+                                android:background="@color/colorPrimary2"/>
                         <ImageButton
                                 android:layout_width="34dp"
                                 android:layout_height="32dp" app:srcCompat="@drawable/ic_action_name"
@@ -382,7 +405,7 @@
                                 tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
                         <Button
                                 android:layout_width="135dp"
-                                android:layout_height="35dp"
+                                android:layout_height="34dp"
                                 android:id="@+id/button4"
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:layout_marginTop="202dp"

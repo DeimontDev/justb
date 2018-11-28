@@ -284,18 +284,25 @@ public class ShoppingCartActivity extends AppCompatActivity {
     }
 
     private void setNewAmount(String newAmount, TextView amount) {
+        Button order = findViewById(R.id.order_button);
+        TextView msg = findViewById(R.id.suma_minima);
+
         if (Integer.parseInt(newAmount) != 0) {
             if (Integer.parseInt(newAmount) < 70) {
-                Button order = findViewById(R.id.order_button);
                 order.setVisibility(View.GONE);
-                TextView msg = findViewById(R.id.suma_minima);
                 msg.setVisibility(View.VISIBLE);
+                newAmount += " lei";
+                SpannableString ss = new SpannableString(newAmount);
+                ss.setSpan(new UnderlineSpan(), 0, newAmount.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                amount.setText(ss);
                 return;
             }
             newAmount += " lei";
             SpannableString ss = new SpannableString(newAmount);
             ss.setSpan(new UnderlineSpan(), 0, newAmount.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
             amount.setText(ss);
+            order.setVisibility(View.VISIBLE);
+            msg.setVisibility(View.GONE);
         }
     }
 
