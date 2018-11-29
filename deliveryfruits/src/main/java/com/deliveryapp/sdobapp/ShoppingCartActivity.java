@@ -300,13 +300,13 @@ public class ShoppingCartActivity extends AppCompatActivity {
         TextView msg = findViewById(R.id.suma_minima);
 
         if (Integer.parseInt(newAmount) != 0) {
-            if (Integer.parseInt(newAmount) < 70) {
+            if (Integer.parseInt(newAmount) < GlobalConst.MINIMAL_AMOUNT) {
                 order.setVisibility(View.GONE);
                 msg.setVisibility(View.VISIBLE);
-                newAmount += " lei";
-                SpannableString ss = new SpannableString(newAmount);
-                ss.setSpan(new UnderlineSpan(), 0, newAmount.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-                amount.setText(ss);
+//                newAmount += " lei";
+//                SpannableString ss = new SpannableString(newAmount);
+//                ss.setSpan(new UnderlineSpan(), 0, newAmount.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+//                amount.setText(ss);
                 return;
             }
             newAmount += " lei";
@@ -317,6 +317,8 @@ public class ShoppingCartActivity extends AppCompatActivity {
             msg.setVisibility(View.GONE);
         } else {
             amount.setVisibility(View.GONE);
+            order.setVisibility(View.GONE);
+            msg.setVisibility(View.VISIBLE);
         }
     }
 
@@ -397,8 +399,6 @@ public class ShoppingCartActivity extends AppCompatActivity {
                 layout.setVisibility(View.GONE);
                 extras.removeExtra("product" + id);
                 COUNTER--;
-
-
             }
         };
     }
