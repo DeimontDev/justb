@@ -17,10 +17,11 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static com.deliveryapp.sdobapp.GlobalConst.COUNTER;
+import static com.deliveryapp.sdobapp.GlobalConst.*;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static int TOTAL_MAIN;
     private final int CALL_REQUEST = 100;
 
     @Override
@@ -37,6 +38,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TOTAL_MAIN = ShoppingCartActivity.TOTAL_SHOPPING;
+        TextView laMoment = findViewById(R.id.la_moment);
+        String text = String.valueOf(TOTAL_MAIN) + " lei";
+
+        if (TOTAL_MAIN < MINIMAL_AMOUNT) {
+            laMoment.setTextColor(Color.parseColor("#FFBE1C27"));
+        } else {
+            laMoment.setTextColor(Color.parseColor("#FF19BE40"));
+        }
+
+        laMoment.setText(text);
         FloatingActionButton fab = findViewById(R.id.basket_button);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
                     toBasket.setBackgroundColor(Color.parseColor("#FFB77E5E"));
                     toBasket.setText(R.string.added);
                     String quant = GlobalConst.intent.getStringExtra("quantity" + id);
+
                     TextView quantity = findViewById(res.getIdentifier(
                             "text" + String.valueOf(id), "id", getPackageName()));
                     quantity.setText(quant);
@@ -125,17 +138,32 @@ public class MainActivity extends AppCompatActivity {
                 view.setBackgroundColor(Color.parseColor("#FFB77E5E"));
                 TextView textView = (TextView) view;
                 TextView counter = findViewById(R.id.counter);
+                Resources res = getResources();
+
+                TextView laMoment = findViewById(R.id.la_moment);
+                TextView price = findViewById(res.getIdentifier(
+                        "price" + String.valueOf(id), "id", getPackageName()));
+                String clearPrice = price.getText().toString().substring(0, price.getText().toString().indexOf(" "));
+                int intPrice = Integer.parseInt(clearPrice);
 
                 if (textView.getText().toString().equals("Adaugă in coș")) {
                     textView.setText(R.string.added);
-                    Resources res = getResources();
+                    TextView quantity = findViewById(res.getIdentifier(
+                            "text" + String.valueOf(id), "id", getPackageName()));
+                    String actQuan = quantity.getText().toString();
+
+                    int totalPrice = intPrice * Integer.parseInt(actQuan);
+
+                    TOTAL_MAIN += totalPrice;
+                    String text = String.valueOf(TOTAL_MAIN) + " lei";
+                    laMoment.setText(text);
+
                     String newCount = String.valueOf(Integer.parseInt(counter.getText().toString()) + 1);
                     counter.setText(newCount);
                     COUNTER++;
                     TextView productName = findViewById(res.getIdentifier(
                             "product" + String.valueOf(id), "id", getPackageName()));
-                    TextView quantity = findViewById(res.getIdentifier(
-                            "text" + String.valueOf(id), "id", getPackageName()));
+
                     if (GlobalConst.intent == null) {
                         GlobalConst.intent = new Intent(MainActivity.this, ShoppingCartActivity.class);
                     }
@@ -150,6 +178,22 @@ public class MainActivity extends AppCompatActivity {
                     textView.setText(R.string.to_basket);
                     GlobalConst.intent.removeExtra("product" + id);
                     GlobalConst.intent.removeExtra("price" + id);
+
+                    TextView quantity = findViewById(res.getIdentifier(
+                            "text" + String.valueOf(id), "id", getPackageName()));
+                    String actQuan = quantity.getText().toString();
+
+                    int totalPrice = intPrice * Integer.parseInt(actQuan);
+
+                    TOTAL_MAIN = TOTAL_MAIN - totalPrice;
+                    String text = String.valueOf(TOTAL_MAIN) + " lei";
+                    laMoment.setText(text);
+                }
+
+                if (TOTAL_MAIN < MINIMAL_AMOUNT) {
+                    laMoment.setTextColor(Color.parseColor("#FFBE1C27"));
+                } else {
+                    laMoment.setTextColor(Color.parseColor("#FF19BE40"));
                 }
             }
         };
@@ -162,10 +206,46 @@ public class MainActivity extends AppCompatActivity {
                 Resources res = getResources();
                 TextView textView = findViewById(res.getIdentifier(
                         "text" + String.valueOf(id), "id", getPackageName()));
+                AppCompatButton toBasket = findViewById(res.getIdentifier(
+                        "button" + String.valueOf(id), "id", getPackageName()));
+
+                TextView laMoment = findViewById(R.id.la_moment);
+                TextView price = findViewById(res.getIdentifier(
+                        "price" + String.valueOf(id), "id", getPackageName()));
+                String clearPrice = price.getText().toString().substring(0, price.getText().toString().indexOf(" "));
+                int priceEntity = Integer.parseInt(clearPrice);
+
                 if (plus) {
                     setPlus(textView);
+
+                    if (!toBasket.getText().toString().equals("Adaugă in coș")) {
+                        TOTAL_MAIN = TOTAL_MAIN + priceEntity;
+                        String newPrice = String.valueOf(TOTAL_MAIN) + " lei";
+                        laMoment.setText(newPrice);
+                    }
                 } else {
+                    int text = Integer.parseInt(textView.getText().toString());
                     setMinus(textView);
+
+                    if (!toBasket.getText().toString().equals("Adaugă in coș")) {
+                        if (text > 1) {
+                            TOTAL_MAIN = TOTAL_MAIN - priceEntity;
+                            String newPrice = String.valueOf(TOTAL_MAIN) + " lei";
+                            laMoment.setText(newPrice);
+                        }
+                    }
+                }
+
+                if (GlobalConst.intent == null) {
+                    GlobalConst.intent = new Intent(MainActivity.this, ShoppingCartActivity.class);
+                }
+
+                intent.putExtra("quantity" + id, textView.getText().toString());
+
+                if (TOTAL_MAIN < MINIMAL_AMOUNT) {
+                    laMoment.setTextColor(Color.parseColor("#FFBE1C27"));
+                } else {
+                    laMoment.setTextColor(Color.parseColor("#FF19BE40"));
                 }
             }
         };

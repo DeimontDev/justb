@@ -1,9 +1,12 @@
 package com.deliveryapp.sdobapp;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -42,7 +45,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
     private static boolean FLAG = true;
 
     private final int CALL_REQUEST = 100;
-    private static int TOTAL;
+    public static int TOTAL_SHOPPING;
     private static int ORDER_NUMBER;
     private static String TOTAL2;
     private static String PRODUCT_NAME;
@@ -76,36 +79,45 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
         Resources res = getResources();
         TextView amount = findViewById(R.id.amount);
-        TOTAL = 0;
+        TOTAL_SHOPPING = 0;
         processPrice(res);
 
         processProduct(res);
         processButtons(res);
-        setNewAmount(String.valueOf(TOTAL), amount);
+        setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
 
         Button order = findViewById(R.id.order_button);
         order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (FLAG) {
-                    FLAG = false;
-                    final Thread call = new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            callPhoneNumber();
-                        }
-                    });
-                    call.start();
+                final ConnectivityManager conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                final NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
 
-                    Thread order = new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            processOrder();
-                        }
-                    });
-                    order.start();
+                if (activeNetwork != null && activeNetwork.isConnected()) {
+                    // notify user you are online
+                    if (FLAG) {
+                        FLAG = false;
+                        final Thread call = new Thread(new Runnable() {
+                            @Override
+                            public void run() {
+                                callPhoneNumber();
+                            }
+                        });
+                        call.start();
+
+                        Thread order = new Thread(new Runnable() {
+                            @Override
+                            public void run() {
+                                processOrder();
+                            }
+                        });
+                        order.start();
+                    } else {
+                        Toast.makeText(ShoppingCartActivity.this, "Comanda e acceptată", Toast.LENGTH_SHORT).show();
+                    }
                 } else {
-                    Toast.makeText(ShoppingCartActivity.this, "Comanda e acceptată", Toast.LENGTH_SHORT).show();
+                    // notify user you are not online
+                    Toast.makeText(ShoppingCartActivity.this, "Nu e acces la internet", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -163,7 +175,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
         try {
             PRODUCT_NAME = " ";
             QUANTITY = " ";
-            TOTAL2 = String.valueOf(TOTAL);
+            TOTAL2 = String.valueOf(TOTAL_SHOPPING);
             new SendRequest().execute();
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -303,6 +315,8 @@ public class ShoppingCartActivity extends AppCompatActivity {
             amount.setText(ss);
             order.setVisibility(View.VISIBLE);
             msg.setVisibility(View.GONE);
+        } else {
+            amount.setVisibility(View.GONE);
         }
     }
 
@@ -320,7 +334,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
                     priceActual *= quantityActual;
                 }
 
-                TOTAL = TOTAL + priceActual;
+                TOTAL_SHOPPING = TOTAL_SHOPPING + priceActual;
 
                 pric = String.valueOf(priceActual) + " lei";
                 price.setText(pric);
@@ -364,6 +378,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FLAG = true;
                 ORDER_NUMBER = (int) (Math.random() * 10000);
                 TextView orderNumber = findViewById(R.id.order_number);
                 orderNumber.setText(String.valueOf(ORDER_NUMBER));
@@ -374,14 +389,16 @@ public class ShoppingCartActivity extends AppCompatActivity {
                 TextView price = findViewById(res.getIdentifier(
                         "price" + String.valueOf(id), "id", getPackageName()));
                 String clearPrice = price.getText().toString().substring(0, price.getText().toString().indexOf(" "));
-                TOTAL = TOTAL - Integer.parseInt(clearPrice);
+                TOTAL_SHOPPING = TOTAL_SHOPPING - Integer.parseInt(clearPrice);
 
                 TextView amount = findViewById(R.id.amount);
-                setNewAmount(String.valueOf(TOTAL), amount);
+                setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
 
                 layout.setVisibility(View.GONE);
                 extras.removeExtra("product" + id);
                 COUNTER--;
+
+
             }
         };
     }
@@ -402,7 +419,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
                 if (plus) {
                     setPlus(textView);
 
-                    TOTAL = TOTAL + priceEntity;
+                    TOTAL_SHOPPING = TOTAL_SHOPPING + priceEntity;
                     String newPrice = String.valueOf(Integer.parseInt(clearPrice) + priceEntity) + " lei";
                     price.setText(newPrice);
                 } else {
@@ -416,7 +433,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
                         COUNTER--;
                     }
 
-                    TOTAL = TOTAL - priceEntity;
+                    TOTAL_SHOPPING = TOTAL_SHOPPING - priceEntity;
                     String newPrice = String.valueOf(Integer.parseInt(clearPrice) - priceEntity) + " lei";
                     price.setText(newPrice);
                 }
@@ -426,17 +443,21 @@ public class ShoppingCartActivity extends AppCompatActivity {
                 orderNumber.setText(String.valueOf(ORDER_NUMBER));
 
                 TextView amount = findViewById(R.id.amount);
-                setNewAmount(String.valueOf(TOTAL), amount);
+                setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
+
+                GlobalConst.intent.putExtra("quantity" + id, textView.getText().toString());
             }
         };
     }
 
     private void setPlus(TextView textView) {
+        FLAG = true;
         int newText = Integer.parseInt(textView.getText().toString()) + 1;
         textView.setText(String.valueOf(newText));
     }
 
     private void setMinus(TextView textView) {
+        FLAG = true;
         int text = Integer.parseInt(textView.getText().toString());
 
         if (text > 0) {
