@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             Intent callIntent = new Intent(Intent.ACTION_CALL);
-            callIntent.setData(Uri.parse("tel:" + "123456"));
+            callIntent.setData(Uri.parse("tel:" + PHONE_NUMBER));
             startActivity(callIntent);
         } catch (Exception ex) {
             ex.printStackTrace();

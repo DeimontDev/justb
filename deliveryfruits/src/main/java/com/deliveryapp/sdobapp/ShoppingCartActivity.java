@@ -39,6 +39,7 @@ import java.util.Iterator;
 import java.util.Locale;
 
 import static com.deliveryapp.sdobapp.GlobalConst.COUNTER;
+import static com.deliveryapp.sdobapp.GlobalConst.PHONE_NUMBER;
 
 public class ShoppingCartActivity extends AppCompatActivity {
 
@@ -199,7 +200,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
             }
 
             Intent callIntent = new Intent(Intent.ACTION_CALL);
-            callIntent.setData(Uri.parse("tel:" + "123456"));
+            callIntent.setData(Uri.parse("tel:" + PHONE_NUMBER));
             startActivity(callIntent);
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -303,10 +304,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
             if (Integer.parseInt(newAmount) < GlobalConst.MINIMAL_AMOUNT) {
                 order.setVisibility(View.GONE);
                 msg.setVisibility(View.VISIBLE);
-//                newAmount += " lei";
-//                SpannableString ss = new SpannableString(newAmount);
-//                ss.setSpan(new UnderlineSpan(), 0, newAmount.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-//                amount.setText(ss);
+
                 return;
             }
             newAmount += " lei";
