@@ -33,12 +33,15 @@
             android:layout_height="wrap_content"
             android:clickable="true" app:srcCompat="@drawable/back"
             android:id="@+id/back" android:layout_margin="10dp"
-            app:backgroundTint="@color/colorPrimaryDark" android:tint="@color/colorPrimary22132" app:fabSize="mini"/>
+            app:backgroundTint="@color/colorPrimaryDark" android:tint="@color/colorPrimary22132" app:fabSize="mini"
+            android:focusable="true"/>
     <android.support.constraint.ConstraintLayout
+            android:layout_gravity="bottom"
             android:layout_width="match_parent"
             android:layout_height="200dp" android:layout_marginTop="480dp"
             android:background="#ded4d4" android:overScrollMode="ifContentScrolls"
-            android:isScrollContainer="false" tools:overScrollMode="always">
+            android:isScrollContainer="false" tools:overScrollMode="always" android:foregroundGravity="bottom"
+            android:id="@+id/bottom_lay">
         <TextView
                 android:text="@string/total"
                 android:layout_width="wrap_content"
@@ -102,8 +105,9 @@
     </android.support.constraint.ConstraintLayout>
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="420dp" style="@android:style/Widget.DeviceDefault.Light.ScrollView"
-            android:fillViewport="false" android:clipToPadding="false" android:layout_marginTop="57dp">
+            android:layout_height="match_parent" style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+            android:fillViewport="false" android:clipToPadding="false" android:layout_marginTop="57dp"
+            android:layout_marginBottom="200dp">
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

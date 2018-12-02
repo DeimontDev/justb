@@ -1,6 +1,7 @@
 package com.deliveryapp.sdobapp;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
@@ -8,11 +9,14 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
+import android.text.InputFilter;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +27,19 @@ public class MainActivity extends AppCompatActivity {
 
     private static int TOTAL_MAIN;
     private final int CALL_REQUEST = 100;
+
+    public static void hideSoftKeyboard(Activity activity) {
+        InputMethodManager inputMethodManager =
+                (InputMethodManager) activity.getSystemService(
+                        Activity.INPUT_METHOD_SERVICE);
+
+        if (inputMethodManager != null) {
+            if (activity.getCurrentFocus() != null) {
+                inputMethodManager.hideSoftInputFromWindow(
+                        activity.getCurrentFocus().getWindowToken(), 0);
+            }
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +78,46 @@ public class MainActivity extends AppCompatActivity {
         Resources res = getResources();
         processBasketActions(res);
         processPlusMinus(res);
+        processTextQuantity(res);
+        processImages(res);
+    }
+
+    public void processImages(final Resources res) {
+        for (int i = 0; i < 20; i++) {
+            int id = i + 1;
+            final ImageButton img = findViewById(res.getIdentifier(
+                    "img" + String.valueOf(id), "id", getPackageName()));
+            img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    processOnClickAnotherPart(res);
+                }
+            });
+        }
+    }
+
+    public void processTextQuantity(final Resources res) {
+        for (int i = 0; i < 20; i++) {
+            int id = i + 1;
+            final TextView quantity = findViewById(res.getIdentifier(
+                    "text" + String.valueOf(id), "id", getPackageName()));
+            quantity.setFilters(new InputFilter[]{new MinMaxFilter("1", "200")});
+
+            quantity.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    quantity.setCursorVisible(true);
+                }
+            });
+        }
+
+        ConstraintLayout cont = findViewById(R.id.constr_layout);
+        cont.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                processOnClickAnotherPart(res);
+            }
+        });
     }
 
     public void callPhoneNumber() {
@@ -131,6 +188,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void processOnClickAnotherPart(Resources res) {
+        hideSoftKeyboard(MainActivity.this);
+        for (int i = 0; i < 20; i++) {
+            int id = i + 1;
+            final TextView quantity = findViewById(res.getIdentifier(
+                    "text" + String.valueOf(id), "id", getPackageName()));
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                if (quantity.isCursorVisible()) {
+                    quantity.setCursorVisible(false);
+                }
+            }
+        }
+    }
+
     private View.OnClickListener basketListener(final int id) {
         return new View.OnClickListener() {
             @Override
@@ -147,10 +219,16 @@ public class MainActivity extends AppCompatActivity {
                 int intPrice = Integer.parseInt(clearPrice);
 
                 if (textView.getText().toString().equals("Adaugă in coș")) {
-                    textView.setText(R.string.added);
                     TextView quantity = findViewById(res.getIdentifier(
                             "text" + String.valueOf(id), "id", getPackageName()));
                     String actQuan = quantity.getText().toString();
+
+                    if (actQuan.equals("")) {
+                        quantity.setText("1");
+                    }
+
+                    actQuan = quantity.getText().toString();
+                    textView.setText(R.string.added);
 
                     int totalPrice = intPrice * Integer.parseInt(actQuan);
 
@@ -183,9 +261,19 @@ public class MainActivity extends AppCompatActivity {
                             "text" + String.valueOf(id), "id", getPackageName()));
                     String actQuan = quantity.getText().toString();
 
+                    if (actQuan.equals("")) {
+                        quantity.setText("1");
+                    }
+
+                    actQuan = quantity.getText().toString();
+
                     int totalPrice = intPrice * Integer.parseInt(actQuan);
 
-                    TOTAL_MAIN = TOTAL_MAIN - totalPrice;
+                    if (totalPrice <= TOTAL_MAIN) {
+                        TOTAL_MAIN = TOTAL_MAIN - totalPrice;
+                    } else {
+                        TOTAL_MAIN = 0;
+                    }
                     String text = String.valueOf(TOTAL_MAIN) + " lei";
                     laMoment.setText(text);
                 }

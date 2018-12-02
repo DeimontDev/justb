@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:layout_marginTop="430dp"
             android:background="@color/grey" android:overScrollMode="ifContentScrolls"
-            android:isScrollContainer="false" tools:overScrollMode="always">
+            android:isScrollContainer="false" tools:overScrollMode="always" android:id="@+id/bottom_lay">
         <TextView
                 android:visibility="visible"
                 android:text="@string/suma_minima"

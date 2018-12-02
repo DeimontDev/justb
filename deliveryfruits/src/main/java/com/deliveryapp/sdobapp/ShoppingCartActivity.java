@@ -15,6 +15,7 @@ import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
@@ -40,6 +41,7 @@ import java.util.Locale;
 
 import static com.deliveryapp.sdobapp.GlobalConst.COUNTER;
 import static com.deliveryapp.sdobapp.GlobalConst.PHONE_NUMBER;
+import static com.deliveryapp.sdobapp.MainActivity.hideSoftKeyboard;
 
 public class ShoppingCartActivity extends AppCompatActivity {
 
@@ -85,6 +87,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
         processProduct(res);
         processButtons(res);
+        processTextQuantity(res);
         setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
 
         Button order = findViewById(R.id.order_button);
@@ -204,6 +207,45 @@ public class ShoppingCartActivity extends AppCompatActivity {
             startActivity(callIntent);
         } catch (Exception ex) {
             ex.printStackTrace();
+        }
+    }
+
+    public void processTextQuantity(final Resources res) {
+        for (int i = 0; i < 20; i++) {
+            int id = i + 1;
+            final TextView quantity = findViewById(res.getIdentifier(
+                    "text" + String.valueOf(id), "id", getPackageName()));
+            quantity.setFilters(new InputFilter[]{new MinMaxFilter("1", "200")});
+
+            quantity.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    quantity.setCursorVisible(true);
+                }
+            });
+        }
+
+        ConstraintLayout cont = findViewById(R.id.bottom_lay);
+        cont.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                processOnClickAnotherPart(res);
+            }
+        });
+    }
+
+    public void processOnClickAnotherPart(Resources res) {
+        hideSoftKeyboard(ShoppingCartActivity.this);
+        for (int i = 0; i < 20; i++) {
+            int id = i + 1;
+            final TextView quantity = findViewById(res.getIdentifier(
+                    "text" + String.valueOf(id), "id", getPackageName()));
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                if (quantity.isCursorVisible()) {
+                    quantity.setCursorVisible(false);
+                }
+            }
         }
     }
 
