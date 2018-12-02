@@ -16,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.text.InputFilter;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         TextView counter = findViewById(R.id.counter);
         counter.setText(String.valueOf(COUNTER));
         findViewById(R.id.call_button).setOnClickListener(new View.OnClickListener() {
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             img.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    processOnClickAnotherPart(res);
+                    hideSoftKeyboard(MainActivity.this);
                 }
             });
         }
@@ -115,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                processOnClickAnotherPart(res);
+                hideSoftKeyboard(MainActivity.this);
             }
         });
     }
@@ -185,21 +187,6 @@ public class MainActivity extends AppCompatActivity {
             ImageButton minus = findViewById(res.getIdentifier(
                     "minus" + String.valueOf(id), "id", getPackageName()));
             minus.setOnClickListener(plusMinusListener(id, false));
-        }
-    }
-
-    public void processOnClickAnotherPart(Resources res) {
-        hideSoftKeyboard(MainActivity.this);
-        for (int i = 0; i < 20; i++) {
-            int id = i + 1;
-            final TextView quantity = findViewById(res.getIdentifier(
-                    "text" + String.valueOf(id), "id", getPackageName()));
-
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                if (quantity.isCursorVisible()) {
-                    quantity.setCursorVisible(false);
-                }
-            }
         }
     }
 

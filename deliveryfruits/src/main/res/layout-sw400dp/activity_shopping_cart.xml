@@ -38,7 +38,7 @@
     <android.support.constraint.ConstraintLayout
             android:layout_gravity="bottom"
             android:layout_width="match_parent"
-            android:layout_height="200dp" android:layout_marginTop="480dp"
+            android:layout_height="190dp" android:layout_marginTop="480dp"
             android:background="#ded4d4" android:overScrollMode="ifContentScrolls"
             android:isScrollContainer="false" tools:overScrollMode="always" android:foregroundGravity="bottom"
             android:id="@+id/bottom_lay">
@@ -107,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" style="@android:style/Widget.DeviceDefault.Light.ScrollView"
             android:fillViewport="false" android:clipToPadding="false" android:layout_marginTop="57dp"
-            android:layout_marginBottom="200dp">
+            android:layout_marginBottom="190dp">
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
