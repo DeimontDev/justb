@@ -12,19 +12,16 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.text.InputFilter;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 import org.json.JSONObject;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -45,14 +42,13 @@ import static com.deliveryapp.sdobapp.MainActivity.hideSoftKeyboard;
 
 public class ShoppingCartActivity extends AppCompatActivity {
 
-    private static boolean FLAG = true;
-
-    private final int CALL_REQUEST = 100;
     public static int TOTAL_SHOPPING;
+    private static boolean FLAG = true;
     private static int ORDER_NUMBER;
     private static String TOTAL2;
     private static String PRODUCT_NAME;
     private static String QUANTITY;
+    private final int CALL_REQUEST = 100;
     private Intent extras = GlobalConst.intent;
 
     @Override
@@ -211,42 +207,43 @@ public class ShoppingCartActivity extends AppCompatActivity {
     }
 
     public void processTextQuantity(final Resources res) {
-        for (int i = 0; i < 20; i++) {
-            int id = i + 1;
-            final TextView quantity = findViewById(res.getIdentifier(
-                    "text" + String.valueOf(id), "id", getPackageName()));
-            quantity.setFilters(new InputFilter[]{new MinMaxFilter("1", "200")});
+//        final ConstraintLayout bottomLay = findViewById(R.id.bottom_lay);
+//
+//        for (int i = 0; i < 20; i++) {
+//            int id = i + 1;
+//            final TextView quantity = findViewById(res.getIdentifier(
+//                    "text" + String.valueOf(id), "id", getPackageName()));
+//            quantity.setFilters(new InputFilter[]{new MinMaxFilter("1", "200")});
+//
+//            quantity.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    quantity.setCursorVisible(true);
+//                }
+//            });
+//        }
 
-            quantity.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    quantity.setCursorVisible(true);
-                }
-            });
-        }
-
-        ConstraintLayout cont = findViewById(R.id.bottom_lay);
+        ConstraintLayout basketLay = findViewById(R.id.lay_basket);
+        basketLay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                hideSoftKeyboard(ShoppingCartActivity.this);
+            }
+        });
+        ScrollView basketScroll = findViewById(R.id.basket_scroll);
+        basketScroll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                hideSoftKeyboard(ShoppingCartActivity.this);
+            }
+        });
+        CoordinatorLayout cont = findViewById(R.id.coord);
         cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                processOnClickAnotherPart(res);
+                hideSoftKeyboard(ShoppingCartActivity.this);
             }
         });
-    }
-
-    public void processOnClickAnotherPart(Resources res) {
-        hideSoftKeyboard(ShoppingCartActivity.this);
-        for (int i = 0; i < 20; i++) {
-            int id = i + 1;
-            final TextView quantity = findViewById(res.getIdentifier(
-                    "text" + String.valueOf(id), "id", getPackageName()));
-
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                if (quantity.isCursorVisible()) {
-                    quantity.setCursorVisible(false);
-                }
-            }
-        }
     }
 
     @Override
@@ -285,59 +282,6 @@ public class ShoppingCartActivity extends AppCompatActivity {
         return result.toString();
     }
 
-    public class SendRequest extends AsyncTask<String, Void, String> {
-        protected void onPreExecute() {
-        }
-
-        protected String doInBackground(String... arg0) {
-            try {
-                URL url = new URL("https://script.google.com/macros/s/AKfycbxFZC9YPpG1-A_StZ583S0jtkmApNOEFclM8eKJ3aLB0zwiHN0/exec");
-                JSONObject postDataParams = new JSONObject();
-
-                String id = "1V9XMhpxFsfe8xXgWEfnGIYcPyLWd8wll9evUmRofDxs";
-
-                postDataParams.put("Product", PRODUCT_NAME);
-                postDataParams.put("cantitatea", QUANTITY);
-                postDataParams.put("total", TOTAL2);
-                postDataParams.put("id", id);
-
-
-                Log.e("params", postDataParams.toString());
-
-                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                conn.setReadTimeout(15000 /* milliseconds */);
-                conn.setConnectTimeout(15000 /* milliseconds */);
-                conn.setRequestMethod("POST");
-//                conn.setDoInput(true);
-                conn.setDoOutput(true);
-
-                OutputStream os = conn.getOutputStream();
-                BufferedWriter writer = new BufferedWriter(
-                        new OutputStreamWriter(os, "UTF-8"));
-                writer.write(getPostDataString(postDataParams));
-
-                writer.flush();
-                writer.close();
-                os.close();
-
-                int responseCode = conn.getResponseCode();
-
-                if (responseCode == HttpsURLConnection.HTTP_OK) {
-                    return "Ваш заказ принят";
-                } else {
-                    return "false : " + responseCode;
-                }
-            } catch (Exception e) {
-                return "Exception: " + e.getMessage();
-            }
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-
-        }
-    }
-
     private void setNewAmount(String newAmount, TextView amount) {
         Button order = findViewById(R.id.order_button);
         TextView msg = findViewById(R.id.suma_minima);
@@ -346,6 +290,11 @@ public class ShoppingCartActivity extends AppCompatActivity {
             if (Integer.parseInt(newAmount) < GlobalConst.MINIMAL_AMOUNT) {
                 order.setVisibility(View.GONE);
                 msg.setVisibility(View.VISIBLE);
+
+                newAmount += " lei";
+                SpannableString ss = new SpannableString(newAmount);
+                ss.setSpan(new UnderlineSpan(), 0, newAmount.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                amount.setText(ss);
 
                 return;
             }
@@ -457,20 +406,26 @@ public class ShoppingCartActivity extends AppCompatActivity {
                 int priceEntity = Integer.parseInt(clearPrice) / Integer.parseInt(actQuan);
 
                 if (plus) {
-                    setPlus(textView);
+                    int newText = Integer.parseInt(textView.getText().toString());
 
-                    TOTAL_SHOPPING = TOTAL_SHOPPING + priceEntity;
-                    String newPrice = String.valueOf(Integer.parseInt(clearPrice) + priceEntity) + " lei";
-                    price.setText(newPrice);
+                    if (newText < 200) {
+                        setPlus(textView);
+
+                        TOTAL_SHOPPING = TOTAL_SHOPPING + priceEntity;
+                        String newPrice = String.valueOf(Integer.parseInt(clearPrice) + priceEntity) + " lei";
+                        price.setText(newPrice);
+                    }
                 } else {
-                    setMinus(textView);
+                    int currText = Integer.parseInt(textView.getText().toString());
 
-                    if (Integer.parseInt(textView.getText().toString()) == 0) {
+                    if (currText == 1) {
                         ConstraintLayout layout = findViewById(res.getIdentifier(
                                 "lay" + String.valueOf(id), "id", getPackageName()));
                         layout.setVisibility(View.GONE);
                         extras.removeExtra("product" + id);
                         COUNTER--;
+                    } else {
+                        setMinus(textView);
                     }
 
                     TOTAL_SHOPPING = TOTAL_SHOPPING - priceEntity;
@@ -478,14 +433,17 @@ public class ShoppingCartActivity extends AppCompatActivity {
                     price.setText(newPrice);
                 }
 
-                ORDER_NUMBER = (int) (Math.random() * 10000);
-                TextView orderNumber = findViewById(R.id.order_number);
-                orderNumber.setText(String.valueOf(ORDER_NUMBER));
+                if (Integer.parseInt(textView.getText().toString()) != 200) {
+                    ORDER_NUMBER = (int) (Math.random() * 10000);
+                    TextView orderNumber = findViewById(R.id.order_number);
+                    orderNumber.setText(String.valueOf(ORDER_NUMBER));
 
-                TextView amount = findViewById(R.id.amount);
-                setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
+                    TextView amount = findViewById(R.id.amount);
+                    setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
 
-                GlobalConst.intent.putExtra("quantity" + id, textView.getText().toString());
+                    GlobalConst.intent.putExtra("quantity" + id, textView.getText().toString());
+                }
+
             }
         };
     }
@@ -500,9 +458,60 @@ public class ShoppingCartActivity extends AppCompatActivity {
         FLAG = true;
         int text = Integer.parseInt(textView.getText().toString());
 
-        if (text > 0) {
-            int newText = text - 1;
-            textView.setText(String.valueOf(newText));
+        int newText = text - 1;
+        textView.setText(String.valueOf(newText));
+    }
+
+    public class SendRequest extends AsyncTask<String, Void, String> {
+        protected void onPreExecute() {
+        }
+
+        protected String doInBackground(String... arg0) {
+            try {
+                URL url = new URL("https://script.google.com/macros/s/AKfycbxFZC9YPpG1-A_StZ583S0jtkmApNOEFclM8eKJ3aLB0zwiHN0/exec");
+                JSONObject postDataParams = new JSONObject();
+
+                String id = "1V9XMhpxFsfe8xXgWEfnGIYcPyLWd8wll9evUmRofDxs";
+
+                postDataParams.put("Product", PRODUCT_NAME);
+                postDataParams.put("cantitatea", QUANTITY);
+                postDataParams.put("total", TOTAL2);
+                postDataParams.put("id", id);
+
+
+                Log.e("params", postDataParams.toString());
+
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setReadTimeout(15000 /* milliseconds */);
+                conn.setConnectTimeout(15000 /* milliseconds */);
+                conn.setRequestMethod("POST");
+//                conn.setDoInput(true);
+                conn.setDoOutput(true);
+
+                OutputStream os = conn.getOutputStream();
+                BufferedWriter writer = new BufferedWriter(
+                        new OutputStreamWriter(os, "UTF-8"));
+                writer.write(getPostDataString(postDataParams));
+
+                writer.flush();
+                writer.close();
+                os.close();
+
+                int responseCode = conn.getResponseCode();
+
+                if (responseCode == HttpsURLConnection.HTTP_OK) {
+                    return "Ваш заказ принят";
+                } else {
+                    return "false : " + responseCode;
+                }
+            } catch (Exception e) {
+                return "Exception: " + e.getMessage();
+            }
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+
         }
     }
 }

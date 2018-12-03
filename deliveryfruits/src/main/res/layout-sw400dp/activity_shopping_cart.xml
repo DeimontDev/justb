@@ -72,7 +72,7 @@
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/total" android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/total" android:layout_marginTop="40dp"
                 android:background="@color/colorPrimary1"/>
         <TextView
                 android:text="@string/order_text"
@@ -107,12 +107,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" style="@android:style/Widget.DeviceDefault.Light.ScrollView"
             android:fillViewport="false" android:clipToPadding="false" android:layout_marginTop="57dp"
-            android:layout_marginBottom="190dp">
+            android:layout_marginBottom="190dp" android:id="@+id/basket_scroll">
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:focusable="true"
-                android:background="#f7f5f4">
+
+                android:background="#f7f5f4" android:id="@+id/lay_basket">
 
             <android.support.constraint.ConstraintLayout
                     android:orientation="vertical"
@@ -159,15 +159,15 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
-                        android:layout_height="40dp"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text1" android:text="@string/_1"
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
-                        android:focusable="false"
+
                         app:layout_constraintEnd_toStartOf="@+id/plus1"
                         app:layout_constraintTop_toBottomOf="@+id/name1" android:layout_marginTop="20dp"
                         app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="5dp"/>
@@ -229,12 +229,11 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text2"
-                        android:focusable="false"
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -300,12 +299,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text3"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -371,12 +370,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text4"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -442,12 +441,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text6"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -513,12 +512,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text5"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -584,12 +583,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text7"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -655,12 +654,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text8"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -726,12 +725,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text9"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -797,12 +796,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text10"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -869,12 +868,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text11"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -940,12 +939,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text12"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -1011,12 +1010,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text13"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -1083,12 +1082,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text14"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -1154,12 +1153,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text15"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -1225,12 +1224,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text16"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -1296,12 +1295,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text17"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -1367,12 +1366,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text18"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -1438,12 +1437,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text19"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"
@@ -1509,12 +1508,12 @@
                         android:tint="@android:color/holo_orange_light" app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"/>
                 <EditText
-                        android:layout_width="30dp"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/text20"
-                        android:focusable="false"
+
                         style="@style/Widget.AppCompat.AutoCompleteTextView" android:singleLine="true"
                         android:textAppearance="@style/TextAppearance.AppCompat" android:gravity="center"
                         android:textSize="18sp" android:textStyle="bold"

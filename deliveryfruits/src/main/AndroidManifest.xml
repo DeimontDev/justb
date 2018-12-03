@@ -17,10 +17,12 @@
             android:allowBackup="true"
             android:icon="@drawable/americano1"
             android:label="@string/app_name"
-            android:roundIcon="@drawable/cruasan"
+            android:roundIcon="@drawable/americano1"
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name="com.deliveryapp.sdobapp.MainActivity">
+        <activity
+                android:name="com.deliveryapp.sdobapp.MainActivity"
+                android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -29,6 +31,7 @@
         <activity
                 android:name="com.deliveryapp.sdobapp.ShoppingCartActivity"
                 android:label="@string/title_activity_shopping_cart"
+                android:windowSoftInputMode="adjustPan"
                 android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         </activity>
     </application>

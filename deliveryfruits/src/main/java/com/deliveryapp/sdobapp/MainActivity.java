@@ -291,12 +291,16 @@ public class MainActivity extends AppCompatActivity {
                 int priceEntity = Integer.parseInt(clearPrice);
 
                 if (plus) {
-                    setPlus(textView);
+                    int newText = Integer.parseInt(textView.getText().toString());
 
-                    if (!toBasket.getText().toString().equals("Adaugă in coș")) {
-                        TOTAL_MAIN = TOTAL_MAIN + priceEntity;
-                        String newPrice = String.valueOf(TOTAL_MAIN) + " lei";
-                        laMoment.setText(newPrice);
+                    if (newText < 200) {
+                        setPlus(textView);
+
+                        if (!toBasket.getText().toString().equals("Adaugă in coș")) {
+                            TOTAL_MAIN = TOTAL_MAIN + priceEntity;
+                            String newPrice = String.valueOf(TOTAL_MAIN) + " lei";
+                            laMoment.setText(newPrice);
+                        }
                     }
                 } else {
                     int text = Integer.parseInt(textView.getText().toString());
