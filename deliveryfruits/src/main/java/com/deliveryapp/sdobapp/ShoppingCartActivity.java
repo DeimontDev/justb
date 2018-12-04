@@ -15,12 +15,16 @@ import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputFilter;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
 import android.util.Log;
 import android.view.View;
-import android.widget.*;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
 import org.json.JSONObject;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -35,14 +39,15 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Locale;
 
-import static com.deliveryapp.sdobapp.GlobalConst.COUNTER;
-import static com.deliveryapp.sdobapp.GlobalConst.PHONE_NUMBER;
+import static com.deliveryapp.sdobapp.GlobalConst.*;
 import static com.deliveryapp.sdobapp.MainActivity.hideSoftKeyboard;
 
 public class ShoppingCartActivity extends AppCompatActivity {
 
     public static int TOTAL_SHOPPING;
     private static boolean FLAG = true;
+    private static boolean LAY_FLAG = true;
+    private static int PROCESSED_ID;
     private static int ORDER_NUMBER;
     private static String TOTAL2;
     private static String PRODUCT_NAME;
@@ -83,6 +88,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
         processProduct(res);
         processButtons(res);
         processTextQuantity();
+        setFilters(res);
         setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
 
         Button order = findViewById(R.id.order_button);
@@ -120,6 +126,22 @@ public class ShoppingCartActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void setFilters(Resources res) {
+        for (int i = 0; i < 20; i++) {
+            int id = i + 1;
+            final TextView quantity = findViewById(res.getIdentifier(
+                    "text" + String.valueOf(id), "id", getPackageName()));
+            quantity.setFilters(new InputFilter[]{new MinMaxFilter("1", "200")});
+
+            quantity.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    quantity.setCursorVisible(true);
+                }
+            });
+        }
     }
 
     public void processOrder() {
@@ -269,27 +291,59 @@ public class ShoppingCartActivity extends AppCompatActivity {
     }
 
     public void processTextQuantity() {
+        final Resources res = getResources();
+
         ConstraintLayout basketLay = findViewById(R.id.lay_basket);
         basketLay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 hideSoftKeyboard(ShoppingCartActivity.this);
+
+                for (int i = 1; i <= 20; i++) {
+                    if (extras != null && extras.getStringExtra("product" + i) != null) {
+                        TextView price = findViewById(res.getIdentifier(
+                                "price" + String.valueOf(i), "id", getPackageName()));
+                        String pric = price.getText().toString().substring(0, price.getText().toString().indexOf(" "));
+                        TextView quantity = findViewById(res.getIdentifier(
+                                "text" + String.valueOf(i), "id", getPackageName()));
+                        String actQuan = quantity.getText().toString();
+                        String oldQuantity = extras.getStringExtra("quantity" + i);
+
+                        if (!actQuan.equals(oldQuantity)) {
+                            int priceActual = Integer.parseInt(pric);
+                            int priceEntity = priceActual / Integer.parseInt(oldQuantity);
+
+                            if (actQuan.equals("") || actQuan.equals("0")) {
+                                priceActual = priceEntity;
+                                TOTAL_SHOPPING = TOTAL_SHOPPING - Integer.parseInt(pric);
+                                TOTAL_SHOPPING = TOTAL_SHOPPING + priceActual;
+
+                                pric = String.valueOf(priceActual) + " lei";
+                                price.setText(pric);
+                                intent.putExtra("quantity" + i, "1");
+
+                                TextView amount = findViewById(R.id.amount);
+                                setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
+                                quantity.setText(String.valueOf("1"));
+                            } else {
+                                int quantityActual = Integer.parseInt(actQuan);
+                                priceActual = priceEntity * quantityActual;
+
+                                TOTAL_SHOPPING = TOTAL_SHOPPING - Integer.parseInt(pric);
+                                TOTAL_SHOPPING = TOTAL_SHOPPING + priceActual;
+
+                                pric = String.valueOf(priceActual) + " lei";
+                                price.setText(pric);
+                                intent.putExtra("quantity" + i, actQuan);
+
+                                TextView amount = findViewById(R.id.amount);
+                                setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
+                            }
+                        }
+                    }
+                }
             }
         });
-        ScrollView basketScroll = findViewById(R.id.basket_scroll);
-        basketScroll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                hideSoftKeyboard(ShoppingCartActivity.this);
-            }
-        });
-//        CoordinatorLayout cont = findViewById(R.id.coord);
-//        cont.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                hideSoftKeyboard(ShoppingCartActivity.this);
-//            }
-//        });
     }
 
     @Override
@@ -449,10 +503,12 @@ public class ShoppingCartActivity extends AppCompatActivity {
                         "price" + String.valueOf(id), "id", getPackageName()));
                 String actQuan = textView.getText().toString();
                 String clearPrice = price.getText().toString().substring(0, price.getText().toString().indexOf(" "));
+                actQuan = actQuan.equals("0") || actQuan.equals("") ? "1" : actQuan;
                 int priceEntity = Integer.parseInt(clearPrice) / Integer.parseInt(actQuan);
 
                 if (plus) {
-                    int newText = Integer.parseInt(textView.getText().toString());
+                    String txt = textView.getText().toString().equals("") ? "1" : textView.getText().toString();
+                    int newText = Integer.parseInt(txt);
 
                     if (newText < 200) {
                         setPlus(textView);
@@ -462,7 +518,8 @@ public class ShoppingCartActivity extends AppCompatActivity {
                         price.setText(newPrice);
                     }
                 } else {
-                    int currText = Integer.parseInt(textView.getText().toString());
+                    String txt = textView.getText().toString().equals("") ? "1" : textView.getText().toString();
+                    int currText = Integer.parseInt(txt);
 
                     if (currText == 1) {
                         ConstraintLayout layout = findViewById(res.getIdentifier(
@@ -479,7 +536,9 @@ public class ShoppingCartActivity extends AppCompatActivity {
                     price.setText(newPrice);
                 }
 
-                if (Integer.parseInt(textView.getText().toString()) != 200) {
+                String updQuantity = textView.getText().toString().equals("") ? "1" : textView.getText().toString();
+
+                if (Integer.parseInt(updQuantity) != 200) {
                     ORDER_NUMBER = (int) (Math.random() * 10000);
                     TextView orderNumber = findViewById(R.id.order_number);
                     orderNumber.setText(String.valueOf(ORDER_NUMBER));
@@ -487,7 +546,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
                     TextView amount = findViewById(R.id.amount);
                     setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
 
-                    GlobalConst.intent.putExtra("quantity" + id, textView.getText().toString());
+                    GlobalConst.intent.putExtra("quantity" + id, updQuantity);
                 }
 
             }

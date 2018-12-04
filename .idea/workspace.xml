@@ -29,9 +29,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5c221e-4e6b-4119-8e15-1a6302f1f725" name="Default" comment="Fixed some bugs">
+    <list default="true" id="7c5c221e-4e6b-4119-8e15-1a6302f1f725" name="Default" comment="Added new method of sending request">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/sdobapp/ShoppingCartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/sdobapp/ShoppingCartActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,16 +149,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="java" value="10040" />
-          <entry key="txt" value="2430" />
+          <entry key="java" value="10695" />
+          <entry key="txt" value="2465" />
           <entry key="xml" value="1460" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="10040" />
-          <entry key="PLAIN_TEXT" value="2430" />
+          <entry key="JAVA" value="10695" />
+          <entry key="PLAIN_TEXT" value="2465" />
           <entry key="XML" value="1460" />
         </counts>
       </usages-collector>
@@ -168,8 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/sdobapp/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="235" column="70" selection-start-line="235" selection-start-column="70" selection-end-line="235" selection-end-column="70" />
+            <state relative-caret-position="204">
+              <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="113" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -219,32 +220,31 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/sdobapp/ShoppingCartActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="236" column="41" selection-start-line="236" selection-start-column="41" selection-end-line="236" selection-end-column="41" />
+            <state relative-caret-position="355">
+              <caret line="548" column="76" selection-start-line="548" selection-start-column="76" selection-end-line="548" selection-end-column="76" />
               <folding>
-                <element signature="e#3613#3822#0" expanded="true" />
-                <element signature="e#3821#3822#0" expanded="true" />
-                <element signature="e#3914#4120#0" expanded="true" />
-                <element signature="e#4119#4120#0" expanded="true" />
-                <element signature="e#4709#5011#0" expanded="true" />
-                <element signature="e#5010#5011#0" expanded="true" />
-                <element signature="e#5112#5556#0" expanded="true" />
-                <element signature="e#5555#5556#0" expanded="true" />
-                <element signature="e#5657#5944#0" expanded="true" />
-                <element signature="e#5943#5944#0" expanded="true" />
-                <element signature="e#6045#7818#0" expanded="true" />
-                <element signature="e#7817#7818#0" expanded="true" />
-                <element signature="e#7919#8215#0" expanded="true" />
-                <element signature="e#8214#8215#0" expanded="true" />
-                <element signature="e#8316#8517#0" expanded="true" />
-                <element signature="e#8516#8517#0" expanded="true" />
-                <element signature="e#9873#10053#0" expanded="true" />
-                <element signature="e#10052#10053#0" expanded="true" />
+                <element signature="e#3827#4036#0" expanded="true" />
+                <element signature="e#4035#4036#0" expanded="true" />
+                <element signature="method#processOrder#0;class#ShoppingCartActivity#0" />
+                <element signature="e#5501#6046#0" expanded="true" />
+                <element signature="e#6045#6046#0" expanded="true" />
+                <element signature="e#6147#6834#0" expanded="true" />
+                <element signature="e#6833#6834#0" expanded="true" />
+                <element signature="e#6935#7465#0" expanded="true" />
+                <element signature="e#7464#7465#0" expanded="true" />
+                <element signature="e#7566#8621#0" expanded="true" />
+                <element signature="e#8620#8621#0" expanded="true" />
+                <element signature="e#8722#9303#0" expanded="true" />
+                <element signature="e#9302#9303#0" expanded="true" />
+                <element signature="e#9404#9848#0" expanded="true" />
+                <element signature="e#9847#9848#0" expanded="true" />
+                <element signature="method#callPhoneNumber#0;class#ShoppingCartActivity#0" />
+                <element signature="e#11018#12920#0" expanded="true" />
+                <element signature="e#12919#12920#0" expanded="true" />
                 <element signature="method#onRequestPermissionsResult#0;class#ShoppingCartActivity#0" />
                 <element signature="method#getPostDataString#0;class#ShoppingCartActivity#0" />
                 <element signature="method#processProduct#0;class#ShoppingCartActivity#0" />
                 <element signature="method#processButtons#0;class#ShoppingCartActivity#0" />
-                <element signature="method#deleteListener#0;class#ShoppingCartActivity#0" />
               </folding>
             </state>
           </provider>
@@ -284,7 +284,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>visible</find>
       <find>product1</find>
       <find>name3</find>
       <find>add_to_basket</find>
@@ -314,6 +313,7 @@
       <find>lay1</find>
       <find>text1</find>
       <find>30dp</find>
+      <find>intent</find>
     </findStrings>
     <replaceStrings>
       <replace>128</replace>
@@ -3757,11 +3757,11 @@
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_main.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/sdobapp/MainActivity.java" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp-v16/activity_shopping_cart.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw300dp/activity_shopping_cart.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp/activity_shopping_cart.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw350dp-v21/activity_shopping_cart.xml" />
+        <option value="$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml" />
         <option value="$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/sdobapp/ShoppingCartActivity.java" />
       </list>
     </option>
@@ -3935,6 +3935,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout-sw400dp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deliapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deliapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="deliveryfruits" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="values" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -3961,7 +3970,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/Android" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543946596462" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543953541769" />
     <property name="device.picker.selection" value="Nexus_5X_API_28" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/deliveryfruits" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -4325,7 +4334,7 @@
       <workItem from="1543772950469" duration="1316000" />
       <workItem from="1543775743656" duration="303000" />
       <workItem from="1543855249257" duration="7578000" />
-      <workItem from="1543942158438" duration="4276000" />
+      <workItem from="1543942158438" duration="11029000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1539889234007</created>
@@ -4565,7 +4574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543869850026</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added new method of sending request">
+      <created>1543946812435</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1543946812435</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -4583,7 +4599,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="413248000" />
+    <option name="totallyTimeSpent" value="420001000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4712,7 +4728,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/justbio" />
     </ignored-roots>
-    <MESSAGE value="Added handler for plus and minus buttons, layouts." />
     <MESSAGE value="Added different layouts for different screen sizes" />
     <MESSAGE value="Added some elements" />
     <MESSAGE value="Added some images and created all product fields" />
@@ -4737,7 +4752,8 @@
     <MESSAGE value="Added last improvements" />
     <MESSAGE value="Added new phone number" />
     <MESSAGE value="Fixed some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some bugs" />
+    <MESSAGE value="Added new method of sending request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new method of sending request" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -4978,6 +4994,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="189" selection-start-line="189" selection-end-line="189" />
+          <folding>
+            <element signature="e#6978#6979#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -5021,6 +5040,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/sdobapp/GlobalConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/res/layout-sw400dp/activity_shopping_cart.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
@@ -5029,17 +5055,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/sdobapp/GlobalConst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/sdobapp/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="235" column="70" selection-start-line="235" selection-start-column="70" selection-end-line="235" selection-end-column="70" />
+        <state relative-caret-position="204">
+          <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="113" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -5048,32 +5067,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deliveryfruits/src/main/java/com/deliveryapp/sdobapp/ShoppingCartActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="236" column="41" selection-start-line="236" selection-start-column="41" selection-end-line="236" selection-end-column="41" />
+        <state relative-caret-position="355">
+          <caret line="548" column="76" selection-start-line="548" selection-start-column="76" selection-end-line="548" selection-end-column="76" />
           <folding>
-            <element signature="e#3613#3822#0" expanded="true" />
-            <element signature="e#3821#3822#0" expanded="true" />
-            <element signature="e#3914#4120#0" expanded="true" />
-            <element signature="e#4119#4120#0" expanded="true" />
-            <element signature="e#4709#5011#0" expanded="true" />
-            <element signature="e#5010#5011#0" expanded="true" />
-            <element signature="e#5112#5556#0" expanded="true" />
-            <element signature="e#5555#5556#0" expanded="true" />
-            <element signature="e#5657#5944#0" expanded="true" />
-            <element signature="e#5943#5944#0" expanded="true" />
-            <element signature="e#6045#7818#0" expanded="true" />
-            <element signature="e#7817#7818#0" expanded="true" />
-            <element signature="e#7919#8215#0" expanded="true" />
-            <element signature="e#8214#8215#0" expanded="true" />
-            <element signature="e#8316#8517#0" expanded="true" />
-            <element signature="e#8516#8517#0" expanded="true" />
-            <element signature="e#9873#10053#0" expanded="true" />
-            <element signature="e#10052#10053#0" expanded="true" />
+            <element signature="e#3827#4036#0" expanded="true" />
+            <element signature="e#4035#4036#0" expanded="true" />
+            <element signature="method#processOrder#0;class#ShoppingCartActivity#0" />
+            <element signature="e#5501#6046#0" expanded="true" />
+            <element signature="e#6045#6046#0" expanded="true" />
+            <element signature="e#6147#6834#0" expanded="true" />
+            <element signature="e#6833#6834#0" expanded="true" />
+            <element signature="e#6935#7465#0" expanded="true" />
+            <element signature="e#7464#7465#0" expanded="true" />
+            <element signature="e#7566#8621#0" expanded="true" />
+            <element signature="e#8620#8621#0" expanded="true" />
+            <element signature="e#8722#9303#0" expanded="true" />
+            <element signature="e#9302#9303#0" expanded="true" />
+            <element signature="e#9404#9848#0" expanded="true" />
+            <element signature="e#9847#9848#0" expanded="true" />
+            <element signature="method#callPhoneNumber#0;class#ShoppingCartActivity#0" />
+            <element signature="e#11018#12920#0" expanded="true" />
+            <element signature="e#12919#12920#0" expanded="true" />
             <element signature="method#onRequestPermissionsResult#0;class#ShoppingCartActivity#0" />
             <element signature="method#getPostDataString#0;class#ShoppingCartActivity#0" />
             <element signature="method#processProduct#0;class#ShoppingCartActivity#0" />
             <element signature="method#processButtons#0;class#ShoppingCartActivity#0" />
-            <element signature="method#deleteListener#0;class#ShoppingCartActivity#0" />
           </folding>
         </state>
       </provider>

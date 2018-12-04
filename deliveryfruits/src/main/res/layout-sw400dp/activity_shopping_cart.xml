@@ -107,12 +107,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" style="@android:style/Widget.DeviceDefault.Light.ScrollView"
             android:fillViewport="false" android:clipToPadding="false" android:layout_marginTop="57dp"
-            android:layout_marginBottom="190dp" android:id="@+id/basket_scroll">
+            android:layout_marginBottom="190dp" android:id="@+id/basket_scroll" android:clickable="true">
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:background="#f7f5f4" android:id="@+id/lay_basket">
+                android:background="#f7f5f4" android:id="@+id/lay_basket" android:clickable="true">
 
             <android.support.constraint.ConstraintLayout
                     android:orientation="vertical"
