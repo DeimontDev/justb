@@ -12,7 +12,6 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -83,7 +82,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
         processProduct(res);
         processButtons(res);
-        processTextQuantity(res);
+        processTextQuantity();
         setNewAmount(String.valueOf(TOTAL_SHOPPING), amount);
 
         Button order = findViewById(R.id.order_button);
@@ -124,65 +123,128 @@ public class ShoppingCartActivity extends AppCompatActivity {
     }
 
     public void processOrder() {
-        Resources res = getResources();
+        final Resources res = getResources();
+
         try {
-            PRODUCT_NAME = "Comanda №";
-            QUANTITY = String.valueOf(ORDER_NUMBER);
-            TOTAL2 = " ";
-            new SendRequest().execute();
-            Thread.sleep(1000);
-
-            PRODUCT_NAME = "Data/Ora:";
-
-            Date date = new Date();
-            date.setTime(System.currentTimeMillis());
-
-            QUANTITY = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.US).format(date);
-            TOTAL2 = " ";
-            new SendRequest().execute();
-            Thread.sleep(1500);
-
-            PRODUCT_NAME = "Produs";
-            QUANTITY = "Cantitatea";
-            TOTAL2 = "Total";
-            new SendRequest().execute();
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        for (int i = 1; i <= 20; i++) {
-            ConstraintLayout lay = findViewById(res.getIdentifier(
-                    "lay" + String.valueOf(i), "id", getPackageName()));
-            if (lay != null && lay.getVisibility() == View.VISIBLE) {
-                TextView product = findViewById(res.getIdentifier(
-                        "name" + String.valueOf(i), "id", getPackageName()));
-                TextView quantity = findViewById(res.getIdentifier(
-                        "text" + String.valueOf(i), "id", getPackageName()));
-                String productName = product.getText().toString();
-                String quan = quantity.getText().toString();
-                PRODUCT_NAME = productName;
-                QUANTITY = quan;
-                TOTAL2 = "";
-                try {
+            Thread thread1 = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    PRODUCT_NAME = "Comanda №";
+                    QUANTITY = String.valueOf(ORDER_NUMBER);
+                    TOTAL2 = " ";
                     new SendRequest().execute();
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    System.out.println("Thread1");
+                    try {
+                        Thread.sleep(1500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
-            }
-        }
-        try {
-            PRODUCT_NAME = " ";
-            QUANTITY = " ";
-            TOTAL2 = String.valueOf(TOTAL_SHOPPING);
-            new SendRequest().execute();
-            Thread.sleep(2000);
+            });
+            thread1.start();
+            thread1.join();
+
+            Thread thread2 = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    PRODUCT_NAME = "Data/Ora:";
+                    Date date = new Date();
+                    date.setTime(System.currentTimeMillis());
+                    QUANTITY = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.US).format(date);
+                    TOTAL2 = " ";
+                    new SendRequest().execute();
+                    System.out.println("Thread2");
+                    try {
+                        Thread.sleep(1500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            thread2.start();
+            thread2.join();
+
+            Thread thread3 = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    PRODUCT_NAME = "Produs";
+                    QUANTITY = "Cantitatea";
+                    TOTAL2 = "Total";
+                    new SendRequest().execute();
+                    System.out.println("Thread3");
+                    try {
+                        Thread.sleep(1500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            thread3.start();
+            thread3.join();
+
+            Thread thread4 = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    for (int i = 1; i <= 20; i++) {
+                        String productName = extras != null ? extras.getStringExtra("product" + i) : null;
+
+                        if (productName != null) {
+                            TextView quantity = findViewById(res.getIdentifier(
+                                    "text" + String.valueOf(i), "id", getPackageName()));
+                            PRODUCT_NAME = productName;
+                            QUANTITY = quantity.getText().toString();
+                            TOTAL2 = " ";
+                            new SendRequest().execute();
+                            System.out.println("Thread4");
+                            try {
+                                Thread.sleep(1500);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+            });
+            thread4.start();
+            thread4.join();
+
+            Thread thread5 = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    PRODUCT_NAME = " ";
+                    QUANTITY = " ";
+                    TOTAL2 = String.valueOf(TOTAL_SHOPPING);
+                    new SendRequest().execute();
+                    System.out.println("Thread5");
+//                    Thread.sleep(1000);
+                    try {
+                        Thread.sleep(1500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            thread5.start();
+            thread5.join();
+
+            Thread thread6 = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    PRODUCT_NAME = "end";
+                    new SendRequest().execute();
+                    System.out.println("Thread6");
+                    try {
+                        Thread.sleep(1500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            thread6.start();
+            thread6.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        PRODUCT_NAME = "end";
-        new SendRequest().execute();
     }
 
     public void callPhoneNumber() {
@@ -206,23 +268,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
         }
     }
 
-    public void processTextQuantity(final Resources res) {
-//        final ConstraintLayout bottomLay = findViewById(R.id.bottom_lay);
-//
-//        for (int i = 0; i < 20; i++) {
-//            int id = i + 1;
-//            final TextView quantity = findViewById(res.getIdentifier(
-//                    "text" + String.valueOf(id), "id", getPackageName()));
-//            quantity.setFilters(new InputFilter[]{new MinMaxFilter("1", "200")});
-//
-//            quantity.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    quantity.setCursorVisible(true);
-//                }
-//            });
-//        }
-
+    public void processTextQuantity() {
         ConstraintLayout basketLay = findViewById(R.id.lay_basket);
         basketLay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -237,13 +283,13 @@ public class ShoppingCartActivity extends AppCompatActivity {
                 hideSoftKeyboard(ShoppingCartActivity.this);
             }
         });
-        CoordinatorLayout cont = findViewById(R.id.coord);
-        cont.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                hideSoftKeyboard(ShoppingCartActivity.this);
-            }
-        });
+//        CoordinatorLayout cont = findViewById(R.id.coord);
+//        cont.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                hideSoftKeyboard(ShoppingCartActivity.this);
+//            }
+//        });
     }
 
     @Override
