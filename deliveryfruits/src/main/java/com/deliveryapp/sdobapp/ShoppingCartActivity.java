@@ -25,6 +25,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -46,13 +47,14 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
     public static int TOTAL_SHOPPING;
     private static boolean FLAG = true;
-    private static boolean LAY_FLAG = true;
-    private static int PROCESSED_ID;
     private static int ORDER_NUMBER;
-    private static String TOTAL2;
-    private static String PRODUCT_NAME;
-    private static String QUANTITY;
+
     private final int CALL_REQUEST = 100;
+    private JSONObject postDataParams;
+    private String COMAND_VAL;
+    private String DATE_VAL;
+    private String PRODUS_VAL;
+    private String AMOUNT_VAL;
     private Intent extras = GlobalConst.intent;
 
     @Override
@@ -147,126 +149,36 @@ public class ShoppingCartActivity extends AppCompatActivity {
     public void processOrder() {
         final Resources res = getResources();
 
-        try {
-            Thread thread1 = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    PRODUCT_NAME = "Comanda №";
-                    QUANTITY = String.valueOf(ORDER_NUMBER);
-                    TOTAL2 = " ";
-                    new SendRequest().execute();
-                    System.out.println("Thread1");
-                    try {
-                        Thread.sleep(1500);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-            thread1.start();
-            thread1.join();
+        Thread thread1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Date date = new Date(System.currentTimeMillis());
+                DATE_VAL = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.US).format(date);
+                COMAND_VAL = String.valueOf(ORDER_NUMBER);
+                AMOUNT_VAL = String.valueOf(TOTAL_SHOPPING);
 
-            Thread thread2 = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    PRODUCT_NAME = "Data/Ora:";
-                    Date date = new Date();
-                    date.setTime(System.currentTimeMillis());
-                    QUANTITY = new SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.US).format(date);
-                    TOTAL2 = " ";
-                    new SendRequest().execute();
-                    System.out.println("Thread2");
-                    try {
-                        Thread.sleep(1500);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-            thread2.start();
-            thread2.join();
+                postDataParams = new JSONObject();
 
-            Thread thread3 = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    PRODUCT_NAME = "Produs";
-                    QUANTITY = "Cantitatea";
-                    TOTAL2 = "Total";
-                    new SendRequest().execute();
-                    System.out.println("Thread3");
-                    try {
-                        Thread.sleep(1500);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-            thread3.start();
-            thread3.join();
+                for (int i = 1; i <= 20; i++) {
+                    String productName = extras != null ? extras.getStringExtra("product" + i) : null;
+                    TextView quantity = findViewById(res.getIdentifier(
+                            "text" + String.valueOf(i), "id", getPackageName()));
+                    String quant = quantity.getText().toString();
 
-            Thread thread4 = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    for (int i = 1; i <= 20; i++) {
-                        String productName = extras != null ? extras.getStringExtra("product" + i) : null;
-
-                        if (productName != null) {
-                            TextView quantity = findViewById(res.getIdentifier(
-                                    "text" + String.valueOf(i), "id", getPackageName()));
-                            PRODUCT_NAME = productName;
-                            QUANTITY = quantity.getText().toString();
-                            TOTAL2 = " ";
-                            new SendRequest().execute();
-                            System.out.println("Thread4");
-                            try {
-                                Thread.sleep(1500);
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
+                    if (productName != null) {
+                        try {
+                            postDataParams.put("prod" + i, productName);
+                            postDataParams.put("quant" + i, quant);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
                         }
                     }
                 }
-            });
-            thread4.start();
-            thread4.join();
+                new SendRequest().execute();
+            }
 
-            Thread thread5 = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    PRODUCT_NAME = " ";
-                    QUANTITY = " ";
-                    TOTAL2 = String.valueOf(TOTAL_SHOPPING);
-                    new SendRequest().execute();
-                    System.out.println("Thread5");
-//                    Thread.sleep(1000);
-                    try {
-                        Thread.sleep(1500);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-            thread5.start();
-            thread5.join();
-
-            Thread thread6 = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    PRODUCT_NAME = "end";
-                    new SendRequest().execute();
-                    System.out.println("Thread6");
-                    try {
-                        Thread.sleep(1500);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-            thread6.start();
-            thread6.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        });
+        thread1.start();
     }
 
     public void callPhoneNumber() {
@@ -461,11 +373,11 @@ public class ShoppingCartActivity extends AppCompatActivity {
 
             ImageButton delete = findViewById(res.getIdentifier(
                     "delete" + String.valueOf(id), "id", getPackageName()));
-            delete.setOnClickListener(deleteListener(id, extras));
+            delete.setOnClickListener(deleteListener(id));
         }
     }
 
-    private View.OnClickListener deleteListener(final int id, final Intent extras) {
+    private View.OnClickListener deleteListener(final int id) {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -496,6 +408,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FLAG = true;
                 Resources res = getResources();
                 TextView textView = findViewById(res.getIdentifier(
                         "text" + String.valueOf(id), "id", getPackageName()));
@@ -574,13 +487,18 @@ public class ShoppingCartActivity extends AppCompatActivity {
         protected String doInBackground(String... arg0) {
             try {
                 URL url = new URL("https://script.google.com/macros/s/AKfycbxFZC9YPpG1-A_StZ583S0jtkmApNOEFclM8eKJ3aLB0zwiHN0/exec");
-                JSONObject postDataParams = new JSONObject();
+//                JSONObject postDataParams = new JSONObject();
 
                 String id = "1V9XMhpxFsfe8xXgWEfnGIYcPyLWd8wll9evUmRofDxs";
 
-                postDataParams.put("Product", PRODUCT_NAME);
-                postDataParams.put("cantitatea", QUANTITY);
-                postDataParams.put("total", TOTAL2);
+                postDataParams.put("comandName", "Comanda №");
+                postDataParams.put("comandVal", ORDER_NUMBER);
+                postDataParams.put("dateName", "Data/Ora:");
+                postDataParams.put("dateVal", DATE_VAL);
+                postDataParams.put("produsName", "Produs");
+                postDataParams.put("quantityName", "Cantitatea");
+                postDataParams.put("amountName", "Total");
+                postDataParams.put("amountVal", TOTAL_SHOPPING);
                 postDataParams.put("id", id);
 
 

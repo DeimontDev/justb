@@ -256,11 +256,8 @@ public class MainActivity extends AppCompatActivity {
 
                     int totalPrice = intPrice * Integer.parseInt(actQuan);
 
-                    if (totalPrice <= TOTAL_MAIN) {
-                        TOTAL_MAIN = TOTAL_MAIN - totalPrice;
-                    } else {
-                        TOTAL_MAIN = 0;
-                    }
+                    TOTAL_MAIN = TOTAL_MAIN - totalPrice;
+
                     String text = String.valueOf(TOTAL_MAIN) + " lei";
                     laMoment.setText(text);
                 }
