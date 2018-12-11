@@ -211,6 +211,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
             public void onClick(View view) {
                 hideSoftKeyboard(ShoppingCartActivity.this);
 
+                //verify each product, if quantity was changed, display it to user and set new price and amount
                 for (int i = 1; i <= 20; i++) {
                     if (extras != null && extras.getStringExtra("product" + i) != null) {
                         TextView price = findViewById(res.getIdentifier(

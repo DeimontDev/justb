@@ -93,6 +93,52 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     hideSoftKeyboard(MainActivity.this);
+
+                    //TODO   Below is handled condition when user added some product to basket,
+                    //TODO   modified manually quantity, and clicks on some image. At the moment it's not
+                    //TODO   working, need to set correctly 'la_moment' value
+
+//                    for (int j = 1; j <= 20 ; j++) {
+//                        TextView price = findViewById(res.getIdentifier(
+//                                "price" + String.valueOf(j), "id", getPackageName()));
+//                        String pric = price.getText().toString().substring(0, price.getText().toString().indexOf(" "));
+//                        TextView quantity = findViewById(res.getIdentifier(
+//                                "text" + String.valueOf(j), "id", getPackageName()));
+//                        String actQuan = quantity.getText().toString();
+//                        String oldQuantity = intent == null ? "1" : intent.getStringExtra("quantity" + j);
+//                        AppCompatButton toBasket = findViewById(res.getIdentifier(
+//                                "button" + String.valueOf(j), "id", getPackageName()));
+//                        String addedToBasket = toBasket.getText().toString();
+//                        String added = getString(R.string.added);
+//
+//                        if (!actQuan.equals(oldQuantity) && addedToBasket.equals(added)) {
+//                            int priceEntity = Integer.parseInt(pric);
+//
+//                            if (actQuan.equals("") || actQuan.equals("0")) {
+//                                int priceActual = Integer.parseInt(oldQuantity) * priceEntity;
+//                                TOTAL_MAIN = TOTAL_MAIN - priceActual;
+//
+//                                intent.putExtra("quantity" + j, "1");
+//
+//                                TextView laMoment = findViewById(R.id.la_moment);
+//                                String text = String.valueOf(TOTAL_MAIN) + " lei";
+//                                laMoment.setText(text);
+//                                quantity.setText(String.valueOf("1"));
+//                            } else {
+//                                int quantityActual = Integer.parseInt(actQuan);
+//                                priceEntity = priceEntity * quantityActual;
+//
+//                                TOTAL_MAIN = TOTAL_MAIN - Integer.parseInt(pric);
+//                                TOTAL_MAIN = TOTAL_MAIN + priceEntity;
+//
+//                                intent.putExtra("quantity" + j, actQuan);
+//
+//                                TextView laMoment = findViewById(R.id.la_moment);
+//                                String text = String.valueOf(TOTAL_MAIN) + " lei";
+//                                laMoment.setText(text);
+//                            }
+//                        }
+//                    }
                 }
             });
         }
@@ -177,6 +223,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Process plus and minus buttons, set listeners
+     *
+     * @param res Resources
+     */
     public void processPlusMinus(Resources res) {
         for (int i = 0; i < 20; i++) {
             int id = i + 1;
@@ -190,6 +241,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Process actions with adding and removing products from shopping basket
+     *
+     * @param id Product id
+     * @return On click listener object
+     */
     private View.OnClickListener basketListener(final int id) {
         return new View.OnClickListener() {
             @Override
@@ -246,15 +303,23 @@ public class MainActivity extends AppCompatActivity {
 
                     TextView quantity = findViewById(res.getIdentifier(
                             "text" + String.valueOf(id), "id", getPackageName()));
+                    String oldQuant = intent.getStringExtra("quantity" + id);
                     String actQuan = quantity.getText().toString();
 
+                    //If user deleted all digits, set default value
                     if (actQuan.equals("")) {
                         quantity.setText("1");
                     }
 
+                    //Calculate total price for given product
                     actQuan = quantity.getText().toString();
-
                     int totalPrice = intPrice * Integer.parseInt(actQuan);
+
+                    //This if is true only when user selected some product with some quantity,
+                    //then modified quant value, and deselect product.
+                    if (Integer.parseInt(oldQuant) != Integer.parseInt(actQuan)) {
+                        totalPrice = intPrice * Integer.parseInt(oldQuant);
+                    }
 
                     TOTAL_MAIN = TOTAL_MAIN - totalPrice;
 
