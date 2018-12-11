@@ -70,9 +70,9 @@
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_marginTop="40dp" app:layout_constraintTop_toBottomOf="@+id/total"/>
+                android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/total"/>
         <TextView
-                android:visibility="gone"
+                android:visibility="visible"
                 android:text="@string/suma_minima"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

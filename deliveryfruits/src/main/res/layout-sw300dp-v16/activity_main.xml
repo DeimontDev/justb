@@ -88,7 +88,7 @@
                                 android:layout_height="150dp" app:srcCompat="@drawable/latte1"
                                 android:id="@+id/img5"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="25dp"
-                                android:layout_marginTop="110dp"
+                                android:layout_marginTop="105dp"
                                 app:layout_constraintTop_toBottomOf="@+id/img3"
                                 android:background="@color/colorPrimary222231222"
                                 android:scaleType="fitCenter" android:layout_marginLeft="25dp"/>
@@ -107,7 +107,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/foietaj_sunca"
                                 android:id="@+id/img9"
-                                app:layout_constraintTop_toBottomOf="@+id/img7" android:layout_marginTop="110dp"
+                                app:layout_constraintTop_toBottomOf="@+id/img7" android:layout_marginTop="105dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="25dp"
                                 android:layout_marginLeft="25dp"
                                 app:layout_constraintLeft_toLeftOf="parent"
@@ -117,7 +117,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/placintabrinza"
                                 android:id="@+id/img11"
-                                app:layout_constraintTop_toBottomOf="@+id/img9" android:layout_marginTop="110dp"
+                                app:layout_constraintTop_toBottomOf="@+id/img9" android:layout_marginTop="105dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="25dp"
                                 android:layout_marginLeft="25dp"
                                 app:layout_constraintLeft_toLeftOf="parent"
@@ -137,7 +137,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/placintavisina"
                                 android:id="@+id/img15"
-                                app:layout_constraintTop_toBottomOf="@+id/img13" android:layout_marginTop="110dp"
+                                app:layout_constraintTop_toBottomOf="@+id/img13" android:layout_marginTop="105dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="25dp"
                                 android:layout_marginLeft="25dp"
                                 app:layout_constraintLeft_toLeftOf="parent"
@@ -147,7 +147,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/donuroz"
                                 android:id="@+id/img17"
-                                app:layout_constraintTop_toBottomOf="@+id/img15" android:layout_marginTop="110dp"
+                                app:layout_constraintTop_toBottomOf="@+id/img15" android:layout_marginTop="105dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="25dp"
                                 android:layout_marginLeft="25dp"
                                 app:layout_constraintLeft_toLeftOf="parent"
@@ -157,7 +157,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/donutsalb"
                                 android:id="@+id/img19"
-                                app:layout_constraintTop_toBottomOf="@+id/img17" android:layout_marginTop="110dp"
+                                app:layout_constraintTop_toBottomOf="@+id/img17" android:layout_marginTop="105dp"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="25dp"
                                 android:layout_marginLeft="25dp"
                                 app:layout_constraintLeft_toLeftOf="parent"
@@ -184,7 +184,7 @@
                                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                                 android:text="@string/_1"
                                 style="@style/Widget.AppCompat.Button.Colored"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 android:textColorLink="@color/colorPrimary222"
                                 android:selectAllOnFocus="false"
                                 app:layout_constraintStart_toEndOf="@+id/minus1"
@@ -206,7 +206,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/pizza"
                                 android:id="@+id/img10"
-                                android:layout_marginTop="110dp" app:layout_constraintTop_toBottomOf="@+id/img8"
+                                android:layout_marginTop="105dp" app:layout_constraintTop_toBottomOf="@+id/img8"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 android:layout_marginEnd="25dp" android:layout_marginRight="25dp"
                                 app:layout_constraintRight_toRightOf="parent"
@@ -216,7 +216,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/sasisca"
                                 android:id="@+id/img12"
-                                android:layout_marginTop="110dp" app:layout_constraintTop_toBottomOf="@+id/img10"
+                                android:layout_marginTop="105dp" app:layout_constraintTop_toBottomOf="@+id/img10"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 android:layout_marginEnd="25dp" android:layout_marginRight="25dp"
                                 app:layout_constraintRight_toRightOf="parent"
@@ -236,7 +236,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/muffin"
                                 android:id="@+id/img16"
-                                android:layout_marginTop="110dp" app:layout_constraintTop_toBottomOf="@+id/img14"
+                                android:layout_marginTop="105dp" app:layout_constraintTop_toBottomOf="@+id/img14"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 android:layout_marginEnd="25dp" android:layout_marginRight="25dp"
                                 app:layout_constraintRight_toRightOf="parent"
@@ -246,7 +246,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/negrudonuts"
                                 android:id="@+id/img18"
-                                android:layout_marginTop="110dp" app:layout_constraintTop_toBottomOf="@+id/img16"
+                                android:layout_marginTop="105dp" app:layout_constraintTop_toBottomOf="@+id/img16"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 android:layout_marginEnd="25dp" android:layout_marginRight="25dp"
                                 app:layout_constraintRight_toRightOf="parent"
@@ -256,7 +256,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/foietaj2"
                                 android:id="@+id/img20"
-                                android:layout_marginTop="110dp" app:layout_constraintTop_toBottomOf="@+id/img18"
+                                android:layout_marginTop="105dp" app:layout_constraintTop_toBottomOf="@+id/img18"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 android:layout_marginEnd="25dp" android:layout_marginRight="25dp"
                                 app:layout_constraintRight_toRightOf="parent"
@@ -284,13 +284,13 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img2"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product2" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product2" android:layout_marginTop="105dp"/>
                         <ImageButton
                                 android:layout_width="120dp"
                                 android:layout_height="150dp" app:srcCompat="@drawable/capucino1"
                                 android:id="@+id/img3"
                                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="25dp"
-                                android:layout_marginTop="110dp"
+                                android:layout_marginTop="105dp"
                                 app:layout_constraintTop_toBottomOf="@+id/img1"
                                 android:background="@color/colorPrimary222231222"
                                 android:scaleType="fitCenter" android:layout_marginLeft="25dp"/>
@@ -301,7 +301,7 @@
                                 android:background="@color/colorPrimary222231222"
                                 style="@style/Widget.AppCompat.ImageButton" android:scaleType="centerCrop"
                                 android:layout_marginRight="25dp"
-                                app:layout_constraintRight_toRightOf="parent" android:layout_marginTop="110dp"
+                                app:layout_constraintRight_toRightOf="parent" android:layout_marginTop="105dp"
                                 app:layout_constraintTop_toBottomOf="@+id/img2" android:layout_marginEnd="25dp"/>
                         <ImageButton
                                 android:layout_width="120dp"
@@ -310,7 +310,7 @@
                                 android:background="@color/colorPrimary222231222"
                                 style="@style/Widget.AppCompat.ImageButton" android:scaleType="centerCrop"
                                 android:layout_marginRight="25dp"
-                                app:layout_constraintRight_toRightOf="parent" android:layout_marginTop="110dp"
+                                app:layout_constraintRight_toRightOf="parent" android:layout_marginTop="105dp"
                                 app:layout_constraintTop_toBottomOf="@+id/img4" android:layout_marginEnd="25dp"/>
                         <ImageButton
                                 android:layout_width="30dp"
@@ -347,7 +347,7 @@
                                 android:background="@color/colorPrimary2"
                                 app:layout_constraintTop_toBottomOf="@+id/text1"
                                 android:textColor="@android:color/black" android:textSize="10sp"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintEnd_toEndOf="@+id/img1"
                                 app:layout_constraintStart_toStartOf="@+id/img1"/>
                         <ImageButton
@@ -375,7 +375,7 @@
                                 android:textAlignment="center" android:text="@string/_1" android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="150dp"
                                 app:layout_constraintTop_toTopOf="@+id/img2"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus2"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <EditText
@@ -387,7 +387,7 @@
                                 android:textAlignment="center" android:text="@string/_1" android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="150dp"
                                 app:layout_constraintTop_toTopOf="@+id/img4"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus4"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <Button
@@ -401,7 +401,7 @@
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
                                 android:text="@string/to_basket"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginRight="25dp"/>
                         <Button
                                 android:layout_width="120dp"
                                 android:layout_height="35dp"
@@ -413,7 +413,7 @@
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
                                 android:text="@string/to_basket"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginRight="25dp"/>
                         <ImageButton
                                 android:layout_width="30dp"
                                 android:layout_height="28dp" app:srcCompat="@drawable/ic_action_name"
@@ -429,7 +429,7 @@
                                 android:ems="10"
                                 android:id="@+id/text3"
                                 app:layout_constraintStart_toEndOf="@+id/minus3"
-                                android:singleLine="true" android:focusable="false"
+                                android:singleLine="true" android:focusable="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:text="@string/_1"
                                 app:layout_constraintTop_toTopOf="@+id/img3" android:layout_marginTop="150dp"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"
@@ -527,7 +527,7 @@
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginLeft="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginLeft="25dp"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -538,7 +538,7 @@
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginLeft="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginLeft="25dp"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -549,7 +549,7 @@
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
-                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="false"/>
+                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="true"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -560,7 +560,7 @@
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
-                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="false"/>
+                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="true"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -571,7 +571,7 @@
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
-                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="false"/>
+                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="true"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -582,7 +582,7 @@
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
-                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="false"/>
+                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="true"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -593,7 +593,7 @@
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
-                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="false"/>
+                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="true"/>
 
                         <Button
                                 android:text="@string/to_basket"
@@ -605,7 +605,7 @@
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
-                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="false"/>
+                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="true"/>
 
                         <Button
                                 android:text="@string/to_basket"
@@ -617,7 +617,7 @@
                                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                                 android:background="@color/colorPrimary2" android:textAlignment="center"
                                 android:textSize="10sp" android:textColor="@android:color/black"
-                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="false"/>
+                                android:layout_marginLeft="25dp" tools:ignore="SmallSp" android:focusable="true"/>
 
                         <Button
                                 android:text="@string/to_basket"
@@ -629,7 +629,7 @@
                                 android:textColor="@android:color/black"
                                 app:layout_constraintTop_toTopOf="@+id/img6" android:layout_marginTop="190dp"
                                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="25dp"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginRight="25dp"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -640,7 +640,7 @@
                                 android:textColor="@android:color/black"
                                 app:layout_constraintTop_toTopOf="@+id/img8" android:layout_marginTop="190dp"
                                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="25dp"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginRight="25dp"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -651,7 +651,7 @@
                                 android:textColor="@android:color/black"
                                 app:layout_constraintTop_toTopOf="@+id/img10" android:layout_marginTop="190dp"
                                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="25dp"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginRight="25dp"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -662,7 +662,7 @@
                                 android:textColor="@android:color/black"
                                 app:layout_constraintTop_toTopOf="@+id/img12" android:layout_marginTop="190dp"
                                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="25dp"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginRight="25dp"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -673,7 +673,7 @@
                                 android:textColor="@android:color/black"
                                 app:layout_constraintTop_toTopOf="@+id/img14" android:layout_marginTop="190dp"
                                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="25dp"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginRight="25dp"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -684,7 +684,7 @@
                                 android:textColor="@android:color/black"
                                 app:layout_constraintTop_toTopOf="@+id/img16" android:layout_marginTop="190dp"
                                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="25dp"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginRight="25dp"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -695,7 +695,7 @@
                                 android:textColor="@android:color/black"
                                 app:layout_constraintTop_toTopOf="@+id/img18" android:layout_marginTop="190dp"
                                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="25dp"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginRight="25dp"/>
                         <Button
                                 android:text="@string/to_basket"
                                 android:layout_width="120dp"
@@ -706,7 +706,7 @@
                                 android:textColor="@android:color/black"
                                 app:layout_constraintTop_toTopOf="@+id/img20" android:layout_marginTop="190dp"
                                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="25dp"
-                                tools:ignore="SmallSp" android:focusable="false" android:layout_marginRight="25dp"/>
+                                tools:ignore="SmallSp" android:focusable="true" android:layout_marginRight="25dp"/>
                         <ImageButton
                                 android:layout_width="30dp"
                                 android:layout_height="28dp" app:srcCompat="@drawable/ic_action_name"
@@ -779,7 +779,7 @@
                                 android:id="@+id/text5"
                                 app:layout_constraintStart_toEndOf="@+id/minus5"
                                 android:singleLine="true"
-                                android:focusable="false"
+                                android:focusable="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:text="@string/_1"
                                 app:layout_constraintTop_toTopOf="@+id/img5" android:layout_marginTop="150dp"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"
@@ -790,7 +790,7 @@
                                 android:inputType="numberSigned"
                                 android:ems="10"
                                 android:id="@+id/text7"
-                                android:focusable="false"
+                                android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus7"
                                 android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:text="@string/_1"
@@ -803,7 +803,7 @@
                                 android:inputType="numberSigned"
                                 android:ems="10"
                                 android:id="@+id/text9"
-                                android:focusable="false"
+                                android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus9"
                                 android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:text="@string/_1"
@@ -818,7 +818,7 @@
                                 android:id="@+id/text11"
                                 app:layout_constraintStart_toEndOf="@+id/minus11"
                                 android:singleLine="true"
-                                android:focusable="false"
+                                android:focusable="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:text="@string/_1"
                                 app:layout_constraintTop_toTopOf="@+id/img11" android:layout_marginTop="150dp"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"
@@ -831,7 +831,7 @@
                                 android:id="@+id/text13"
                                 app:layout_constraintStart_toEndOf="@+id/minus13"
                                 android:singleLine="true"
-                                android:focusable="false"
+                                android:focusable="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:text="@string/_1"
                                 app:layout_constraintTop_toTopOf="@+id/img13" android:layout_marginTop="150dp"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"
@@ -841,7 +841,7 @@
                                 android:layout_height="40dp"
                                 android:inputType="numberSigned"
                                 android:ems="10"
-                                android:id="@+id/text15" android:focusable="false"
+                                android:id="@+id/text15" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus15"
                                 android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:text="@string/_1"
@@ -853,7 +853,7 @@
                                 android:layout_height="40dp"
                                 android:inputType="numberSigned"
                                 android:ems="10"
-                                android:id="@+id/text17" android:focusable="false"
+                                android:id="@+id/text17" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus17"
                                 android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:text="@string/_1"
@@ -865,7 +865,7 @@
                                 android:layout_height="40dp"
                                 android:inputType="numberSigned"
                                 android:ems="10"
-                                android:id="@+id/text19" android:focusable="false"
+                                android:id="@+id/text19" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus19"
                                 android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:text="@string/_1"
@@ -950,7 +950,7 @@
                                 android:id="@+id/minus6" style="@style/Widget.AppCompat.ImageButton"
                                 android:background="@color/colorPrimaryDark22"
                                 app:layout_constraintStart_toStartOf="@+id/img6"
-                                android:focusable="false"
+                                android:focusable="true"
                                 app:layout_constraintTop_toTopOf="@+id/text6" android:layout_marginTop="6dp"
                         />
                         <EditText
@@ -962,7 +962,7 @@
                                 android:textAlignment="center" android:text="@string/_1" android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="150dp"
                                 app:layout_constraintTop_toTopOf="@+id/img6"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus6"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <EditText
@@ -974,7 +974,7 @@
                                 android:textAlignment="center" android:text="@string/_1" android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="150dp"
                                 app:layout_constraintTop_toTopOf="@+id/img8"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus8"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <EditText
@@ -986,7 +986,7 @@
                                 android:textAlignment="center" android:text="@string/_1" android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="150dp"
                                 app:layout_constraintTop_toTopOf="@+id/img10"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus10"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <EditText
@@ -998,7 +998,7 @@
                                 android:textAlignment="center" android:text="@string/_1" android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="150dp"
                                 app:layout_constraintTop_toTopOf="@+id/img12"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus12"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <EditText
@@ -1010,7 +1010,7 @@
                                 android:textAlignment="center" android:text="@string/_1" android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="150dp"
                                 app:layout_constraintTop_toTopOf="@+id/img14"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus14"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <EditText
@@ -1022,7 +1022,7 @@
                                 android:textAlignment="center" android:text="@string/_1" android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="150dp"
                                 app:layout_constraintTop_toTopOf="@+id/img16"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus16"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <EditText
@@ -1034,7 +1034,7 @@
                                 android:textAlignment="center" android:text="@string/_1" android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="150dp"
                                 app:layout_constraintTop_toTopOf="@+id/img18"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus18"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <EditText
@@ -1046,7 +1046,7 @@
                                 android:textAlignment="center" android:text="@string/_1" android:singleLine="true"
                                 style="@style/Widget.AppCompat.Button.Colored" android:layout_marginTop="150dp"
                                 app:layout_constraintTop_toTopOf="@+id/img20"
-                                tools:ignore="SmallSp" android:focusable="false"
+                                tools:ignore="SmallSp" android:focusable="true"
                                 app:layout_constraintStart_toEndOf="@+id/minus20"
                                 android:layout_marginStart="3dp" android:layout_marginLeft="3dp"/>
                         <ImageButton
@@ -1133,7 +1133,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img1"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product1" android:layout_marginTop="110dp"
+                                app:layout_constraintTop_toBottomOf="@+id/product1" android:layout_marginTop="105dp"
                         />
                         <TextView
                                 android:text="@string/price_3"
@@ -1147,7 +1147,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img3"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product3" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product3" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_4"
                                 android:layout_width="0dp"
@@ -1160,7 +1160,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img4"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product4" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product4" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_5"
                                 android:layout_width="0dp"
@@ -1173,7 +1173,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img5"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product5" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product5" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_6"
                                 android:layout_width="0dp"
@@ -1186,7 +1186,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img6"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product6" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product6" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_7"
                                 android:layout_width="0dp"
@@ -1199,7 +1199,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img7"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product7" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product7" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_8"
                                 android:layout_width="0dp"
@@ -1212,7 +1212,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img8"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product8" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product8" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_9"
                                 android:layout_width="0dp"
@@ -1225,7 +1225,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img9"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product9" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product9" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_10"
                                 android:layout_width="0dp"
@@ -1238,7 +1238,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img10"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product10" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product10" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_11"
                                 android:layout_width="0dp"
@@ -1251,7 +1251,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img11"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product11" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product11" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_12"
                                 android:layout_width="0dp"
@@ -1264,7 +1264,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img12"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product12" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product12" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_13"
                                 android:layout_width="0dp"
@@ -1277,7 +1277,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img13"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product13" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product13" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_14"
                                 android:layout_width="0dp"
@@ -1290,7 +1290,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img14"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product14" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product14" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_15"
                                 android:layout_width="0dp"
@@ -1303,7 +1303,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img15"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product15" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product15" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_16"
                                 android:layout_width="0dp"
@@ -1316,7 +1316,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img16"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product16" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product16" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_17"
                                 android:layout_width="0dp"
@@ -1329,7 +1329,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img17"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product17" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product17" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_18"
                                 android:layout_width="0dp"
@@ -1342,7 +1342,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img18"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product18" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product18" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_19"
                                 android:layout_width="0dp"
@@ -1355,7 +1355,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img19"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product19" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product19" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/price_20"
                                 android:layout_width="0dp"
@@ -1368,7 +1368,7 @@
                                 android:textSize="14sp"
                                 app:layout_constraintStart_toStartOf="@+id/img20"
 
-                                app:layout_constraintTop_toBottomOf="@+id/product20" android:layout_marginTop="110dp"/>
+                                app:layout_constraintTop_toBottomOf="@+id/product20" android:layout_marginTop="105dp"/>
                         <TextView
                                 android:text="@string/americano_250ml"
                                 android:layout_width="0dp"
